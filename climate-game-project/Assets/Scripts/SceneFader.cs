@@ -1,25 +1,15 @@
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
-using UnityEngine.InputSystem;
 using System.Collections;
 
 public class SceneFader : MonoBehaviour
 {
     public Image blackScreen;
-    [SerializeField] private string sceneName;
 
     private void Start()
     {
         StartCoroutine(FadeOut());
-    }
-
-    private void Update()
-    {
-        if (Keyboard.current.nKey.wasPressedThisFrame)
-        {
-            FadeAndLoad(sceneName, 1);
-        }
     }
 
     public void FadeAndLoad(string sceneName, float duration)

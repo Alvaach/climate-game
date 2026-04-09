@@ -44,12 +44,12 @@ public class InteractScript : MonoBehaviour
     void Interact()
     {
         if (clue != null)
+        {
             clue.SetActive(true);
-
-        if (playerMovement != null)
-            playerMovement.enabled = false;
-
-        waitingForClick = true;
+            if (playerMovement != null)
+                playerMovement.enabled = false;
+            waitingForClick = true;
+        }
     }
 
     void DismissClue()
