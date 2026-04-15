@@ -11,6 +11,7 @@ public class UIManager : MonoBehaviour
     [SerializeField] private GameObject decisionButton1;
     [SerializeField] private GameObject decisionButton2;
     [SerializeField] private GameObject decisionButton3;
+    [SerializeField] private GameObject decisionText;
 
     // ── Game flow ──────────────────────────────────────
 
@@ -33,6 +34,7 @@ public class UIManager : MonoBehaviour
         if (decisionButton1) decisionButton1.SetActive(true);
         if (decisionButton2) decisionButton2.SetActive(true);
         if (decisionButton3) decisionButton3.SetActive(true);
+        if (decisionText) decisionText.SetActive(true);
     }
 
     // Wire this to each decision button's OnClick — set a different int per button in the Inspector
