@@ -1,5 +1,6 @@
 using System.Collections;
 using UnityEngine;
+using UnityEngine.UI;
 using UnityEngine.InputSystem;
 using TMPro;
 
@@ -8,8 +9,8 @@ public class InteractScript : MonoBehaviour
     public GameObject interactPrompt;
     public GameObject clue;
 
-    [Tooltip("The X button that appears once the clue's completion criteria is met.")]
-    public GameObject closeButton;
+    [Tooltip("Shared X button. This script registers/unregisters itself so only the active clue responds.")]
+    public Button closeButton;
 
     [SerializeField] private GameObject blurImage;
 
@@ -33,18 +34,21 @@ public class InteractScript : MonoBehaviour
         if (clue != null)
             clue.SetActive(false);
         if (closeButton != null)
-            closeButton.SetActive(false);
+            closeButton.gameObject.SetActive(false);
     }
 
     void Update()
     {
         if (clueIsOpen)
         {
-            // Show the X button as soon as the clue reports it's done.
             if (activeClue != null && activeClue.isDone)
             {
-                if (closeButton != null && !closeButton.activeSelf)
-                    closeButton.SetActive(true);
+                if (closeButton != null && !closeButton.gameObject.activeSelf)
+                {
+                    closeButton.onClick.RemoveAllListeners();
+                    closeButton.onClick.AddListener(DismissClue);
+                    closeButton.gameObject.SetActive(true);
+                }
             }
             return;
         }
@@ -63,7 +67,7 @@ public class InteractScript : MonoBehaviour
             activeClue.OnClueOpen();
 
         if (closeButton != null)
-            closeButton.SetActive(false);
+            closeButton.gameObject.SetActive(false);
 
         if (blurImage != null)
             blurImage.SetActive(true);
@@ -74,13 +78,15 @@ public class InteractScript : MonoBehaviour
         clueIsOpen = true;
     }
 
-    // Hook this to the X button's OnClick event in the Inspector.
     public void DismissClue()
     {
         if (clue != null)
             clue.SetActive(false);
         if (closeButton != null)
-            closeButton.SetActive(false);
+        {
+            closeButton.onClick.RemoveListener(DismissClue);
+            closeButton.gameObject.SetActive(false);
+        }
         if (interactPrompt != null)
             interactPrompt.SetActive(false);
         if (blurImage != null)

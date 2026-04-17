@@ -2,6 +2,7 @@ using UnityEngine;
 
 public class TestGameManager : MonoBehaviour
 {
+    //bootstrap?
     [SerializeField] private GameObject gameManagerPrefab;
 
     void Awake()
