@@ -131,7 +131,7 @@ GameObject:
   - component: {fileID: 27865575}
   - component: {fileID: 27865574}
   m_Layer: 5
-  m_Name: Text (TMP)
+  m_Name: Option 2 text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -176,7 +176,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Option2
+  m_text: ' Feeling your stomach rumbling, the cravings for a nice steak is immediate.
+    With your mood worsening, don''t you deserve to treat yourself a little? Besides,
+    what is one more steak gonna do for the environment?'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -203,8 +205,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 24
-  m_fontSizeBase: 24
+  m_fontSize: 19
+  m_fontSizeBase: 19
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -397,7 +399,7 @@ GameObject:
   - component: {fileID: 77577694}
   - component: {fileID: 77577693}
   m_Layer: 5
-  m_Name: Text (TMP)
+  m_Name: Option 1 text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -442,7 +444,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Option1
+  m_text: "Stick with your habits, you\xB4ve decided to prioritize plant based options
+    and intend to see it through. Buy tofu and try out a new recipe!"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -469,8 +472,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 24
-  m_fontSizeBase: 24
+  m_fontSize: 19
+  m_fontSizeBase: 19
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -533,7 +536,6 @@ GameObject:
   - component: {fileID: 90344631}
   - component: {fileID: 90344633}
   - component: {fileID: 90344632}
-  - component: {fileID: 90344635}
   - component: {fileID: 90344634}
   m_Layer: 5
   m_Name: Clue-1
@@ -615,18 +617,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::HoverTooltipClue
   isDone: 0
---- !u!114 &90344635
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 90344630}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 30dc5558638819f46b404942d480a97b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::ClueFridgeScript
 --- !u!1 &133784953
 GameObject:
   m_ObjectHideFlags: 0
@@ -969,7 +959,6 @@ GameObject:
   - component: {fileID: 233369039}
   - component: {fileID: 233369041}
   - component: {fileID: 233369040}
-  - component: {fileID: 233369042}
   - component: {fileID: 233369043}
   m_Layer: 5
   m_Name: Clue-2
@@ -1038,18 +1027,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 233369038}
   m_CullTransparentMesh: 1
---- !u!114 &233369042
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 233369038}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a265279cde123364ebc4aba9c4129904, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::CluePhoneScript
 --- !u!114 &233369043
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1846,7 +1823,7 @@ GameObject:
   - component: {fileID: 539114386}
   - component: {fileID: 539114385}
   m_Layer: 5
-  m_Name: Option2
+  m_Name: Option 2 button
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1869,8 +1846,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 16}
-  m_SizeDelta: {x: 160, y: 30}
+  m_AnchoredPosition: {x: 0, y: -92.00001}
+  m_SizeDelta: {x: 250, y: 179.6}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &539114385
 MonoBehaviour:
@@ -1894,8 +1871,8 @@ MonoBehaviour:
   m_Transition: 1
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
-    m_HighlightedColor: {r: 0.43867922, g: 0.5849056, b: 0.4808183, a: 1}
-    m_PressedColor: {r: 0.25970778, g: 0.31132078, b: 0.20705768, a: 1}
+    m_HighlightedColor: {r: 0.69411767, g: 0.79607844, b: 0.72156864, a: 1}
+    m_PressedColor: {r: 0.5849056, g: 0.26210395, b: 0.26210395, a: 1}
     m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
     m_ColorMultiplier: 1
@@ -1923,7 +1900,7 @@ MonoBehaviour:
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
+          m_IntArgument: -1
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -1948,7 +1925,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
+  m_Sprite: {fileID: 0}
   m_Type: 1
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -2479,7 +2456,7 @@ GameObject:
   - component: {fileID: 678685828}
   - component: {fileID: 678685827}
   m_Layer: 5
-  m_Name: Option1
+  m_Name: Option 1 button
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2502,8 +2479,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -378, y: 16}
-  m_SizeDelta: {x: 160, y: 30}
+  m_AnchoredPosition: {x: -520, y: -92}
+  m_SizeDelta: {x: 250, y: 119.5}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &678685827
 MonoBehaviour:
@@ -2527,7 +2504,7 @@ MonoBehaviour:
   m_Transition: 1
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
-    m_HighlightedColor: {r: 0.43867922, g: 0.5849056, b: 0.4808183, a: 1}
+    m_HighlightedColor: {r: 0.6915272, g: 0.7924528, b: 0.7215321, a: 1}
     m_PressedColor: {r: 0.25970778, g: 0.31132078, b: 0.20705768, a: 1}
     m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
@@ -2556,7 +2533,7 @@ MonoBehaviour:
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 2
+          m_IntArgument: 1
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -2581,7 +2558,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
+  m_Sprite: {fileID: 0}
   m_Type: 1
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -3371,7 +3348,6 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 610090776}
-  - {fileID: 1438291379}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -3606,81 +3582,6 @@ MonoBehaviour:
   greenBoxPrefab: {fileID: 7852313502167498, guid: 9db6d4d3bd695c94da861c66338a3d06, type: 3}
   redBoxPrefab: {fileID: 225542648470664017, guid: 6c9150bc6e9eba04db18bf8251698749, type: 3}
   boxContainer: {fileID: 0}
---- !u!1 &1438291378
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1438291379}
-  - component: {fileID: 1438291381}
-  - component: {fileID: 1438291380}
-  m_Layer: 5
-  m_Name: Fridge
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 0
---- !u!224 &1438291379
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1438291378}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 3.4926, y: 3.4926, z: 3.4926}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1106951974}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 668, y: -63}
-  m_SizeDelta: {x: 46.17, y: 100}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1438291380
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1438291378}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_Sprite: {fileID: 7905035377740988559, guid: 8f7db94b71a02f4499ff6914d3c1197f, type: 3}
-  m_Type: 0
-  m_PreserveAspect: 1
-  m_FillCenter: 1
-  m_FillMethod: 4
-  m_FillAmount: 1
-  m_FillClockwise: 1
-  m_FillOrigin: 0
-  m_UseSpriteMesh: 0
-  m_PixelsPerUnitMultiplier: 1
---- !u!222 &1438291381
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1438291378}
-  m_CullTransparentMesh: 1
 --- !u!1 &1467846361
 GameObject:
   m_ObjectHideFlags: 0
@@ -3748,8 +3649,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 36
-  m_fontSizeBase: 36
+  m_fontSize: 45.8
+  m_fontSizeBase: 45.8
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -3817,8 +3718,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 508, y: 285}
-  m_SizeDelta: {x: 633.32, y: 164.84}
+  m_AnchoredPosition: {x: 0, y: 285}
+  m_SizeDelta: {x: 916.8, y: 283.7}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1495938068
 GameObject:
@@ -3832,7 +3733,7 @@ GameObject:
   - component: {fileID: 1495938071}
   - component: {fileID: 1495938070}
   m_Layer: 5
-  m_Name: Text (TMP)
+  m_Name: Buton 3 text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3877,7 +3778,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Option3
+  m_text: You stop in your tracks, realizing you have plenty of food in the fridge
+    that needs to be used before it goes bad. Step back into the apartment, and cook
+    a delicious meal without food waste!
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -3904,8 +3807,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 24
-  m_fontSizeBase: 24
+  m_fontSize: 19
+  m_fontSizeBase: 19
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -4851,7 +4754,7 @@ GameObject:
   - component: {fileID: 1828947833}
   - component: {fileID: 1828947832}
   m_Layer: 5
-  m_Name: Option3
+  m_Name: Option 3 button
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4879,7 +4782,7 @@ MonoBehaviour:
   m_Transition: 1
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
-    m_HighlightedColor: {r: 0.43867922, g: 0.5849056, b: 0.4808183, a: 1}
+    m_HighlightedColor: {r: 0.69411767, g: 0.79607844, b: 0.72156864, a: 1}
     m_PressedColor: {r: 0.25970778, g: 0.31132078, b: 0.20705768, a: 1}
     m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
@@ -4908,7 +4811,7 @@ MonoBehaviour:
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: -1
+          m_IntArgument: 2
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -4933,7 +4836,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
+  m_Sprite: {fileID: 0}
   m_Type: 1
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -4968,8 +4871,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 378, y: 16}
-  m_SizeDelta: {x: 160, y: 30}
+  m_AnchoredPosition: {x: 520, y: -92.00001}
+  m_SizeDelta: {x: 250, y: 178.5}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1847107579
 GameObject:
@@ -5037,7 +4940,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_MaskInteraction: 0
-  m_Sprite: {fileID: 7905035377740988559, guid: 8f7db94b71a02f4499ff6914d3c1197f, type: 3}
+  m_Sprite: {fileID: -3390893326706430675, guid: d4f050e8fa220f04aabf0a1f1359d71f, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -5056,8 +4959,8 @@ Transform:
   m_GameObject: {fileID: 1847107579}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -6.012, y: -0.35, z: 0}
-  m_LocalScale: {x: 0.08327662, y: 0.08327662, z: 0.08327662}
+  m_LocalPosition: {x: -5.79, y: -0.42, z: 0}
+  m_LocalScale: {x: 0.07444348, y: 0.07444348, z: 0.074443474}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1083200353}
@@ -6073,6 +5976,6 @@ SceneRoots:
   - {fileID: 655343593}
   - {fileID: 242444525}
   - {fileID: 880015714}
-  - {fileID: 141554067}
   - {fileID: 2122056931}
   - {fileID: 1847107581}
+  - {fileID: 141554067}
