@@ -4,11 +4,11 @@ public class VisualTracker : MonoBehaviour
 {
     public static VisualTracker Instance { get; private set; }
 
-    [Header("Box Prefabs")]
+    [Header("Box/checkmark Prefabs")]
     [SerializeField] private GameObject greenBoxPrefab;
     [SerializeField] private GameObject redBoxPrefab;
 
-    [Header("Container where boxes spawn")]
+    [Header("Place where boxes spawn")]
     [SerializeField] private Transform boxContainer;
 
     void Awake()

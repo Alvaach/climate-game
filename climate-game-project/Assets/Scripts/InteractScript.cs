@@ -1,5 +1,6 @@
 using System.Collections;
 using UnityEngine;
+using UnityEngine.UI;
 using UnityEngine.InputSystem;
 using TMPro;
 
@@ -7,6 +8,11 @@ public class InteractScript : MonoBehaviour
 {
     public GameObject interactPrompt;
     public GameObject clue;
+
+    [Tooltip("Shared X button. This script registers/unregisters itself so only the active clue responds.")]
+    public Button closeButton;
+
+    [SerializeField] private GameObject blurImage;
 
     public string playerTag = "Player";
 
@@ -16,9 +22,10 @@ public class InteractScript : MonoBehaviour
     public float fadeDuration = 0.5f;
 
     private bool playerInRange = false;
-    private bool waitingForClick = false;
+    private bool clueIsOpen = false;
     private bool textAlreadyChanged = false;
     private MovementScript playerMovement;
+    private ClueBase activeClue;
 
     void Start()
     {
@@ -26,14 +33,23 @@ public class InteractScript : MonoBehaviour
             interactPrompt.SetActive(false);
         if (clue != null)
             clue.SetActive(false);
+        if (closeButton != null)
+            closeButton.gameObject.SetActive(false);
     }
 
     void Update()
     {
-        if (waitingForClick)
+        if (clueIsOpen)
         {
-            if (Mouse.current != null && Mouse.current.leftButton.wasPressedThisFrame)
-                DismissClue();
+            if (activeClue != null && activeClue.isDone)
+            {
+                if (closeButton != null && !closeButton.gameObject.activeSelf)
+                {
+                    closeButton.onClick.RemoveAllListeners();
+                    closeButton.onClick.AddListener(DismissClue);
+                    closeButton.gameObject.SetActive(true);
+                }
+            }
             return;
         }
 
@@ -43,21 +59,38 @@ public class InteractScript : MonoBehaviour
 
     void Interact()
     {
-        if (clue != null)
-        {
-            clue.SetActive(true);
-            if (playerMovement != null)
-                playerMovement.enabled = false;
-            waitingForClick = true;
-        }
+        if (clue == null) return;
+
+        clue.SetActive(true);
+        activeClue = clue.GetComponent<ClueBase>();
+        if (activeClue != null)
+            activeClue.OnClueOpen();
+
+        if (closeButton != null)
+            closeButton.gameObject.SetActive(false);
+
+        if (blurImage != null)
+            blurImage.SetActive(true);
+
+        if (playerMovement != null)
+            playerMovement.enabled = false;
+
+        clueIsOpen = true;
     }
 
-    void DismissClue()
+    public void DismissClue()
     {
         if (clue != null)
             clue.SetActive(false);
+        if (closeButton != null)
+        {
+            closeButton.onClick.RemoveListener(DismissClue);
+            closeButton.gameObject.SetActive(false);
+        }
         if (interactPrompt != null)
             interactPrompt.SetActive(false);
+        if (blurImage != null)
+            blurImage.SetActive(false);
 
         if (playerMovement != null)
             playerMovement.enabled = true;
@@ -68,13 +101,13 @@ public class InteractScript : MonoBehaviour
             StartCoroutine(FadeTextSwap());
         }
 
-        waitingForClick = false;
+        clueIsOpen = false;
         playerInRange = false;
+        activeClue = null;
     }
 
     IEnumerator FadeTextSwap()
     {
-        // Fade out old text
         Color c = targetText.color;
         for (float t = 0; t < fadeDuration; t += Time.deltaTime)
         {
@@ -83,12 +116,10 @@ public class InteractScript : MonoBehaviour
             yield return null;
         }
 
-        // Swap text while invisible
         c.a = 0f;
         targetText.color = c;
         targetText.text = newText;
 
-        // Fade in new text
         for (float t = 0; t < fadeDuration; t += Time.deltaTime)
         {
             c.a = t / fadeDuration;
