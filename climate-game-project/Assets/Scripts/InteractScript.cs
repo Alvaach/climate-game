@@ -69,6 +69,9 @@ public class InteractScript : MonoBehaviour
         if (closeButton != null)
             closeButton.gameObject.SetActive(false);
 
+        if (interactPrompt != null)
+            interactPrompt.SetActive(false);
+
         if (blurImage != null)
             blurImage.SetActive(true);
 
