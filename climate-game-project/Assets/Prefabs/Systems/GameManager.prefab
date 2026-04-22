@@ -318,7 +318,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MusicManager
   music: {fileID: 8300000, guid: d2d78affb60bdfe499932723d8829207, type: 3}
-  maxVolume: 0.5
+  maxVolume: 0.1
   fadeDuration: 2
 --- !u!1001 &5458125270965554017
 PrefabInstance:
