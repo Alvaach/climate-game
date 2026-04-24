@@ -8,6 +8,9 @@ public class SoundManager : MonoBehaviour
     [SerializeField] private AudioClip clickSound;
     [SerializeField] private float clickVolume = 1f;
 
+    [SerializeField] private AudioClip hoverSound;
+    [SerializeField] private float hoverVolume = 1f;
+
     private AudioSource audioSource;
 
     void Awake()
@@ -23,5 +26,11 @@ public class SoundManager : MonoBehaviour
     {
         if (Mouse.current.leftButton.wasPressedThisFrame)
             audioSource.PlayOneShot(clickSound, clickVolume);
+    }
+
+    public void PlayHoverSound()
+    {
+        if (hoverSound != null && !audioSource.isPlaying)
+            audioSource.PlayOneShot(hoverSound, hoverVolume);
     }
 }

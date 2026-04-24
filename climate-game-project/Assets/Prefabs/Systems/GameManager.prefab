@@ -273,6 +273,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::SoundManager
   clickSound: {fileID: 8300000, guid: 4da0c69d17d80aa4b9793737e8093ce2, type: 3}
   clickVolume: 1
+  hoverSound: {fileID: 8300000, guid: 209d32d9efde3ad4ba2526c370d80c41, type: 3}
+  hoverVolume: 0.4
 --- !u!1 &6799009122869324144
 GameObject:
   m_ObjectHideFlags: 0
