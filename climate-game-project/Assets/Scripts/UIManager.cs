@@ -1,5 +1,6 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.InputSystem;
 
 public class UIManager : MonoBehaviour
 {
@@ -12,6 +13,8 @@ public class UIManager : MonoBehaviour
     [SerializeField] private GameObject decisionButton2;
     [SerializeField] private GameObject decisionButton3;
     [SerializeField] private GameObject decisionText;
+    [SerializeField] private GameObject creditScreen;
+    [SerializeField] private GameObject creditCloseButton;
 
     // ── Game flow ──────────────────────────────────────
 
@@ -51,6 +54,25 @@ public class UIManager : MonoBehaviour
 #else
         Application.Quit();
 #endif
+    }
+
+    public void CreditScreen()
+    {
+        if (creditScreen) creditScreen.SetActive(true);
+        if (creditCloseButton) creditCloseButton.SetActive(true);
+    }
+
+    public void CloseCreditScreen()
+    {
+        if (creditScreen) creditScreen.SetActive(false);
+        if (creditCloseButton) creditCloseButton.SetActive(false);
+    }
+
+    private void Update()
+    {
+        if (Keyboard.current != null && Keyboard.current.escapeKey.wasPressedThisFrame
+            && creditScreen != null && creditScreen.activeSelf)
+            CloseCreditScreen();
     }
 
     // ── UI toggles ─────────────────────────────────────
