@@ -1,0 +1,133 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &5206032469793253605
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 466803270017469995, guid: ee06dda49500c6d41b50caee7885634c, type: 3}
+      propertyPath: m_Pivot.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 466803270017469995, guid: ee06dda49500c6d41b50caee7885634c, type: 3}
+      propertyPath: m_Pivot.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 466803270017469995, guid: ee06dda49500c6d41b50caee7885634c, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 466803270017469995, guid: ee06dda49500c6d41b50caee7885634c, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 466803270017469995, guid: ee06dda49500c6d41b50caee7885634c, type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 466803270017469995, guid: ee06dda49500c6d41b50caee7885634c, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 466803270017469995, guid: ee06dda49500c6d41b50caee7885634c, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 399
+      objectReference: {fileID: 0}
+    - target: {fileID: 466803270017469995, guid: ee06dda49500c6d41b50caee7885634c, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 234
+      objectReference: {fileID: 0}
+    - target: {fileID: 466803270017469995, guid: ee06dda49500c6d41b50caee7885634c, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 466803270017469995, guid: ee06dda49500c6d41b50caee7885634c, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 466803270017469995, guid: ee06dda49500c6d41b50caee7885634c, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 466803270017469995, guid: ee06dda49500c6d41b50caee7885634c, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 466803270017469995, guid: ee06dda49500c6d41b50caee7885634c, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 466803270017469995, guid: ee06dda49500c6d41b50caee7885634c, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 466803270017469995, guid: ee06dda49500c6d41b50caee7885634c, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 466803270017469995, guid: ee06dda49500c6d41b50caee7885634c, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 466803270017469995, guid: ee06dda49500c6d41b50caee7885634c, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 466803270017469995, guid: ee06dda49500c6d41b50caee7885634c, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 466803270017469995, guid: ee06dda49500c6d41b50caee7885634c, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 466803270017469995, guid: ee06dda49500c6d41b50caee7885634c, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2695682152096390867, guid: ee06dda49500c6d41b50caee7885634c, type: 3}
+      propertyPath: m_Name
+      value: Dialouge-answer-2 Variant
+      objectReference: {fileID: 0}
+    - target: {fileID: 4750830788615956258, guid: ee06dda49500c6d41b50caee7885634c, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 147.34
+      objectReference: {fileID: 0}
+    - target: {fileID: 4750830788615956258, guid: ee06dda49500c6d41b50caee7885634c, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 17.63
+      objectReference: {fileID: 0}
+    - target: {fileID: 6462327624948827911, guid: ee06dda49500c6d41b50caee7885634c, type: 3}
+      propertyPath: m_text
+      value: "I\xB4ve been trying to make a conscious change, choosing more planet
+        based protein, and I think my stomach might be upset with me\u2026 Here I
+        am trying to change the world and look where it got me!"
+      objectReference: {fileID: 0}
+    - target: {fileID: 6462327624948827911, guid: ee06dda49500c6d41b50caee7885634c, type: 3}
+      propertyPath: m_fontSize
+      value: 20.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 6462327624948827911, guid: ee06dda49500c6d41b50caee7885634c, type: 3}
+      propertyPath: m_margin.w
+      value: -7.053383
+      objectReference: {fileID: 0}
+    - target: {fileID: 6462327624948827911, guid: ee06dda49500c6d41b50caee7885634c, type: 3}
+      propertyPath: m_margin.y
+      value: 7.0533676
+      objectReference: {fileID: 0}
+    - target: {fileID: 6462327624948827911, guid: ee06dda49500c6d41b50caee7885634c, type: 3}
+      propertyPath: m_fontSizeBase
+      value: 20.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 6462327624948827911, guid: ee06dda49500c6d41b50caee7885634c, type: 3}
+      propertyPath: m_VerticalAlignment
+      value: 256
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: ee06dda49500c6d41b50caee7885634c, type: 3}

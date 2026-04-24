@@ -430,7 +430,7 @@ Canvas:
   m_AdditionalShaderChannelsFlag: 25
   m_UpdateRectTransformForStandalone: 0
   m_SortingLayerID: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 26
   m_TargetDisplay: 0
 --- !u!114 &1362440737619681993
 MonoBehaviour:
@@ -2528,15 +2528,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SequentialDialogueClue
   isDone: 0
-  dialogueLines:
-  - Hi, how are you? Are you eating well and taking care of yourself?
-  - "Hi mom, yes I\u2019m doing alright. I\xB4ve had a rough couple of weeks, so
-    my appetite is down, but I\xB4ll manage. How are you?"
-  - "Oh! Why didn\xB4t you tell me sooner? Maybe I could've helped, why aren't you
-    eating?"
   textContainer: {fileID: 5255491163162378596}
-  textLinePrefab: {fileID: 5443594972303883199, guid: 52d616283bce83a479b1a57fd0464607, type: 3}
   nextButton: {fileID: 6912178077512259429}
+  linePrefabs: []
+  spawnAnimDuration: 0.25
   optionsContainer: {fileID: 1951432389766095199}
   optionAButton: {fileID: 6364021199114706571}
   optionBButton: {fileID: 1254283554032732693}
@@ -2546,15 +2541,10 @@ MonoBehaviour:
   optionBLabel: "I\xB4ve been trying to make a conscious change, choosing more planet
     based protein, and I think my stomach might be upset with me\u2026 Here I am
     trying to change the world and look where it got me!"
-  resultTextA: "Pfft, most of the things you read about nowadays are just twisted
-    to scare us, I think you're overexaggerating! I\xB4d much rather blame all that
-    vegan crap you decided to try out, how do you know it\xB4s not your rabbit food
-    making you ill?"
-  resultTextB: "Ah, I might suspect that the soy and beans aren\xB4t the real issue
-    here\u2026 It sounds like you have a lot of thoughts and anxiety about the climate?
-    I believe it\xB4s easy to blame your new habits for issues that in reality are
-    so much bigger than that. You know what, let me invite you over for some good
-    ol\xB4 vegan food and a long talk on how to get you out of this slump, okay?"
+  optionAResponsePrefab: {fileID: 0}
+  optionAResultPrefab: {fileID: 0}
+  optionBResponsePrefab: {fileID: 0}
+  optionBResultPrefab: {fileID: 0}
   resultDelay: 5
 --- !u!1001 &6205001593995489764
 PrefabInstance:
