@@ -13,6 +13,7 @@ public class InteractScript : MonoBehaviour
     public Button closeButton;
 
     [SerializeField] private GameObject blurImage;
+    public GameObject continueObject;
 
     public string playerTag = "Player";
 
@@ -75,6 +76,9 @@ public class InteractScript : MonoBehaviour
         if (blurImage != null)
             blurImage.SetActive(true);
 
+        if (continueObject != null)
+            continueObject.SetActive(false);
+
         if (playerMovement != null)
             playerMovement.enabled = false;
 
@@ -94,6 +98,9 @@ public class InteractScript : MonoBehaviour
             interactPrompt.SetActive(false);
         if (blurImage != null)
             blurImage.SetActive(false);
+
+        if (continueObject != null)
+            continueObject.SetActive(true);
 
         if (playerMovement != null)
             playerMovement.enabled = true;

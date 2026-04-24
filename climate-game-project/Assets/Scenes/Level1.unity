@@ -300,6 +300,7 @@ MonoBehaviour:
   clue: {fileID: 884506341}
   closeButton: {fileID: 789862963}
   blurImage: {fileID: 789862962}
+  continueObject: {fileID: 0}
   playerTag: Player
   targetText: {fileID: 1286197894}
   newText: Pondering about the benefits of sunny skies
@@ -1521,23 +1522,23 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 485286096291367863, guid: a86e4ae3e161e7e4fba08808e40a886a, type: 3}
       propertyPath: m_SizeDelta.x
-      value: 126.3
+      value: 869
       objectReference: {fileID: 0}
     - target: {fileID: 485286096291367863, guid: a86e4ae3e161e7e4fba08808e40a886a, type: 3}
       propertyPath: m_SizeDelta.y
-      value: 199.4
+      value: 899
       objectReference: {fileID: 0}
     - target: {fileID: 485286096291367863, guid: a86e4ae3e161e7e4fba08808e40a886a, type: 3}
       propertyPath: m_LocalScale.x
-      value: 7.250776
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 485286096291367863, guid: a86e4ae3e161e7e4fba08808e40a886a, type: 3}
       propertyPath: m_LocalScale.y
-      value: 7.250776
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 485286096291367863, guid: a86e4ae3e161e7e4fba08808e40a886a, type: 3}
       propertyPath: m_LocalScale.z
-      value: 7.250776
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 485286096291367863, guid: a86e4ae3e161e7e4fba08808e40a886a, type: 3}
       propertyPath: m_AnchoredPosition.x
@@ -1554,7 +1555,7 @@ PrefabInstance:
     - target: {fileID: 604974802883399784, guid: a86e4ae3e161e7e4fba08808e40a886a, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: -7603454627173983920, guid: de2bd1c704f652a4fb3ba66bdc19c712, type: 3}
+      objectReference: {fileID: 21300000, guid: a9c2d9f2870f6a94f9e2da7e82ee9f8b, type: 3}
     - target: {fileID: 604974802883399784, guid: a86e4ae3e161e7e4fba08808e40a886a, type: 3}
       propertyPath: m_Color.b
       value: 1
@@ -1909,7 +1910,7 @@ MonoBehaviour:
     and stakeholders in said companies without backup for their actions. How will
     they stay afloat?\u201D"
   textDisplay: {fileID: 1927334781}
-  typingSpeed: 70
+  typingSpeed: 60
 --- !u!1 &848906804
 GameObject:
   m_ObjectHideFlags: 0
@@ -4408,15 +4409,15 @@ RectTransform:
   m_GameObject: {fileID: 1927334779}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.74292636, y: 0.74292636, z: 0.74292636}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 789862969}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 2, y: -3.9}
-  m_SizeDelta: {x: 93.392, y: 60.993}
+  m_AnchoredPosition: {x: -1.63, y: -61.93}
+  m_SizeDelta: {x: 640.32, y: 368.55}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1927334781
 MonoBehaviour:
@@ -4470,8 +4471,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 4.8
-  m_fontSizeBase: 4.8
+  m_fontSize: 29.57
+  m_fontSizeBase: 29.57
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -4893,6 +4894,7 @@ MonoBehaviour:
   clue: {fileID: 0}
   closeButton: {fileID: 0}
   blurImage: {fileID: 0}
+  continueObject: {fileID: 0}
   playerTag: Player
   targetText: {fileID: 0}
   newText: 

@@ -4,43 +4,42 @@ using UnityEngine.UI;
 using TMPro;
 
 // Attach to the clue root GameObject.
-// Shows dialogue lines one by one via Next button, then gives the player two choices.
-// The chosen option spawns as a dialogue line, then after a delay the result spawns too.
-// Sets isDone = true after the result line appears.
+// Spawns linePrefabs in order via Next button, then shows options.
+// Choosing an option spawns optionAResultPrefab or optionBResultPrefab.
+// Sets isDone = true after the result prefab appears.
 public class SequentialDialogueClue : ClueBase
 {
-    [Header("Dialogue Lines")]
-    public string[] dialogueLines;
-
     [Header("UI References")]
     public Transform textContainer;
-   
-    
-    public TMP_Text textLinePrefab; //prefab with all text info, font size etc
     public Button nextButton;
+
+    [Header("Line Prefabs (one per dialogue line)")]
+    public GameObject[] linePrefabs;
+
+    [Header("Spawn Animation")]
+    public float spawnAnimDuration = 0.25f;
 
     [Header("Options")]
     public GameObject optionsContainer;
     public Button optionAButton;
     public Button optionBButton;
-
     public string optionALabel;
-
     public string optionBLabel;
 
-    [Header("Option Results")]
-    [TextArea] public string resultTextA;
-    [TextArea] public string resultTextB;
-
-
+    [Header("Option Prefabs")]
+    public GameObject optionAResponsePrefab;
+    public GameObject optionAResultPrefab;
+    public GameObject optionBResponsePrefab;
+    public GameObject optionBResultPrefab;
     public float resultDelay = 1.5f;
+
     private int currentLine = 0;
 
     void Awake()
     {
         nextButton.onClick.AddListener(OnNextClicked);
-        optionAButton.onClick.AddListener(() => OnOptionChosen(optionALabel, resultTextA));
-        optionBButton.onClick.AddListener(() => OnOptionChosen(optionBLabel, resultTextB));
+        optionAButton.onClick.AddListener(() => OnOptionChosen(optionAResponsePrefab, optionAResultPrefab));
+        optionBButton.onClick.AddListener(() => OnOptionChosen(optionBResponsePrefab, optionBResultPrefab));
     }
 
     void Start()
@@ -63,11 +62,10 @@ public class SequentialDialogueClue : ClueBase
         optionsContainer.SetActive(false);
         nextButton.gameObject.SetActive(true);
 
-        // Show the first line right away
-        SpawnLine(dialogueLines[currentLine]);
+        SpawnPrefab(linePrefabs[currentLine]);
         currentLine++;
 
-        if (currentLine >= dialogueLines.Length)
+        if (currentLine >= linePrefabs.Length)
         {
             nextButton.gameObject.SetActive(false);
             optionsContainer.SetActive(true);
@@ -76,66 +74,53 @@ public class SequentialDialogueClue : ClueBase
 
     void OnNextClicked()
     {
-        if (currentLine >= dialogueLines.Length) return;
+        if (currentLine >= linePrefabs.Length) return;
 
-        SpawnLine(dialogueLines[currentLine]);
+        SpawnPrefab(linePrefabs[currentLine]);
         currentLine++;
 
-        if (currentLine >= dialogueLines.Length)
+        if (currentLine >= linePrefabs.Length)
         {
             nextButton.gameObject.SetActive(false);
             optionsContainer.SetActive(true);
         }
     }
 
-    void OnOptionChosen(string choiceText, string resultText)
+    void OnOptionChosen(GameObject responsePrefab, GameObject resultPrefab)
     {
         optionsContainer.SetActive(false);
-        StartCoroutine(ShowOptionThenResult(choiceText, resultText));
+        StartCoroutine(ShowResponseThenResult(responsePrefab, resultPrefab));
     }
 
-    IEnumerator ShowOptionThenResult(string choiceText, string resultText)
+    IEnumerator ShowResponseThenResult(GameObject responsePrefab, GameObject resultPrefab)
     {
-        TMP_Text choiceLine = SpawnLine(choiceText);
-
+        SpawnPrefab(responsePrefab);
         yield return new WaitForSeconds(resultDelay);
-
-        // remove all lines except the chosen option
-        foreach (Transform child in textContainer)
-        {
-            if (child != choiceLine.transform)
-                Destroy(child.gameObject);
-        }
-
-        SpawnLine(resultText);
-
+        SpawnPrefab(resultPrefab);
         isDone = true;
     }
 
-    TMP_Text SpawnLine(string text)
+    GameObject SpawnPrefab(GameObject prefab)
     {
-        TMP_Text newLine = Instantiate(textLinePrefab, textContainer);
-        newLine.text = text;
-        StartCoroutine(FadeIn(newLine));
-        return newLine;
+        GameObject go = Instantiate(prefab, textContainer);
+
+        if (textContainer.childCount > 2)
+            Destroy(textContainer.GetChild(0).gameObject);
+
+        StartCoroutine(GrowIn(go.GetComponent<RectTransform>()));
+        return go;
     }
 
-    IEnumerator FadeIn(TMP_Text target)
+    IEnumerator GrowIn(RectTransform rt)
     {
-        Color c = target.color;
-        c.a = 0f;
-        target.color = c;
-
+        rt.localScale = new Vector3(1f, 0f, 1f);
         float elapsed = 0f;
-        while (elapsed < 1f)
+        while (elapsed < spawnAnimDuration)
         {
             elapsed += Time.deltaTime;
-            c.a = Mathf.Clamp01(elapsed);
-            target.color = c;
+            rt.localScale = new Vector3(1f, Mathf.Clamp01(elapsed / spawnAnimDuration), 1f);
             yield return null;
         }
-
-        c.a = 1f;
-        target.color = c;
+        rt.localScale = Vector3.one;
     }
 }
