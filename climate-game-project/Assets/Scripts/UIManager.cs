@@ -1,3 +1,4 @@
+using System.Collections;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.InputSystem;
@@ -6,6 +7,13 @@ public class UIManager : MonoBehaviour
 {
     [Header("Optional - for faded transitions")]
     [SerializeField] private SceneFader sceneFader;
+
+    [Header("Start Game Canvas")]
+    [SerializeField] private CanvasGroup gameCanvas;
+    [SerializeField] private float fadeInDuration = 1f;
+    [SerializeField] private GameObject nextCanvasButton;
+    [SerializeField] private float buttonAppearDelay = 3f;
+    [SerializeField] private CanvasGroup nextCanvas;
 
     [Header("Decision UI")]
     [SerializeField] private GameObject blurImage;
@@ -17,6 +25,42 @@ public class UIManager : MonoBehaviour
     [SerializeField] private GameObject creditCloseButton;
 
     // ── Game flow ──────────────────────────────────────
+
+    public void StartGame()
+    {
+        if (gameCanvas == null) return;
+        gameCanvas.gameObject.SetActive(true);
+        gameCanvas.alpha = 0f;
+        StartCoroutine(FadeInThenShowButton(gameCanvas));
+    }
+
+    public void ShowNextCanvas()
+    {
+        if (nextCanvas == null) return;
+        nextCanvas.gameObject.SetActive(true);
+        nextCanvas.alpha = 0f;
+        StartCoroutine(FadeIn(nextCanvas));
+    }
+
+    private IEnumerator FadeInThenShowButton(CanvasGroup cg)
+    {
+        yield return StartCoroutine(FadeIn(cg));
+        yield return new WaitForSeconds(buttonAppearDelay);
+        if (nextCanvasButton != null)
+            nextCanvasButton.SetActive(true);
+    }
+
+    private IEnumerator FadeIn(CanvasGroup cg)
+    {
+        float elapsed = 0f;
+        while (elapsed < fadeInDuration)
+        {
+            elapsed += Time.deltaTime;
+            cg.alpha = Mathf.Clamp01(elapsed / fadeInDuration);
+            yield return null;
+        }
+        cg.alpha = 1f;
+    }
 
     public void NextScene()
     {
