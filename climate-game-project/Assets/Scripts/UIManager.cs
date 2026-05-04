@@ -15,6 +15,10 @@ public class UIManager : MonoBehaviour
     [SerializeField] private float buttonAppearDelay = 3f;
     [SerializeField] private CanvasGroup nextCanvas;
 
+    [Header("Decision Prefabs (assign per scene in Inspector)")]
+    [SerializeField] private GameObject decisionAPrefab;
+    [SerializeField] private GameObject decisionBPrefab;
+
     [Header("Decision UI")]
     [SerializeField] private GameObject blurImage;
     [SerializeField] private GameObject decisionButton1;
@@ -29,6 +33,7 @@ public class UIManager : MonoBehaviour
     public void StartGame()
     {
         if (gameCanvas == null) return;
+        nextCanvasButton?.SetActive(false);
         gameCanvas.gameObject.SetActive(true);
         gameCanvas.alpha = 0f;
         StartCoroutine(FadeInThenShowButton(gameCanvas));
@@ -87,6 +92,22 @@ public class UIManager : MonoBehaviour
     // Wire this to each decision button's OnClick — set a different int per button in the Inspector
     public void MakeDecision(int scoreChange)
     {
+        PlayerStats.Instance.AddEnvironmentScore(scoreChange);
+        PathTracker.Instance?.SpawnNext();
+        NextScene();
+    }
+
+    // Starting-scene buttons — lock in Path A or B, then advance
+    public void ChoosePathA(int scoreChange)
+    {
+        PathTracker.Instance?.ChoosePath(true);
+        PlayerStats.Instance.AddEnvironmentScore(scoreChange);
+        NextScene();
+    }
+
+    public void ChoosePathB(int scoreChange)
+    {
+        PathTracker.Instance?.ChoosePath(false);
         PlayerStats.Instance.AddEnvironmentScore(scoreChange);
         NextScene();
     }
