@@ -1,9 +1,6 @@
 using UnityEngine;
 using UnityEngine.UI;
 
-// Attach to the clue root GameObject.
-// Two buttons — clicking either shows a checkmark on that button,
-// disables both buttons, and sets isDone = true so the close button appears.
 public class CheckboxClue : ClueBase
 {
     [Header("Buttons")]
@@ -11,9 +8,7 @@ public class CheckboxClue : ClueBase
     public Button buttonB;
 
     [Header("Checkmarks")]
-    [Tooltip("Checkmark child object inside Button A")]
     public GameObject checkmarkA;
-    [Tooltip("Checkmark child object inside Button B")]
     public GameObject checkmarkB;
 
     void Awake()

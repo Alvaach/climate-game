@@ -9,7 +9,7 @@ public class InteractScript : MonoBehaviour
     public GameObject interactPrompt;
     public GameObject clue;
 
-    [Tooltip("Shared X button. This script registers/unregisters itself so only the active clue responds.")]
+    [Header("Shared X button. This script activates itself ish so only the active clue responds.")]
     public Button closeButton;
 
     [SerializeField] private GameObject blurImage;
@@ -17,7 +17,7 @@ public class InteractScript : MonoBehaviour
 
     public string playerTag = "Player";
 
-    [Header("Text Replace on Dismiss")]
+    [Header("???? to replace with clue")]
     public TMP_Text targetText;
     public string newText;
     public float fadeDuration = 0.5f;

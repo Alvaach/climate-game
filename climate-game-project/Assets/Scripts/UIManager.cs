@@ -5,17 +5,17 @@ using UnityEngine.InputSystem;
 
 public class UIManager : MonoBehaviour
 {
-    [Header("Optional - for faded transitions")]
+    [Header("Fader")]
     [SerializeField] private SceneFader sceneFader;
 
-    [Header("Start Game Canvas")]
+    [Header("Start Game-canvas")]
     [SerializeField] private CanvasGroup gameCanvas;
     [SerializeField] private float fadeInDuration = 1f;
     [SerializeField] private GameObject nextCanvasButton;
     [SerializeField] private float buttonAppearDelay = 3f;
     [SerializeField] private CanvasGroup nextCanvas;
 
-    [Header("Decision Prefabs (assign per scene in Inspector)")]
+    [Header("Decision Prefabs (assign per scene)")]
     [SerializeField] private GameObject decisionAPrefab;
     [SerializeField] private GameObject decisionBPrefab;
 
@@ -28,8 +28,7 @@ public class UIManager : MonoBehaviour
     [SerializeField] private GameObject creditScreen;
     [SerializeField] private GameObject creditCloseButton;
 
-    // ── Game flow ──────────────────────────────────────
-
+    // For starting scene
     public void StartGame()
     {
         if (gameCanvas == null) return;
@@ -67,38 +66,8 @@ public class UIManager : MonoBehaviour
         cg.alpha = 1f;
     }
 
-    public void NextScene()
-    {
-        int next = SceneManager.GetActiveScene().buildIndex + 1;
-        if (next < SceneManager.sceneCountInBuildSettings)
-        {
-            if (sceneFader != null)
-                sceneFader.FadeAndLoad(SceneUtility.GetScenePathByBuildIndex(next), 1f);
-            else
-                SceneManager.LoadScene(next);
-        }
-    }
-
-    // Call this to show the decision UI
-    public void Decision()
-    {
-        if (blurImage)   blurImage.SetActive(true);
-        if (decisionButton1) decisionButton1.SetActive(true);
-        if (decisionButton2) decisionButton2.SetActive(true);
-        if (decisionButton3) decisionButton3.SetActive(true);
-        if (decisionText) decisionText.SetActive(true);
-    }
-
-    // Wire this to each decision button's OnClick — set a different int per button in the Inspector
-    public void MakeDecision(int scoreChange)
-    {
-        PlayerStats.Instance.AddEnvironmentScore(scoreChange);
-        PathTracker.Instance?.SpawnNext();
-        NextScene();
-    }
-
-    // Starting-scene buttons — lock in Path A or B, then advance
-    public void ChoosePathA(int scoreChange)
+    // Long term decisions
+        public void ChoosePathA(int scoreChange)
     {
         PathTracker.Instance?.ChoosePath(true);
         PlayerStats.Instance.AddEnvironmentScore(scoreChange);
@@ -112,6 +81,37 @@ public class UIManager : MonoBehaviour
         NextScene();
     }
 
+    // Swap scene
+    public void NextScene()
+    {
+        int next = SceneManager.GetActiveScene().buildIndex + 1;
+        if (next < SceneManager.sceneCountInBuildSettings)
+        {
+            if (sceneFader != null)
+                sceneFader.FadeAndLoad(SceneUtility.GetScenePathByBuildIndex(next), 1f);
+            else
+                SceneManager.LoadScene(next);
+        }
+    }
+
+    // Universal decision logic
+    public void Decision()
+    {
+        if (blurImage)   blurImage.SetActive(true);
+        if (decisionButton1) decisionButton1.SetActive(true);
+        if (decisionButton2) decisionButton2.SetActive(true);
+        if (decisionButton3) decisionButton3.SetActive(true);
+        if (decisionText) decisionText.SetActive(true);
+    }
+
+    // Add to decision-bbuttons + set positive/negative score
+    public void MakeDecision(int scoreChange)
+    {
+        PlayerStats.Instance.AddEnvironmentScore(scoreChange);
+        PathTracker.Instance?.SpawnNext();
+        NextScene();
+    }
+
     public void ExitGame()
     {
 #if UNITY_EDITOR
@@ -121,6 +121,7 @@ public class UIManager : MonoBehaviour
 #endif
     }
 
+    // credits on starting screena
     public void CreditScreen()
     {
         if (creditScreen) creditScreen.SetActive(true);
@@ -140,11 +141,7 @@ public class UIManager : MonoBehaviour
             CloseCreditScreen();
     }
 
-    // ── UI toggles ─────────────────────────────────────
-
     public void ShowPanel(GameObject panel)  => panel.SetActive(true);
     public void HidePanel(GameObject panel)  => panel.SetActive(false);
     public void TogglePanel(GameObject panel) => panel.SetActive(!panel.activeSelf);
-
-
 }

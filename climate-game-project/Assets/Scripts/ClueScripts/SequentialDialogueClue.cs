@@ -3,30 +3,25 @@ using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
 
-// Attach to the clue root GameObject.
-// Spawns linePrefabs in order via Next button, then shows options.
-// Choosing an option spawns optionAResultPrefab or optionBResultPrefab.
-// Sets isDone = true after the result prefab appears.
 public class SequentialDialogueClue : ClueBase
 {
-    [Header("UI References")]
+
     public Transform textContainer;
     public Button nextButton;
 
-    [Header("Line Prefabs (one per dialogue line)")]
+    [Header("Line Prefabs")]
     public GameObject[] linePrefabs;
 
-    [Header("Spawn Animation")]
     public float spawnAnimDuration = 0.25f;
 
-    [Header("Options")]
+    [Header("Options fields")]
     public GameObject optionsContainer;
     public Button optionAButton;
     public Button optionBButton;
     public string optionALabel;
     public string optionBLabel;
 
-    [Header("Option Prefabs")]
+    [Header("Option response/result")]
     public GameObject optionAResponsePrefab;
     public GameObject optionAResultPrefab;
     public GameObject optionBResponsePrefab;

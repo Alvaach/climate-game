@@ -4,7 +4,7 @@ public class VisualTracker : MonoBehaviour
 {
     public static VisualTracker Instance { get; private set; }
 
-    [Header("Box/checkmark Prefabs")]
+    [Header("Boxes that will spawn")]
     [SerializeField] private GameObject greenBoxPrefab;
     [SerializeField] private GameObject redBoxPrefab;
 

@@ -5,6 +5,7 @@ public class SoundManager : MonoBehaviour
 {
     public static SoundManager Instance { get; private set; }
 
+    [Header("Add audio clips here")]
     [SerializeField] private AudioClip clickSound;
     [SerializeField] private float clickVolume = 1f;
 
