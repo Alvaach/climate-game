@@ -1795,6 +1795,10 @@ PrefabInstance:
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: 0}
+    - target: {fileID: 7206421768159673479, guid: a86e4ae3e161e7e4fba08808e40a886a, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8008811872967194849, guid: a86e4ae3e161e7e4fba08808e40a886a, type: 3}
       propertyPath: m_Sprite
       value: 
@@ -1936,7 +1940,6 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1477356352}
     m_RemovedComponents:
-    - {fileID: 7206421768159673479, guid: a86e4ae3e161e7e4fba08808e40a886a, type: 3}
     - {fileID: 728610405626703258, guid: a86e4ae3e161e7e4fba08808e40a886a, type: 3}
     m_RemovedGameObjects:
     - {fileID: 6798216382764556375, guid: a86e4ae3e161e7e4fba08808e40a886a, type: 3}
@@ -4133,6 +4136,10 @@ PrefabInstance:
       propertyPath: m_PreserveAspect
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 2475048247839417165, guid: 580e34565f6819f46adad9c307f89a7f, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 9e58f3ff73a7a854695490533809bd86, type: 3}
     - target: {fileID: 2780295287688128192, guid: 580e34565f6819f46adad9c307f89a7f, type: 3}
       propertyPath: m_Camera
       value: 
@@ -4144,6 +4151,10 @@ PrefabInstance:
     - target: {fileID: 2780295287688128192, guid: 580e34565f6819f46adad9c307f89a7f, type: 3}
       propertyPath: m_SortingOrder
       value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3406216932957493912, guid: 580e34565f6819f46adad9c307f89a7f, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 62.1
       objectReference: {fileID: 0}
     - target: {fileID: 4141201691943583711, guid: 580e34565f6819f46adad9c307f89a7f, type: 3}
       propertyPath: m_Name

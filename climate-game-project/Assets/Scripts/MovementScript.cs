@@ -41,7 +41,7 @@ public class MovementScript : MonoBehaviour
         if (groundCheck != null)
             return Physics2D.OverlapCircle(groundCheck.position, groundCheckRadius, groundLayer);
 
-        // Fallback: raycast downward from the object's center
+        
         return Physics2D.Raycast(transform.position, Vector2.down, 0.6f, groundLayer).collider != null;
     }
 }

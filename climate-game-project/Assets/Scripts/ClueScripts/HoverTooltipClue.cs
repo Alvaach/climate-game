@@ -2,7 +2,6 @@ using UnityEngine;
 
 public class HoverTooltipClue : ClueBase
 {
-    // Attach to the clue GameObject (the image that spawns when the player interacts).
     private HoverHotspot[] hotspots;
 
     void Awake()
@@ -17,7 +16,7 @@ public class HoverTooltipClue : ClueBase
             hotspot.Reset();
     }
 
-    // Called by each HoverHotspot when it gets hovered for the first time.
+    // Called by HoverHotspot when it gets hovered for the first time.
     public void CheckCompletion()
     {
         foreach (var hotspot in hotspots)
@@ -29,5 +28,5 @@ public class HoverTooltipClue : ClueBase
         isDone = true;
     }
 
-    // Completes when all required hotspots have been hovered.
+    // completes when all required hotspots have been touched/hovered?
 }

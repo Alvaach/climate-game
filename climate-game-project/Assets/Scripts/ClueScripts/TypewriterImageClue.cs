@@ -2,18 +2,14 @@ using System.Collections;
 using UnityEngine;
 using TMPro;
 
-// Attach to the clue root GameObject.
-// Types out a fixed text typewriter-style. Sets isDone = true when done.
 public class TypewriterImageClue : ClueBase
 {
-    [Header("Content")]
     [TextArea(3, 10)] public string clueText;
 
-    [Header("UI References")]
+    [Header("UI")]
     public TMP_Text textDisplay;
 
-    [Header("Settings")]
-    [Tooltip("Letters per second")]
+    [Header("Speed, letters per second")]
     public float typingSpeed = 30f;
 
     private Coroutine activeRoutine;

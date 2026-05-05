@@ -1,14 +1,11 @@
 using UnityEngine;
 using UnityEngine.EventSystems;
 
-// Attach to each hotspot area (a child Image/RectTransform on the clue).
-// Shows a tooltip on hover and marks itself as visited.
 public class HoverHotspot : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler
 {
-    [Tooltip("The text or image that appears when the player hovers over this spot.")]
+    [Tooltip("The text or image that appears when the player hovers over a spot")]
     public GameObject tooltip;
 
-    [Tooltip("If true, this hotspot must be hovered for the clue to be completable.")]
     public bool required = true;
 
     [HideInInspector]

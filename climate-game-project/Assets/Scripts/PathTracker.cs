@@ -4,13 +4,13 @@ public class PathTracker : MonoBehaviour
 {
     public static PathTracker Instance { get; private set; }
 
-    [Header("Prefabs spawned in order when Path A is chosen")]
+    [Header("Prefabs spawned when path A is active")]
     [SerializeField] private GameObject[] pathAPrefabs;
 
-    [Header("Prefabs spawned in order when Path B is chosen")]
+    [Header("Prefabs spawned when path B is active")]
     [SerializeField] private GameObject[] pathBPrefabs;
 
-    [Header("Container where path prefabs spawn (child of this prefab)")]
+    [Header("Container where path prefabs spawn")]
     [SerializeField] private Transform pathContainer;
 
     private bool _pathAChosen;
@@ -25,7 +25,6 @@ public class PathTracker : MonoBehaviour
         DontDestroyOnLoad(gameObject);
     }
 
-    // Call from starting-scene buttons to lock in the path for the whole game
     public void ChoosePath(bool chooseA)
     {
         _pathAChosen = chooseA;
@@ -33,7 +32,7 @@ public class PathTracker : MonoBehaviour
         _decisionIndex = 0;
     }
 
-    // Called alongside VisualTracker each time a regular decision is made
+    // called at the same time as desicions being made, see VisualTracker
     public void SpawnNext()
     {
         if (!PathChosen) return;
