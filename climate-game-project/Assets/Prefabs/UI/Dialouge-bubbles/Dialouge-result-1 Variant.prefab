@@ -98,8 +98,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9058503069725853570, guid: a3f46dc0914425142bca2b6b5d1b49f6, type: 3}
       propertyPath: m_text
-      value: "Pfft, most of the things you read about nowadays are just twisted to
-        scare us, I think you're overexaggerating! I\xB4d much rather blame all that
+      value: "I think you're overexaggerating! I\xB4d much rather blame all that
         vegan crap you decided to try out, how do you know it\xB4s not your rabbit
         food making you ill?"
       objectReference: {fileID: 0}
@@ -109,7 +108,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9058503069725853570, guid: a3f46dc0914425142bca2b6b5d1b49f6, type: 3}
       propertyPath: m_margin.w
-      value: -10.783417
+      value: -18.851257
+      objectReference: {fileID: 0}
+    - target: {fileID: 9058503069725853570, guid: a3f46dc0914425142bca2b6b5d1b49f6, type: 3}
+      propertyPath: m_margin.x
+      value: 8.964111
+      objectReference: {fileID: 0}
+    - target: {fileID: 9058503069725853570, guid: a3f46dc0914425142bca2b6b5d1b49f6, type: 3}
+      propertyPath: m_margin.y
+      value: 27.789185
       objectReference: {fileID: 0}
     - target: {fileID: 9058503069725853570, guid: a3f46dc0914425142bca2b6b5d1b49f6, type: 3}
       propertyPath: m_fontSizeBase

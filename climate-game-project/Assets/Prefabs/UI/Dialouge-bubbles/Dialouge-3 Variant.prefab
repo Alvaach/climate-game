@@ -92,6 +92,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7347305438263519143, guid: a3f46dc0914425142bca2b6b5d1b49f6, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 15.9
+      objectReference: {fileID: 0}
     - target: {fileID: 9058503069725853570, guid: a3f46dc0914425142bca2b6b5d1b49f6, type: 3}
       propertyPath: m_text
       value: "Oh! Why didn\xB4t you tell me sooner? Maybe I could've helped, why
@@ -99,11 +103,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9058503069725853570, guid: a3f46dc0914425142bca2b6b5d1b49f6, type: 3}
       propertyPath: m_fontSize
-      value: 26
+      value: 24.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 9058503069725853570, guid: a3f46dc0914425142bca2b6b5d1b49f6, type: 3}
+      propertyPath: m_margin.y
+      value: 17.032104
       objectReference: {fileID: 0}
     - target: {fileID: 9058503069725853570, guid: a3f46dc0914425142bca2b6b5d1b49f6, type: 3}
       propertyPath: m_fontSizeBase
-      value: 26
+      value: 24.4
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

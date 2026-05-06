@@ -643,81 +643,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 315014359}
   m_CullTransparentMesh: 1
---- !u!1 &378504585
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 378504586}
-  - component: {fileID: 378504588}
-  - component: {fileID: 378504587}
-  m_Layer: 5
-  m_Name: DecisionText
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 0
---- !u!224 &378504586
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 378504585}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.686864, y: 0.686864, z: 0.686864}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1589344293}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 1}
-  m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: -23, y: 143}
-  m_SizeDelta: {x: 967.74, y: 1125}
-  m_Pivot: {x: 0.5, y: 1}
---- !u!114 &378504587
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 378504585}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 976404c1cbfc9bf4caf75ae46fdf75a1, type: 3}
-  m_Type: 0
-  m_PreserveAspect: 1
-  m_FillCenter: 1
-  m_FillMethod: 4
-  m_FillAmount: 1
-  m_FillClockwise: 1
-  m_FillOrigin: 0
-  m_UseSpriteMesh: 0
-  m_PixelsPerUnitMultiplier: 1
---- !u!222 &378504588
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 378504585}
-  m_CullTransparentMesh: 1
 --- !u!1001 &574337554
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -815,8 +740,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
-  m_AnchoredPosition: {x: 534, y: 159}
-  m_SizeDelta: {x: 264, y: 199.3}
+  m_AnchoredPosition: {x: 500.45056, y: 159}
+  m_SizeDelta: {x: 247.55, y: 169.83}
   m_Pivot: {x: 0.5, y: 0}
 --- !u!114 &590374858
 MonoBehaviour:
@@ -869,7 +794,7 @@ MonoBehaviour:
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 2
+          m_IntArgument: -1
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -1325,7 +1250,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -2.4149933, y: 7.6500015}
+  m_AnchoredPosition: {x: -2.4150467, y: 7.6500015}
   m_SizeDelta: {x: -4.83, y: -15.3}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &730612527
@@ -1348,12 +1273,11 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: ' Feeling your stomach rumbling, the cravings for a nice steak is immediate.
-    With your mood worsening, don''t you deserve to treat yourself a little? Besides,
-    what is one more steak gonna do for the environment?'
+  m_text: ' Make the change to invest in solar panels that can be placed in the Sahara
+    Desert.'
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 9b7528e0c1226974991d1ed873a501db, type: 2}
+  m_sharedMaterial: {fileID: 4418553693185215687, guid: 9b7528e0c1226974991d1ed873a501db, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -1589,7 +1513,7 @@ PrefabInstance:
   serializedVersion: 2
   m_Modification:
     serializedVersion: 3
-    m_TransformParent: {fileID: 0}
+    m_TransformParent: {fileID: 1589344293}
     m_Modifications:
     - target: {fileID: 428863294285646313, guid: a86e4ae3e161e7e4fba08808e40a886a, type: 3}
       propertyPath: m_fontAsset
@@ -1771,6 +1695,26 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: -26
       objectReference: {fileID: 0}
+    - target: {fileID: 5897931105596034012, guid: a86e4ae3e161e7e4fba08808e40a886a, type: 3}
+      propertyPath: m_fontSize
+      value: 51.73
+      objectReference: {fileID: 0}
+    - target: {fileID: 5897931105596034012, guid: a86e4ae3e161e7e4fba08808e40a886a, type: 3}
+      propertyPath: m_fontAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: 9b7528e0c1226974991d1ed873a501db, type: 2}
+    - target: {fileID: 5897931105596034012, guid: a86e4ae3e161e7e4fba08808e40a886a, type: 3}
+      propertyPath: m_fontSizeBase
+      value: 51.73
+      objectReference: {fileID: 0}
+    - target: {fileID: 5897931105596034012, guid: a86e4ae3e161e7e4fba08808e40a886a, type: 3}
+      propertyPath: m_sharedMaterial
+      value: 
+      objectReference: {fileID: 4418553693185215687, guid: 9b7528e0c1226974991d1ed873a501db, type: 2}
+    - target: {fileID: 5897931105596034012, guid: a86e4ae3e161e7e4fba08808e40a886a, type: 3}
+      propertyPath: m_hasFontAssetChanged
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6002894458512418441, guid: a86e4ae3e161e7e4fba08808e40a886a, type: 3}
       propertyPath: m_IsActive
       value: 1
@@ -1853,11 +1797,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8276687679400745093, guid: a86e4ae3e161e7e4fba08808e40a886a, type: 3}
       propertyPath: m_Pivot.x
-      value: 0
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 8276687679400745093, guid: a86e4ae3e161e7e4fba08808e40a886a, type: 3}
       propertyPath: m_Pivot.y
-      value: 0
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 8276687679400745093, guid: a86e4ae3e161e7e4fba08808e40a886a, type: 3}
       propertyPath: m_AnchorMax.x
@@ -1877,11 +1821,23 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8276687679400745093, guid: a86e4ae3e161e7e4fba08808e40a886a, type: 3}
       propertyPath: m_SizeDelta.x
-      value: 0
+      value: 1920.0001
       objectReference: {fileID: 0}
     - target: {fileID: 8276687679400745093, guid: a86e4ae3e161e7e4fba08808e40a886a, type: 3}
       propertyPath: m_SizeDelta.y
-      value: 0
+      value: 1080
+      objectReference: {fileID: 0}
+    - target: {fileID: 8276687679400745093, guid: a86e4ae3e161e7e4fba08808e40a886a, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8276687679400745093, guid: a86e4ae3e161e7e4fba08808e40a886a, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8276687679400745093, guid: a86e4ae3e161e7e4fba08808e40a886a, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8276687679400745093, guid: a86e4ae3e161e7e4fba08808e40a886a, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1901,23 +1857,23 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8276687679400745093, guid: a86e4ae3e161e7e4fba08808e40a886a, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 8276687679400745093, guid: a86e4ae3e161e7e4fba08808e40a886a, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 8276687679400745093, guid: a86e4ae3e161e7e4fba08808e40a886a, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 8276687679400745093, guid: a86e4ae3e161e7e4fba08808e40a886a, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 0
+      value: 960.00006
       objectReference: {fileID: 0}
     - target: {fileID: 8276687679400745093, guid: a86e4ae3e161e7e4fba08808e40a886a, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 0
+      value: 540
       objectReference: {fileID: 0}
     - target: {fileID: 8276687679400745093, guid: a86e4ae3e161e7e4fba08808e40a886a, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -1941,6 +1897,7 @@ PrefabInstance:
       objectReference: {fileID: 1477356352}
     m_RemovedComponents:
     - {fileID: 728610405626703258, guid: a86e4ae3e161e7e4fba08808e40a886a, type: 3}
+    - {fileID: 7206421768159673479, guid: a86e4ae3e161e7e4fba08808e40a886a, type: 3}
     m_RemovedGameObjects:
     - {fileID: 6798216382764556375, guid: a86e4ae3e161e7e4fba08808e40a886a, type: 3}
     - {fileID: 1900774901734413703, guid: a86e4ae3e161e7e4fba08808e40a886a, type: 3}
@@ -2456,8 +2413,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
-  m_AnchoredPosition: {x: -534, y: 159}
-  m_SizeDelta: {x: 264, y: 199.3}
+  m_AnchoredPosition: {x: -501, y: 159}
+  m_SizeDelta: {x: 247.55, y: 169.83}
   m_Pivot: {x: 0.5, y: 0}
 --- !u!114 &1010319778
 MonoBehaviour:
@@ -2510,7 +2467,7 @@ MonoBehaviour:
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: -1
+          m_IntArgument: 1
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -2627,12 +2584,12 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "The switch to a more plant based diet was easy enough - to begin with.
-    Now, you're heading out for the weekly shop and you don\xB4t have a plan. Do
-    you\u2026 "
+  m_text: You have previously invested your money into an energy company, as their
+    returns were more profitable compared to their competitors. Now, you have the
+    possibility to change to another one, what will you choose?
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 31e2bb6cebca8f74ba9a3bffd12e9f1a, type: 2}
-  m_sharedMaterial: {fileID: 8072398418989063233, guid: 31e2bb6cebca8f74ba9a3bffd12e9f1a, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 4c607bc552d27574281ceda981cb73ea, type: 2}
+  m_sharedMaterial: {fileID: -2763390048462947370, guid: 4c607bc552d27574281ceda981cb73ea, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -2656,8 +2613,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 57.82
-  m_fontSizeBase: 57.82
+  m_fontSize: 47.94
+  m_fontSizeBase: 47.94
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -2795,7 +2752,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 5393589617719875915, guid: 20dfcf3f2ed2d7946b88f5f1e7372084, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 1.3800001
+      value: 0.29
       objectReference: {fileID: 0}
     - target: {fileID: 5393589617719875915, guid: 20dfcf3f2ed2d7946b88f5f1e7372084, type: 3}
       propertyPath: m_LocalPosition.y
@@ -3747,7 +3704,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -2.4149933, y: 7.6500015}
+  m_AnchoredPosition: {x: -2.4150467, y: 7.6500015}
   m_SizeDelta: {x: -4.83, y: -15.3}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1452703786
@@ -3770,12 +3727,11 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: You stop in your tracks, realizing you have plenty of food in the fridge
-    that needs to be used before it goes bad. Step back into the apartment, and cook
-    a delicious meal without food waste!
+  m_text: Sustainable investments are costly and don't yield the same return. Invest
+    in fossil companies to increase money flow
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 9b7528e0c1226974991d1ed873a501db, type: 2}
+  m_sharedMaterial: {fileID: 4418553693185215687, guid: 9b7528e0c1226974991d1ed873a501db, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -4160,6 +4116,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Make up your mind
       objectReference: {fileID: 0}
+    - target: {fileID: 4141201691943583711, guid: 580e34565f6819f46adad9c307f89a7f, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4399831402435332151, guid: 580e34565f6819f46adad9c307f89a7f, type: 3}
       propertyPath: m_Name
       value: Canvas, decisions
@@ -4260,6 +4220,10 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: Decision
       objectReference: {fileID: 0}
+    - target: {fileID: 6785311655419618307, guid: 580e34565f6819f46adad9c307f89a7f, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8309632877464300727, guid: 580e34565f6819f46adad9c307f89a7f, type: 3}
       propertyPath: m_fontAsset
       value: 
@@ -4290,10 +4254,10 @@ PrefabInstance:
       addedObject: {fileID: 590374857}
     - targetCorrespondingSourceObject: {fileID: 5641224534572380479, guid: 580e34565f6819f46adad9c307f89a7f, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 378504586}
+      addedObject: {fileID: 1329689051}
     - targetCorrespondingSourceObject: {fileID: 5641224534572380479, guid: 580e34565f6819f46adad9c307f89a7f, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 1329689051}
+      addedObject: {fileID: 1421052996}
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 580e34565f6819f46adad9c307f89a7f, type: 3}
 --- !u!224 &1589344293 stripped
@@ -4462,7 +4426,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -2.4149933, y: 7.6500015}
+  m_AnchoredPosition: {x: -2.4150467, y: 7.6500015}
   m_SizeDelta: {x: -4.83, y: -15.3}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1862742182
@@ -4485,11 +4449,10 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Stick with your habits, you\xB4ve decided to prioritize plant based options
-    and intend to see it through. Buy tofu and try out a new recipe!"
+  m_text: You are comfortable with your investments, leave them be
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 9b7528e0c1226974991d1ed873a501db, type: 2}
+  m_sharedMaterial: {fileID: 4418553693185215687, guid: 9b7528e0c1226974991d1ed873a501db, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -4744,8 +4707,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
-  m_AnchoredPosition: {x: 0, y: 159}
-  m_SizeDelta: {x: 264, y: 199.3}
+  m_AnchoredPosition: {x: -0.27957535, y: 159}
+  m_SizeDelta: {x: 247.55, y: 169.83}
   m_Pivot: {x: 0.5, y: 0}
 --- !u!114 &1977934108
 MonoBehaviour:
@@ -4798,7 +4761,7 @@ MonoBehaviour:
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 1
+          m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -5172,7 +5135,6 @@ SceneRoots:
   - {fileID: 2016490480989192537}
   - {fileID: 622561629}
   - {fileID: 1589344291}
-  - {fileID: 789862957}
   - {fileID: 1427055524}
   - {fileID: 719036469}
   - {fileID: 764147124}
