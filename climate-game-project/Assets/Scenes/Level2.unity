@@ -179,8 +179,8 @@ MonoBehaviour:
   m_text: "Stick with your habits, you\xB4ve decided to prioritize plant based options
     and intend to see it through. Buy tofu and try out a new recipe!"
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 9b7528e0c1226974991d1ed873a501db, type: 2}
+  m_sharedMaterial: {fileID: 4418553693185215687, guid: 9b7528e0c1226974991d1ed873a501db, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -939,6 +939,144 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 614784906}
   m_CullTransparentMesh: 1
+--- !u!1 &651137933
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 651137934}
+  - component: {fileID: 651137936}
+  - component: {fileID: 651137935}
+  m_Layer: 5
+  m_Name: Text (TMP)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &651137934
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 651137933}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0.99999994, y: 0.99999994, z: 0.99999994}
+  m_ConstrainProportionsScale: 1
+  m_Children: []
+  m_Father: {fileID: 757123499}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 341.06, y: 147.34}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &651137935
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 651137933}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.TextMeshPro::TMPro.TextMeshProUGUI
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_text: "I\xB4ve been trying to make a conscious change, choosing more planet based
+    protein, and I think my stomach might be upset with me\u2026 "
+  m_isRightToLeft: 0
+  m_fontAsset: {fileID: 11400000, guid: 9b7528e0c1226974991d1ed873a501db, type: 2}
+  m_sharedMaterial: {fileID: 4418553693185215687, guid: 9b7528e0c1226974991d1ed873a501db, type: 2}
+  m_fontSharedMaterials: []
+  m_fontMaterial: {fileID: 0}
+  m_fontMaterials: []
+  m_fontColor32:
+    serializedVersion: 2
+    rgba: 4279900698
+  m_fontColor: {r: 0.1, g: 0.1, b: 0.1, a: 1}
+  m_enableVertexGradient: 0
+  m_colorMode: 3
+  m_fontColorGradient:
+    topLeft: {r: 1, g: 1, b: 1, a: 1}
+    topRight: {r: 1, g: 1, b: 1, a: 1}
+    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
+    bottomRight: {r: 1, g: 1, b: 1, a: 1}
+  m_fontColorGradientPreset: {fileID: 0}
+  m_spriteAsset: {fileID: 0}
+  m_tintAllSprites: 0
+  m_StyleSheet: {fileID: 0}
+  m_TextStyleHashCode: -1183493901
+  m_overrideHtmlColors: 0
+  m_faceColor:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontSize: 20.4
+  m_fontSizeBase: 20.4
+  m_fontWeight: 400
+  m_enableAutoSizing: 0
+  m_fontSizeMin: 18
+  m_fontSizeMax: 72
+  m_fontStyle: 0
+  m_HorizontalAlignment: 4
+  m_VerticalAlignment: 256
+  m_textAlignment: 65535
+  m_characterSpacing: 0
+  m_characterHorizontalScale: 1
+  m_wordSpacing: 0
+  m_lineSpacing: 0
+  m_lineSpacingMax: 0
+  m_paragraphSpacing: 0
+  m_charWidthMaxAdj: 0
+  m_TextWrappingMode: 1
+  m_wordWrappingRatios: 0.4
+  m_overflowMode: 0
+  m_linkedTextComponent: {fileID: 0}
+  parentLinkedComponent: {fileID: 0}
+  m_enableKerning: 0
+  m_ActiveFontFeatures: 6e72656b
+  m_enableExtraPadding: 0
+  checkPaddingRequired: 0
+  m_isRichText: 1
+  m_EmojiFallbackSupport: 1
+  m_parseCtrlCharacters: 1
+  m_isOrthographic: 1
+  m_isCullingEnabled: 0
+  m_horizontalMapping: 0
+  m_verticalMapping: 0
+  m_uvLineOffset: 0
+  m_geometrySortingOrder: 0
+  m_IsTextObjectScaleStatic: 0
+  m_VertexBufferAutoSizeReduction: 0
+  m_useMaxVisibleDescender: 1
+  m_pageToDisplay: 1
+  m_margin: {x: 15.239136, y: 11.373436, z: 13.446411, w: -7.053383}
+  m_isUsingLegacyAnimationComponent: 0
+  m_isVolumetricText: 0
+  m_hasFontAssetChanged: 0
+  m_baseMaterial: {fileID: 0}
+  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!222 &651137936
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 651137933}
+  m_CullTransparentMesh: 1
 --- !u!1001 &655343593
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1073,7 +1211,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4141201691943583711, guid: 580e34565f6819f46adad9c307f89a7f, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4399831402435332151, guid: 580e34565f6819f46adad9c307f89a7f, type: 3}
       propertyPath: m_Name
@@ -1419,8 +1557,8 @@ MonoBehaviour:
     With your mood worsening, don''t you deserve to treat yourself a little? Besides,
     what is one more steak gonna do for the environment?'
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 9b7528e0c1226974991d1ed873a501db, type: 2}
+  m_sharedMaterial: {fileID: 4418553693185215687, guid: 9b7528e0c1226974991d1ed873a501db, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -1444,8 +1582,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 19
-  m_fontSizeBase: 19
+  m_fontSize: 16.44
+  m_fontSizeBase: 16.44
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -1607,7 +1745,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6462327624948827911, guid: ee06dda49500c6d41b50caee7885634c, type: 3}
       propertyPath: m_HorizontalAlignment
-      value: 1
+      value: 4
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -2052,8 +2190,8 @@ MonoBehaviour:
     Now, you're heading out for the weekly shop and you don\xB4t have a plan. Do
     you\u2026 "
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 31e2bb6cebca8f74ba9a3bffd12e9f1a, type: 2}
-  m_sharedMaterial: {fileID: 8072398418989063233, guid: 31e2bb6cebca8f74ba9a3bffd12e9f1a, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 4c607bc552d27574281ceda981cb73ea, type: 2}
+  m_sharedMaterial: {fileID: -2763390048462947370, guid: 4c607bc552d27574281ceda981cb73ea, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -2077,8 +2215,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 57.82
-  m_fontSizeBase: 57.82
+  m_fontSize: 52.2
+  m_fontSizeBase: 52.2
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -2317,8 +2455,8 @@ MonoBehaviour:
     that needs to be used before it goes bad. Step back into the apartment, and cook
     a delicious meal without food waste!
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 9b7528e0c1226974991d1ed873a501db, type: 2}
+  m_sharedMaterial: {fileID: 4418553693185215687, guid: 9b7528e0c1226974991d1ed873a501db, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -2342,8 +2480,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 19
-  m_fontSizeBase: 19
+  m_fontSize: 16.8
+  m_fontSizeBase: 16.8
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -2976,6 +3114,10 @@ PrefabInstance:
       propertyPath: m_hasFontAssetChanged
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1224887275641958119, guid: a86e4ae3e161e7e4fba08808e40a886a, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1804290245766087535, guid: a86e4ae3e161e7e4fba08808e40a886a, type: 3}
       propertyPath: m_Name
       value: Canvas, clues
@@ -3320,6 +3462,26 @@ PrefabInstance:
       propertyPath: m_ConstrainProportionsScale
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 5897931105596034012, guid: a86e4ae3e161e7e4fba08808e40a886a, type: 3}
+      propertyPath: m_fontSize
+      value: 51.73
+      objectReference: {fileID: 0}
+    - target: {fileID: 5897931105596034012, guid: a86e4ae3e161e7e4fba08808e40a886a, type: 3}
+      propertyPath: m_fontAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: 9b7528e0c1226974991d1ed873a501db, type: 2}
+    - target: {fileID: 5897931105596034012, guid: a86e4ae3e161e7e4fba08808e40a886a, type: 3}
+      propertyPath: m_fontSizeBase
+      value: 51.73
+      objectReference: {fileID: 0}
+    - target: {fileID: 5897931105596034012, guid: a86e4ae3e161e7e4fba08808e40a886a, type: 3}
+      propertyPath: m_sharedMaterial
+      value: 
+      objectReference: {fileID: 4418553693185215687, guid: 9b7528e0c1226974991d1ed873a501db, type: 2}
+    - target: {fileID: 5897931105596034012, guid: a86e4ae3e161e7e4fba08808e40a886a, type: 3}
+      propertyPath: m_hasFontAssetChanged
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5970902049210069680, guid: a86e4ae3e161e7e4fba08808e40a886a, type: 3}
       propertyPath: m_LocalScale.x
       value: 3.82
@@ -3524,6 +3686,7 @@ PrefabInstance:
     - {fileID: 8069779733211364178, guid: a86e4ae3e161e7e4fba08808e40a886a, type: 3}
     - {fileID: 1077013930193211663, guid: a86e4ae3e161e7e4fba08808e40a886a, type: 3}
     - {fileID: 7574074622485948988, guid: a86e4ae3e161e7e4fba08808e40a886a, type: 3}
+    - {fileID: 1224887275641958119, guid: a86e4ae3e161e7e4fba08808e40a886a, type: 3}
     m_AddedGameObjects:
     - targetCorrespondingSourceObject: {fileID: 8088423113505764900, guid: a86e4ae3e161e7e4fba08808e40a886a, type: 3}
       insertIndex: -1
@@ -3531,6 +3694,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 2875057283859000068, guid: a86e4ae3e161e7e4fba08808e40a886a, type: 3}
       insertIndex: -1
       addedObject: {fileID: 243203727}
+    - targetCorrespondingSourceObject: {fileID: 4918719331691782862, guid: a86e4ae3e161e7e4fba08808e40a886a, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 651137934}
     - targetCorrespondingSourceObject: {fileID: 4918719331691782862, guid: a86e4ae3e161e7e4fba08808e40a886a, type: 3}
       insertIndex: -1
       addedObject: {fileID: 367872793}

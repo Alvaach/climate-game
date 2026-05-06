@@ -98,13 +98,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4750830788615956258, guid: ee06dda49500c6d41b50caee7885634c, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 17.63
+      value: 21.2
       objectReference: {fileID: 0}
     - target: {fileID: 6462327624948827911, guid: ee06dda49500c6d41b50caee7885634c, type: 3}
       propertyPath: m_text
       value: "I\xB4ve been trying to make a conscious change, choosing more planet
-        based protein, and I think my stomach might be upset with me\u2026 Here I
-        am trying to change the world and look where it got me!"
+        based protein, and I think my stomach might be upset with me\u2026 "
       objectReference: {fileID: 0}
     - target: {fileID: 6462327624948827911, guid: ee06dda49500c6d41b50caee7885634c, type: 3}
       propertyPath: m_fontSize
@@ -116,7 +115,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6462327624948827911, guid: ee06dda49500c6d41b50caee7885634c, type: 3}
       propertyPath: m_margin.y
-      value: 7.0533676
+      value: 11.373436
       objectReference: {fileID: 0}
     - target: {fileID: 6462327624948827911, guid: ee06dda49500c6d41b50caee7885634c, type: 3}
       propertyPath: m_fontSizeBase

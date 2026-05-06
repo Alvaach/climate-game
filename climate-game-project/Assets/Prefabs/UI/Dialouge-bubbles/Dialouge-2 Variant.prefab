@@ -103,11 +103,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9058503069725853570, guid: a3f46dc0914425142bca2b6b5d1b49f6, type: 3}
       propertyPath: m_fontSize
-      value: 24
+      value: 21.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 9058503069725853570, guid: a3f46dc0914425142bca2b6b5d1b49f6, type: 3}
+      propertyPath: m_margin.y
+      value: 12.549988
+      objectReference: {fileID: 0}
+    - target: {fileID: 9058503069725853570, guid: a3f46dc0914425142bca2b6b5d1b49f6, type: 3}
+      propertyPath: m_margin.z
+      value: 13.446411
       objectReference: {fileID: 0}
     - target: {fileID: 9058503069725853570, guid: a3f46dc0914425142bca2b6b5d1b49f6, type: 3}
       propertyPath: m_fontSizeBase
-      value: 24
+      value: 21.8
       objectReference: {fileID: 0}
     - target: {fileID: 9058503069725853570, guid: a3f46dc0914425142bca2b6b5d1b49f6, type: 3}
       propertyPath: m_HorizontalAlignment

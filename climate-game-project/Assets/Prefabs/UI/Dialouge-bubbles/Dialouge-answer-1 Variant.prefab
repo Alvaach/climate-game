@@ -16,11 +16,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2762396913405368035, guid: 0e33c54447815204b8f9401044e010b7, type: 3}
       propertyPath: m_fontSize
-      value: 21
+      value: 18
       objectReference: {fileID: 0}
     - target: {fileID: 2762396913405368035, guid: 0e33c54447815204b8f9401044e010b7, type: 3}
       propertyPath: m_fontSizeBase
-      value: 21
+      value: 18
+      objectReference: {fileID: 0}
+    - target: {fileID: 4473933194854151878, guid: 0e33c54447815204b8f9401044e010b7, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 26.7
       objectReference: {fileID: 0}
     - target: {fileID: 6525770034705174327, guid: 0e33c54447815204b8f9401044e010b7, type: 3}
       propertyPath: m_Name

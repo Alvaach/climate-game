@@ -8,21 +8,28 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 985807101586864738, guid: ba7df1abdb646b04e8a7360a376bcdba, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 35
+      objectReference: {fileID: 0}
     - target: {fileID: 1580430901149555271, guid: ba7df1abdb646b04e8a7360a376bcdba, type: 3}
       propertyPath: m_text
-      value: "Ah, I might suspect that the soy isn't the real issue here\u2026 It
-        sounds like you have a lot of thoughts and anxiety about the climate? I believe
+      value: "It sounds like you have a lot of anxiety about the climate? I believe
         it\xB4s easy to blame your new habits for issues that in reality are so much
-        bigger than that. You know what, let me invite you over for some good ol\xB4
-        vegan food and a long talk on how to get you out of this slump, okay?"
+        bigger than that. You know what, let me invite you over for some delicious
+        vegan food!"
       objectReference: {fileID: 0}
     - target: {fileID: 1580430901149555271, guid: ba7df1abdb646b04e8a7360a376bcdba, type: 3}
       propertyPath: m_fontSize
-      value: 15.3
+      value: 16.9
+      objectReference: {fileID: 0}
+    - target: {fileID: 1580430901149555271, guid: ba7df1abdb646b04e8a7360a376bcdba, type: 3}
+      propertyPath: m_margin.y
+      value: 17.032104
       objectReference: {fileID: 0}
     - target: {fileID: 1580430901149555271, guid: ba7df1abdb646b04e8a7360a376bcdba, type: 3}
       propertyPath: m_fontSizeBase
-      value: 15.3
+      value: 16.9
       objectReference: {fileID: 0}
     - target: {fileID: 5348717397152158571, guid: ba7df1abdb646b04e8a7360a376bcdba, type: 3}
       propertyPath: m_Pivot.x
