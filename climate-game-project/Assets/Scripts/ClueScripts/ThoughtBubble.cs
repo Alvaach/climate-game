@@ -5,16 +5,15 @@ using TMPro;
 public class ThoughtBubble : ClueBase
 {
     [Header("Animation")]
-    [Tooltip("Can be a child of the player so it always appears at the same offset from them.")]
+    [Tooltip("Child that starts inactive. Activated when the hint opens.")]
     public GameObject animatedObject;
-    public Animator animator;
 
     [Header("Text")]
     public TMP_Text hintText;
     public float textFadeDuration = 0.5f;
 
     [Header("Timing")]
-    [Tooltip("Seconds to wait after text fades in before the close button appears.")]
+    [Tooltip("Seconds after text fades in before the close button appears.")]
     public float closeButtonDelay = 2f;
 
     public override void OnClueOpen()
@@ -36,19 +35,22 @@ public class ThoughtBubble : ClueBase
 
     IEnumerator RunSequence()
     {
-        if (animator != null)
+        if (animatedObject != null)
         {
-            yield return null; // let the Animator tick once before sampling state
-            yield return new WaitUntil(() =>
-                animator.GetCurrentAnimatorStateInfo(0).normalizedTime >= 1f &&
-                !animator.IsInTransition(0));
+            Animator anim = animatedObject.GetComponent<Animator>();
+            if (anim != null)
+            {
+                yield return null; // let animator tick before sampling
+                yield return new WaitUntil(() =>
+                    anim.GetCurrentAnimatorStateInfo(0).normalizedTime >= 1f &&
+                    !anim.IsInTransition(0));
+            }
         }
 
         if (hintText != null)
             yield return FadeText(0f, 1f);
 
         yield return new WaitForSeconds(closeButtonDelay);
-
         isDone = true;
     }
 
@@ -56,6 +58,13 @@ public class ThoughtBubble : ClueBase
     {
         if (animatedObject != null)
             animatedObject.SetActive(false);
+
+        if (hintText != null)
+        {
+            Color c = hintText.color;
+            c.a = 0f;
+            hintText.color = c;
+        }
     }
 
     IEnumerator FadeText(float from, float to)
