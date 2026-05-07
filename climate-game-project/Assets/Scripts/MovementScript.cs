@@ -2,6 +2,7 @@ using UnityEngine;
 using UnityEngine.InputSystem;
 
 [RequireComponent(typeof(Rigidbody2D))]
+[RequireComponent(typeof(Animator))]
 public class MovementScript : MonoBehaviour
 {
     public float moveSpeed = 5f;
@@ -10,11 +11,15 @@ public class MovementScript : MonoBehaviour
     public float groundCheckRadius = 0.1f;
     public LayerMask groundLayer;
 
+    private static readonly int SpeedHash = Animator.StringToHash("Speed");
+
     private Rigidbody2D rb;
+    private Animator animator;
 
     void Awake()
     {
         rb = GetComponent<Rigidbody2D>();
+        animator = GetComponent<Animator>();
     }
 
     void Update()
@@ -34,6 +39,16 @@ public class MovementScript : MonoBehaviour
         }
 
         transform.position += (Vector3)input.normalized * (moveSpeed * Time.deltaTime);
+
+        if (animator != null)
+            animator.SetFloat(SpeedHash, Mathf.Abs(input.x));
+
+        if (input.x != 0)
+        {
+            Vector3 scale = transform.localScale;
+            scale.x = input.x > 0 ? -Mathf.Abs(scale.x) : Mathf.Abs(scale.x);
+            transform.localScale = scale;
+        }
     }
 
     bool IsGrounded()
