@@ -492,7 +492,7 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 95727807}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0, y: 0, z: 0}
   m_ConstrainProportionsScale: 0
@@ -504,7 +504,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 960.00006, y: 540}
+  m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
 --- !u!1 &161642850
@@ -983,9 +983,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: The only fossil company in the top 10 companies with the best returns globally
-    on the stock markets. It single handedly represents the entirety of fossil fuel,
-    making it one of a kind!
+  m_text: "The only fossil company in the top 10 companies with the best returns
+    globally \non the stock markets. It single handedly represents the entirety of
+    fossil fuel, \nmaking it one of a kind!"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 4c607bc552d27574281ceda981cb73ea, type: 2}
   m_sharedMaterial: {fileID: -2763390048462947370, guid: 4c607bc552d27574281ceda981cb73ea, type: 2}
@@ -1012,8 +1012,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 47.5
-  m_fontSizeBase: 47.5
+  m_fontSize: 40
+  m_fontSizeBase: 40
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -1376,7 +1376,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 315}
+  m_AnchoredPosition: {x: -2, y: 315}
   m_SizeDelta: {x: 1043.0194, y: 237.0275}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &561988237
@@ -1399,10 +1399,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'You now have the opportunity to select which company you would like to
-    invest in. Please select on of the options below:
-
-'
+  m_text: "You now have the opportunity to select \nwhich company you would like
+    to invest in. \nPlease select one of the options below:\n"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 4c607bc552d27574281ceda981cb73ea, type: 2}
   m_sharedMaterial: {fileID: -2763390048462947370, guid: 4c607bc552d27574281ceda981cb73ea, type: 2}
@@ -1429,8 +1427,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 36
-  m_fontSizeBase: 36
+  m_fontSize: 30
+  m_fontSizeBase: 30
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -1863,8 +1861,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 1043.0194, y: 237.0275}
+  m_AnchoredPosition: {x: 0, y: 72}
+  m_SizeDelta: {x: 1043.02, y: 540.65}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1055049213
 MonoBehaviour:
@@ -1886,16 +1884,16 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Swedes have on average $57,000 saved in stocks. When deciding where you
-    want your investments to be, a multitude of factors play into the choice. Do
-    you go with the safest option, which yields a lower return? Or do you gamble,
-    with high risk and high reward? Is increasing your returns the highest priority,
-    or is there another angle to consider? In this game, you will be faced with situations
-    that\u2019s meant for you to question your choices, and visualize that actions
-    do have consequences; both immediate, but also long term.\r\n"
+  m_text: "Swedes have on average $57,000 saved in stocks.\nWhen deciding where you
+    want your investments to be, \na multitude of factors play into the choice. \n\nDo
+    you go with the safest option, which yields a lower return? \nOr do you gamble,
+    with high risk and high reward? \nIs increasing your returns the highest priority,
+    or is there \nanother angle to consider?\n \nIn this game, you will be faced
+    with situations\n that\u2019s meant for you to question your choices, \nand visualize
+    that actions do have consequences; \nboth immediate, but also long term.\r\n"
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 0393cb197a176f943abc9644b3bf4213, type: 2}
-  m_sharedMaterial: {fileID: -5227781586009847663, guid: 0393cb197a176f943abc9644b3bf4213, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 4c607bc552d27574281ceda981cb73ea, type: 2}
+  m_sharedMaterial: {fileID: -2763390048462947370, guid: 4c607bc552d27574281ceda981cb73ea, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -1919,8 +1917,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 36
-  m_fontSizeBase: 36
+  m_fontSize: 30
+  m_fontSizeBase: 30
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -2064,7 +2062,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!225 &1078222726
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -2595,10 +2593,10 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: An ever growing business with more than 600 million items for sale, pioneered
-    by the currently richest man on the planet. Investors' shares in the company
-    have doubled in less than a year, and its revenue is now higher than the economic
-    outputs of entire nations!
+  m_text: "An ever growing business with more than \n600 million items for sale,
+    pioneered by the currently richest man on the planet. Investors' shares in the
+    company have doubled in less than a year, and its revenue is now higher than
+    the economic outputs of entire nations!"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 4c607bc552d27574281ceda981cb73ea, type: 2}
   m_sharedMaterial: {fileID: -2763390048462947370, guid: 4c607bc552d27574281ceda981cb73ea, type: 2}
@@ -2625,8 +2623,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 41.9
-  m_fontSizeBase: 41.9
+  m_fontSize: 40
+  m_fontSizeBase: 40
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -3132,7 +3130,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -336}
+  m_AnchoredPosition: {x: 0, y: -303}
   m_SizeDelta: {x: 1043.0194, y: 237.0275}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1796743803
@@ -3155,9 +3153,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "You\u2019ll be able to track the consequences of your decision throughout
-    the game. If you gain a green +, it means your passive c02 is decreasing, while
-    a red - means it\u2019s getting worse.\r\n"
+  m_text: "You\u2019ll be able to track the consequences of your \ndecision throughout
+    the game. \n\nIf you gain a green +, it means your passive c02 is decreasing,
+    while a red - means it\u2019s getting worse.\r\n"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 9b7528e0c1226974991d1ed873a501db, type: 2}
   m_sharedMaterial: {fileID: 4418553693185215687, guid: 9b7528e0c1226974991d1ed873a501db, type: 2}
@@ -3184,8 +3182,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 36
-  m_fontSizeBase: 36
+  m_fontSize: 30
+  m_fontSizeBase: 30
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
