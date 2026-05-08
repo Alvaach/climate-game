@@ -102,12 +102,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6462327624948827911, guid: ee06dda49500c6d41b50caee7885634c, type: 3}
       propertyPath: m_text
-      value: "I\xB4ve been trying to make a conscious change, choosing more planet
-        based protein, and I think my stomach might be upset with me\u2026 "
+      value: "I\xB4ve been trying to make a conscious change, choosing more plant-based
+        protein, and I think my stomach might be upset with me\u2026 "
       objectReference: {fileID: 0}
     - target: {fileID: 6462327624948827911, guid: ee06dda49500c6d41b50caee7885634c, type: 3}
       propertyPath: m_fontSize
-      value: 20.4
+      value: 19
       objectReference: {fileID: 0}
     - target: {fileID: 6462327624948827911, guid: ee06dda49500c6d41b50caee7885634c, type: 3}
       propertyPath: m_margin.w
@@ -119,11 +119,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6462327624948827911, guid: ee06dda49500c6d41b50caee7885634c, type: 3}
       propertyPath: m_fontSizeBase
-      value: 20.4
+      value: 19
       objectReference: {fileID: 0}
     - target: {fileID: 6462327624948827911, guid: ee06dda49500c6d41b50caee7885634c, type: 3}
       propertyPath: m_VerticalAlignment
       value: 256
+      objectReference: {fileID: 0}
+    - target: {fileID: 6462327624948827911, guid: ee06dda49500c6d41b50caee7885634c, type: 3}
+      propertyPath: m_HorizontalAlignment
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

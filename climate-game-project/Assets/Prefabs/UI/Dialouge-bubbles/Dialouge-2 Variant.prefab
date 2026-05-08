@@ -96,14 +96,18 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7347305438263519143, guid: a3f46dc0914425142bca2b6b5d1b49f6, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 47
+      objectReference: {fileID: 0}
     - target: {fileID: 9058503069725853570, guid: a3f46dc0914425142bca2b6b5d1b49f6, type: 3}
       propertyPath: m_text
-      value: "Hi mom, yes I\u2019m doing alright. I\xB4ve had a rough couple of weeks,
-        so my appetite is down, but I\xB4ll manage. How are you?"
+      value: "Hi mom, yes I\u2019m doing alright. \nI\xB4ve had a rough couple of
+        weeks, so my appetite is down, but I\xB4ll manage. How are you?"
       objectReference: {fileID: 0}
     - target: {fileID: 9058503069725853570, guid: a3f46dc0914425142bca2b6b5d1b49f6, type: 3}
       propertyPath: m_fontSize
-      value: 21.8
+      value: 19
       objectReference: {fileID: 0}
     - target: {fileID: 9058503069725853570, guid: a3f46dc0914425142bca2b6b5d1b49f6, type: 3}
       propertyPath: m_margin.y
@@ -115,11 +119,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9058503069725853570, guid: a3f46dc0914425142bca2b6b5d1b49f6, type: 3}
       propertyPath: m_fontSizeBase
-      value: 21.8
+      value: 19
       objectReference: {fileID: 0}
     - target: {fileID: 9058503069725853570, guid: a3f46dc0914425142bca2b6b5d1b49f6, type: 3}
       propertyPath: m_HorizontalAlignment
-      value: 4
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

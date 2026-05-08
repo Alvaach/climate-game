@@ -10,18 +10,17 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 985807101586864738, guid: ba7df1abdb646b04e8a7360a376bcdba, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 35
+      value: 41
       objectReference: {fileID: 0}
     - target: {fileID: 1580430901149555271, guid: ba7df1abdb646b04e8a7360a376bcdba, type: 3}
       propertyPath: m_text
-      value: "It sounds like you have a lot of anxiety about the climate? I believe
-        it\xB4s easy to blame your new habits for issues that in reality are so much
-        bigger than that. You know what, let me invite you over for some delicious
-        vegan food!"
+      value: "It sounds like you have anxiety about the climate? It\xB4s easy to
+        blame your new habits on issues that are so much bigger. You know what? Head
+        over to me for some delicious vegan food!"
       objectReference: {fileID: 0}
     - target: {fileID: 1580430901149555271, guid: ba7df1abdb646b04e8a7360a376bcdba, type: 3}
       propertyPath: m_fontSize
-      value: 16.9
+      value: 19
       objectReference: {fileID: 0}
     - target: {fileID: 1580430901149555271, guid: ba7df1abdb646b04e8a7360a376bcdba, type: 3}
       propertyPath: m_margin.y
@@ -29,7 +28,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1580430901149555271, guid: ba7df1abdb646b04e8a7360a376bcdba, type: 3}
       propertyPath: m_fontSizeBase
-      value: 16.9
+      value: 19
       objectReference: {fileID: 0}
     - target: {fileID: 5348717397152158571, guid: ba7df1abdb646b04e8a7360a376bcdba, type: 3}
       propertyPath: m_Pivot.x
