@@ -1,7 +1,6 @@
 using System.Collections;
 using UnityEngine;
 using UnityEngine.UI;
-using TMPro;
 
 public class SequentialDialogueClue : ClueBase
 {
@@ -15,11 +14,8 @@ public class SequentialDialogueClue : ClueBase
     public float spawnAnimDuration = 0.25f;
 
     [Header("Options fields")]
-    public GameObject optionsContainer;
     public Button optionAButton;
     public Button optionBButton;
-    public string optionALabel;
-    public string optionBLabel;
 
     [Header("Option response/result")]
     public GameObject optionAResponsePrefab;
@@ -37,16 +33,7 @@ public class SequentialDialogueClue : ClueBase
         optionBButton.onClick.AddListener(() => OnOptionChosen(optionBResponsePrefab, optionBResultPrefab));
     }
 
-    void Start()
-    {
-        TMP_Text labelA = optionAButton.GetComponentInChildren<TMP_Text>();
-        if (labelA != null) labelA.text = optionALabel;
-
-        TMP_Text labelB = optionBButton.GetComponentInChildren<TMP_Text>();
-        if (labelB != null) labelB.text = optionBLabel;
-    }
-
-    public override void OnClueOpen()
+public override void OnClueOpen()
     {
         isDone = false;
         currentLine = 0;
@@ -54,7 +41,8 @@ public class SequentialDialogueClue : ClueBase
         foreach (Transform child in textContainer)
             Destroy(child.gameObject);
 
-        optionsContainer.SetActive(false);
+        optionAButton.gameObject.SetActive(false);
+        optionBButton.gameObject.SetActive(false);
         nextButton.gameObject.SetActive(true);
 
         SpawnPrefab(linePrefabs[currentLine]);
@@ -63,7 +51,8 @@ public class SequentialDialogueClue : ClueBase
         if (currentLine >= linePrefabs.Length)
         {
             nextButton.gameObject.SetActive(false);
-            optionsContainer.SetActive(true);
+            optionAButton.gameObject.SetActive(true);
+            optionBButton.gameObject.SetActive(true);
         }
     }
 
@@ -77,13 +66,15 @@ public class SequentialDialogueClue : ClueBase
         if (currentLine >= linePrefabs.Length)
         {
             nextButton.gameObject.SetActive(false);
-            optionsContainer.SetActive(true);
+            optionAButton.gameObject.SetActive(true);
+            optionBButton.gameObject.SetActive(true);
         }
     }
 
     void OnOptionChosen(GameObject responsePrefab, GameObject resultPrefab)
     {
-        optionsContainer.SetActive(false);
+        optionAButton.gameObject.SetActive(false);
+        optionBButton.gameObject.SetActive(false);
         StartCoroutine(ShowResponseThenResult(responsePrefab, resultPrefab));
     }
 
