@@ -93,17 +93,21 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7347305438263519143, guid: a3f46dc0914425142bca2b6b5d1b49f6, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -8
+      objectReference: {fileID: 0}
+    - target: {fileID: 7347305438263519143, guid: a3f46dc0914425142bca2b6b5d1b49f6, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 15.9
+      value: 46
       objectReference: {fileID: 0}
     - target: {fileID: 9058503069725853570, guid: a3f46dc0914425142bca2b6b5d1b49f6, type: 3}
       propertyPath: m_text
-      value: "Oh! Why didn\xB4t you tell me sooner? Maybe I could've helped, why
-        aren't you eating?"
+      value: "Oh! \nWhy didn\xB4t you tell me sooner? \nMaybe I could've helped,
+        why aren't you eating?"
       objectReference: {fileID: 0}
     - target: {fileID: 9058503069725853570, guid: a3f46dc0914425142bca2b6b5d1b49f6, type: 3}
       propertyPath: m_fontSize
-      value: 24.4
+      value: 19
       objectReference: {fileID: 0}
     - target: {fileID: 9058503069725853570, guid: a3f46dc0914425142bca2b6b5d1b49f6, type: 3}
       propertyPath: m_margin.y
@@ -111,7 +115,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9058503069725853570, guid: a3f46dc0914425142bca2b6b5d1b49f6, type: 3}
       propertyPath: m_fontSizeBase
-      value: 24.4
+      value: 19
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
