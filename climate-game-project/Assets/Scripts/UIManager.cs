@@ -28,6 +28,13 @@ public class UIManager : MonoBehaviour
     [SerializeField] private GameObject creditScreen;
     [SerializeField] private GameObject creditCloseButton;
 
+    private MovementScript playerMovement;
+
+    void Awake()
+    {
+        playerMovement = FindObjectOfType<MovementScript>();
+    }
+
     // For starting scene
     public void StartGame()
     {
@@ -97,6 +104,7 @@ public class UIManager : MonoBehaviour
     // Universal decision logic
     public void Decision()
     {
+        if (playerMovement) playerMovement.enabled = false;
         if (blurImage)   blurImage.SetActive(true);
         if (decisionButton1) decisionButton1.SetActive(true);
         if (decisionButton2) decisionButton2.SetActive(true);
