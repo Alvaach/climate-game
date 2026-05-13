@@ -120,6 +120,17 @@ public class UIManager : MonoBehaviour
         NextScene();
     }
 
+    public void RestartGame()
+    {
+        if (PlayerStats.Instance != null) Destroy(PlayerStats.Instance.gameObject);
+        if (PathTracker.Instance != null) Destroy(PathTracker.Instance.gameObject);
+
+        if (sceneFader != null)
+            sceneFader.FadeAndLoad("StartingScene", 1f);
+        else
+            SceneManager.LoadScene("StartingScene");
+    }
+
     public void ExitGame()
     {
 #if UNITY_EDITOR
