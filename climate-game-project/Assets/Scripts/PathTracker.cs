@@ -17,6 +17,7 @@ public class PathTracker : MonoBehaviour
     private int _decisionIndex = 0;
 
     public bool PathChosen { get; private set; } = false;
+    public bool IsPathA => _pathAChosen;
 
     void Awake()
     {
