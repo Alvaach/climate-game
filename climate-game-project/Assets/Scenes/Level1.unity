@@ -2355,7 +2355,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &884506342
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2591,8 +2591,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4279900698
-  m_fontColor: {r: 0.1, g: 0.1, b: 0.1, a: 1}
+    rgba: 1710618
+  m_fontColor: {r: 0.1, g: 0.1, b: 0.1, a: 0}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -4302,7 +4302,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3406216932957493912, guid: 580e34565f6819f46adad9c307f89a7f, type: 3}
       propertyPath: m_SizeDelta.y
-      value: 62.1
+      value: 63.96
+      objectReference: {fileID: 0}
+    - target: {fileID: 3406216932957493912, guid: 580e34565f6819f46adad9c307f89a7f, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 207
       objectReference: {fileID: 0}
     - target: {fileID: 4141201691943583711, guid: 580e34565f6819f46adad9c307f89a7f, type: 3}
       propertyPath: m_Name
