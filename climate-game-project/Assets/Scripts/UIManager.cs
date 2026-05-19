@@ -28,6 +28,14 @@ public class UIManager : MonoBehaviour
     [SerializeField] private GameObject creditScreen;
     [SerializeField] private GameObject creditCloseButton;
 
+    [Header("Decision Box Previews")]
+    [SerializeField] private GameObject previewGreenBoxPrefab;
+    [SerializeField] private GameObject previewRedBoxPrefab;
+    [Tooltip("One container per option button, in the same order as the buttons")]
+    [SerializeField] private Transform[] optionPreviewContainers;
+    [Tooltip("Score value each option gives — controls box count and color (positive = green, negative = red)")]
+    [SerializeField] private int[] optionScorePreviews;
+
     private MovementScript playerMovement;
 
     void Awake()
@@ -115,9 +123,29 @@ public class UIManager : MonoBehaviour
     // Add to decision-bbuttons + set positive/negative score
     public void MakeDecision(int scoreChange)
     {
+        ShowOptionPreviews();
         PlayerStats.Instance.AddEnvironmentScore(scoreChange);
         PathTracker.Instance?.SpawnNext();
         NextScene();
+    }
+
+    private void ShowOptionPreviews()
+    {
+        if (optionPreviewContainers == null || optionScorePreviews == null) return;
+        int count = Mathf.Min(optionPreviewContainers.Length, optionScorePreviews.Length);
+        for (int i = 0; i < count; i++)
+        {
+            Transform container = optionPreviewContainers[i];
+            int score = optionScorePreviews[i];
+            if (container == null || score == 0) continue;
+
+            GameObject prefab = score > 0 ? previewGreenBoxPrefab : previewRedBoxPrefab;
+            if (prefab == null) continue;
+
+            int boxCount = Mathf.Abs(score);
+            for (int b = 0; b < boxCount; b++)
+                Instantiate(prefab, container);
+        }
     }
 
     public void RestartGame()
