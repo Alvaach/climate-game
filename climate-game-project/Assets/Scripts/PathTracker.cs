@@ -13,10 +13,10 @@ public class PathTracker : MonoBehaviour
     [Header("Container where path prefabs spawn")]
     [SerializeField] private Transform pathContainer;
 
-    private bool _pathAChosen;
+    private bool _pathAChosen = true;
     private int _decisionIndex = 0;
 
-    public bool PathChosen { get; private set; } = false;
+    public bool PathChosen { get; private set; } = true;
     public bool IsPathA => _pathAChosen;
 
     void Awake()

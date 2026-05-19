@@ -195,8 +195,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2363e046e45a7844c819ab8e9ff6008e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::VisualTracker
-  greenBoxPrefab: {fileID: 7852313502167498, guid: 9db6d4d3bd695c94da861c66338a3d06, type: 3}
-  redBoxPrefab: {fileID: 225542648470664017, guid: 6c9150bc6e9eba04db18bf8251698749, type: 3}
+  greenBoxPrefab: {fileID: 4187308653597845055, guid: 242ab5d101d4f024a8d4f3b3daf4a09c, type: 3}
+  redBoxPrefab: {fileID: 5129116013013824575, guid: e2e43e10941d82f428fb164ca7a30a7f, type: 3}
   boxContainer: {fileID: 0}
 --- !u!212 &3925957783995222969
 SpriteRenderer:

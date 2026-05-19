@@ -22,7 +22,7 @@ public class MovementScript : MonoBehaviour
         animator = GetComponent<Animator>();
     }
 
-    void Update()
+void Update()
     {
         Vector2 input = Vector2.zero;
 
