@@ -51,6 +51,12 @@ void Update()
         }
     }
 
+    void OnDisable()
+    {
+        if (animator != null)
+            animator.SetFloat(SpeedHash, 0f);
+    }
+
     bool IsGrounded()
     {
         if (groundCheck != null)
