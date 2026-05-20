@@ -7,6 +7,7 @@ public class UIManager : MonoBehaviour
 {
     [Header("Fader")]
     [SerializeField] private SceneFader sceneFader;
+    [SerializeField] private float preTransitionHold = 3f;
 
     [Header("Start Game-canvas")]
     [SerializeField] private CanvasGroup gameCanvas;
@@ -99,6 +100,12 @@ public class UIManager : MonoBehaviour
     // Swap scene
     public void NextScene()
     {
+        StartCoroutine(NextSceneDelayed());
+    }
+
+    private IEnumerator NextSceneDelayed()
+    {
+        yield return new WaitForSeconds(preTransitionHold);
         int next = SceneManager.GetActiveScene().buildIndex + 1;
         if (next < SceneManager.sceneCountInBuildSettings)
         {
