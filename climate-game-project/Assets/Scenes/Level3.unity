@@ -553,8 +553,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Press E to interact
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 4c607bc552d27574281ceda981cb73ea, type: 2}
-  m_sharedMaterial: {fileID: -2763390048462947370, guid: 4c607bc552d27574281ceda981cb73ea, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 1ed9e609e40c8854795f1328f65ee593, type: 2}
+  m_sharedMaterial: {fileID: -8511917344306314455, guid: 1ed9e609e40c8854795f1328f65ee593, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -631,6 +631,51 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 315014359}
   m_CullTransparentMesh: 1
+--- !u!1 &376978587
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 376978589}
+  - component: {fileID: 376978588}
+  m_Layer: 0
+  m_Name: ClueTracker
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &376978588
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 376978587}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5a3e8b1cd8da5024787c32f113e01c4a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ClueTracker
+  targetObject: {fileID: 6285636749542321473}
+--- !u!4 &376978589
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 376978587}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 1.53658, y: 0.10379, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &465238833 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 4448204057114902871, guid: a86e4ae3e161e7e4fba08808e40a886a, type: 3}
@@ -908,7 +953,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8c55d336177fd0442b7298df4338cb37, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::AnimatedRevealClue
-  isDone: 0
   clueImage: {fileID: 901933873}
   animatedObject: {fileID: 1351500431}
   animationTrigger: Play
@@ -1341,7 +1385,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3332432d3bf77ca4ab074463cba7d4b1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ThoughtBubble
-  isDone: 0
   animatedObject: {fileID: 692840013}
   hintText: {fileID: 2049421428}
   textFadeDuration: 0.5
@@ -2233,13 +2276,21 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3280063301294776162, guid: a86e4ae3e161e7e4fba08808e40a886a, type: 3}
+      propertyPath: m_fontSize
+      value: 37.86
+      objectReference: {fileID: 0}
+    - target: {fileID: 3280063301294776162, guid: a86e4ae3e161e7e4fba08808e40a886a, type: 3}
       propertyPath: m_fontAsset
       value: 
-      objectReference: {fileID: 11400000, guid: 4c607bc552d27574281ceda981cb73ea, type: 2}
+      objectReference: {fileID: 11400000, guid: 1ed9e609e40c8854795f1328f65ee593, type: 2}
+    - target: {fileID: 3280063301294776162, guid: a86e4ae3e161e7e4fba08808e40a886a, type: 3}
+      propertyPath: m_fontSizeBase
+      value: 37.86
+      objectReference: {fileID: 0}
     - target: {fileID: 3280063301294776162, guid: a86e4ae3e161e7e4fba08808e40a886a, type: 3}
       propertyPath: m_sharedMaterial
       value: 
-      objectReference: {fileID: -2763390048462947370, guid: 4c607bc552d27574281ceda981cb73ea, type: 2}
+      objectReference: {fileID: -8511917344306314455, guid: 1ed9e609e40c8854795f1328f65ee593, type: 2}
     - target: {fileID: 3280063301294776162, guid: a86e4ae3e161e7e4fba08808e40a886a, type: 3}
       propertyPath: m_hasFontAssetChanged
       value: 0
@@ -2283,11 +2334,11 @@ PrefabInstance:
     - target: {fileID: 4716077949797169443, guid: a86e4ae3e161e7e4fba08808e40a886a, type: 3}
       propertyPath: m_fontAsset
       value: 
-      objectReference: {fileID: 11400000, guid: 4c607bc552d27574281ceda981cb73ea, type: 2}
+      objectReference: {fileID: 11400000, guid: 1ed9e609e40c8854795f1328f65ee593, type: 2}
     - target: {fileID: 4716077949797169443, guid: a86e4ae3e161e7e4fba08808e40a886a, type: 3}
       propertyPath: m_sharedMaterial
       value: 
-      objectReference: {fileID: -2763390048462947370, guid: 4c607bc552d27574281ceda981cb73ea, type: 2}
+      objectReference: {fileID: -8511917344306314455, guid: 1ed9e609e40c8854795f1328f65ee593, type: 2}
     - target: {fileID: 4716077949797169443, guid: a86e4ae3e161e7e4fba08808e40a886a, type: 3}
       propertyPath: m_hasFontAssetChanged
       value: 0
@@ -2374,7 +2425,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6627123464011748095, guid: a86e4ae3e161e7e4fba08808e40a886a, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 160
+      value: 180
       objectReference: {fileID: 0}
     - target: {fileID: 6908639413730580901, guid: a86e4ae3e161e7e4fba08808e40a886a, type: 3}
       propertyPath: m_Sprite
@@ -2819,7 +2870,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3332432d3bf77ca4ab074463cba7d4b1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ThoughtBubble
-  isDone: 0
   animatedObject: {fileID: 1563039876}
   hintText: {fileID: 853830478}
   textFadeDuration: 0.5
@@ -3592,7 +3642,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8c55d336177fd0442b7298df4338cb37, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::AnimatedRevealClue
-  isDone: 0
   clueImage: {fileID: 1283214501}
   animatedObject: {fileID: 921407190}
   animationTrigger: Play
@@ -5783,7 +5832,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8c55d336177fd0442b7298df4338cb37, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::AnimatedRevealClue
-  isDone: 0
   clueImage: {fileID: 1002288559}
   animatedObject: {fileID: 579321345}
   animationTrigger: Play
@@ -6088,5 +6136,6 @@ SceneRoots:
   - {fileID: 94944830}
   - {fileID: 1400083794}
   - {fileID: 2143200242}
-  - {fileID: 682065840}
   - {fileID: 97543890}
+  - {fileID: 682065840}
+  - {fileID: 376978589}

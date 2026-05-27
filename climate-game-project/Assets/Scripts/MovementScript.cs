@@ -6,15 +6,12 @@ using UnityEngine.InputSystem;
 public class MovementScript : MonoBehaviour
 {
     public float moveSpeed = 5f;
-    public float jumpForce = 7f;
-    public Transform groundCheck;
-    public float groundCheckRadius = 0.1f;
-    public LayerMask groundLayer;
 
     private static readonly int SpeedHash = Animator.StringToHash("Speed");
 
     private Rigidbody2D rb;
     private Animator animator;
+    private float inputX;
 
     void Awake()
     {
@@ -22,33 +19,34 @@ public class MovementScript : MonoBehaviour
         animator = GetComponent<Animator>();
     }
 
-void Update()
+    void Update()
     {
-        Vector2 input = Vector2.zero;
+        inputX = 0f;
 
         if (Keyboard.current != null)
         {
-            if (Keyboard.current.dKey.isPressed || Keyboard.current.rightArrowKey.isPressed) input.x += 1f;
-            if (Keyboard.current.aKey.isPressed || Keyboard.current.leftArrowKey.isPressed)  input.x -= 1f;
+            if (Keyboard.current.dKey.isPressed || Keyboard.current.rightArrowKey.isPressed) inputX += 1f;
+            if (Keyboard.current.aKey.isPressed || Keyboard.current.leftArrowKey.isPressed)  inputX -= 1f;
 
-            bool jumpPressed = Keyboard.current.wKey.wasPressedThisFrame
-                            || Keyboard.current.spaceKey.wasPressedThisFrame;
-
-            if (jumpPressed && IsGrounded())
-                rb.linearVelocity = new Vector2(rb.linearVelocity.x, jumpForce);
         }
 
-        transform.position += (Vector3)input.normalized * (moveSpeed * Time.deltaTime);
-
+        // Drive animator from raw input so walk anim plays even when blocked by a wall
         if (animator != null)
-            animator.SetFloat(SpeedHash, Mathf.Abs(input.x));
+            animator.SetFloat(SpeedHash, Mathf.Abs(inputX));
 
-        if (input.x != 0)
+        if (inputX != 0)
         {
             Vector3 scale = transform.localScale;
-            scale.x = input.x > 0 ? -Mathf.Abs(scale.x) : Mathf.Abs(scale.x);
+            scale.x = inputX > 0 ? -Mathf.Abs(scale.x) : Mathf.Abs(scale.x);
             transform.localScale = scale;
         }
+    }
+
+    void FixedUpdate()
+    {
+        // Set velocity instead of moving transform directly so physics handles wall collision without vibrating
+        rb.linearVelocity = new Vector2(inputX * moveSpeed, rb.linearVelocity.y);
+
     }
 
     void OnDisable()
@@ -57,12 +55,5 @@ void Update()
             animator.SetFloat(SpeedHash, 0f);
     }
 
-    bool IsGrounded()
-    {
-        if (groundCheck != null)
-            return Physics2D.OverlapCircle(groundCheck.position, groundCheckRadius, groundLayer);
 
-        
-        return Physics2D.Raycast(transform.position, Vector2.down, 0.6f, groundLayer).collider != null;
-    }
 }
