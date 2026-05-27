@@ -3,14 +3,13 @@ using UnityEngine.InputSystem;
 
 public class SoundManager : MonoBehaviour
 {
+
+    //why isnt hover sound removed from inspector when its removed here?
     public static SoundManager Instance { get; private set; }
 
     [Header("Add audio clips here")]
     [SerializeField] private AudioClip clickSound;
     [SerializeField] private float clickVolume = 1f;
-
-    [SerializeField] private AudioClip hoverSound;
-    [SerializeField] private float hoverVolume = 1f;
 
     private AudioSource audioSource;
 
@@ -27,11 +26,5 @@ public class SoundManager : MonoBehaviour
     {
         if (Mouse.current.leftButton.wasPressedThisFrame)
             audioSource.PlayOneShot(clickSound, clickVolume);
-    }
-
-    public void PlayHoverSound()
-    {
-        if (hoverSound != null && !audioSource.isPlaying)
-            audioSource.PlayOneShot(hoverSound, hoverVolume);
     }
 }

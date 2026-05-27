@@ -12,7 +12,7 @@ public class UIManager : MonoBehaviour
     [Header("Start Game-canvas")]
     [SerializeField] private CanvasGroup gameCanvas;
     [SerializeField] private float fadeInDuration = 1f;
-    [SerializeField] private GameObject nextCanvasButton;
+    [SerializeField] private CanvasGroup nextCanvasButton;
     [SerializeField] private float buttonAppearDelay = 3f;
     [SerializeField] private CanvasGroup nextCanvas;
 
@@ -48,7 +48,7 @@ public class UIManager : MonoBehaviour
     public void StartGame()
     {
         if (gameCanvas == null) return;
-        nextCanvasButton?.SetActive(false);
+        if (nextCanvasButton != null) { nextCanvasButton.alpha = 0f; nextCanvasButton.interactable = false; nextCanvasButton.blocksRaycasts = false; }
         gameCanvas.gameObject.SetActive(true);
         gameCanvas.alpha = 0f;
         StartCoroutine(FadeInThenShowButton(gameCanvas));
@@ -67,7 +67,11 @@ public class UIManager : MonoBehaviour
         yield return StartCoroutine(FadeIn(cg));
         yield return new WaitForSeconds(buttonAppearDelay);
         if (nextCanvasButton != null)
-            nextCanvasButton.SetActive(true);
+        {
+            yield return StartCoroutine(FadeIn(nextCanvasButton));
+            nextCanvasButton.interactable = true;
+            nextCanvasButton.blocksRaycasts = true;
+        }
     }
 
     private IEnumerator FadeIn(CanvasGroup cg)
@@ -87,6 +91,7 @@ public class UIManager : MonoBehaviour
     {
         PathTracker.Instance?.ChoosePath(true);
         PlayerStats.Instance.AddEnvironmentScore(scoreChange);
+        PlayerStats.Instance.SpawnStatsIcon(true);
         NextScene();
     }
 
@@ -94,6 +99,7 @@ public class UIManager : MonoBehaviour
     {
         PathTracker.Instance?.ChoosePath(false);
         PlayerStats.Instance.AddEnvironmentScore(scoreChange);
+        PlayerStats.Instance.SpawnStatsIcon(false);
         NextScene();
     }
 

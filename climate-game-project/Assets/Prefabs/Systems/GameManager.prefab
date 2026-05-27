@@ -12,13 +12,14 @@ GameObject:
   - component: {fileID: 2238500784999166839}
   - component: {fileID: 8659641816087710527}
   - component: {fileID: 4831189174608351912}
+  - component: {fileID: 7678693396856737198}
   m_Layer: 0
-  m_Name: Canvas
+  m_Name: StatsBox-Canvas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &7579795187081271060
 RectTransform:
   m_ObjectHideFlags: 0
@@ -36,6 +37,7 @@ RectTransform:
   - {fileID: 3414798303177801998}
   - {fileID: 5980640671582035993}
   - {fileID: 3181218161109831995}
+  - {fileID: 1002600167356672612}
   m_Father: {fileID: 7475974616678800686}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -107,6 +109,18 @@ MonoBehaviour:
   m_BlockingMask:
     serializedVersion: 2
     m_Bits: 4294967295
+--- !u!225 &7678693396856737198
+CanvasGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 402720907675942521}
+  m_Enabled: 1
+  m_Alpha: 1
+  m_Interactable: 1
+  m_BlocksRaycasts: 1
+  m_IgnoreParentGroups: 0
 --- !u!1 &994035885434114856
 GameObject:
   m_ObjectHideFlags: 0
@@ -182,6 +196,41 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 1
   m_PixelsPerUnitMultiplier: 1
+--- !u!1 &1645237353155226174
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1002600167356672612}
+  m_Layer: 0
+  m_Name: IconContainer
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1002600167356672612
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1645237353155226174}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0.9, y: 0.9, z: 0.9}
+  m_ConstrainProportionsScale: 1
+  m_Children: []
+  m_Father: {fileID: 7579795187081271060}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 601, y: 479}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1855806331664230576
 GameObject:
   m_ObjectHideFlags: 0
@@ -305,6 +354,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerStats
   globalScore: 0
+  statsBoxCanvas: {fileID: 7678693396856737198}
+  statsBoxFadeDuration: 1.5
+  statsIconContainer: {fileID: 1002600167356672612}
+  icon1Prefab: {fileID: 511924182010984731, guid: ad3431d0a01015a419b96bec50036189, type: 3}
+  icon2Prefab: {fileID: 348909211359628943, guid: 975a154d33cf2e641be30764da260cf6, type: 3}
 --- !u!1 &2107930003887574870
 GameObject:
   m_ObjectHideFlags: 0
@@ -384,10 +438,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b79e7ab4fcde32c46ab18c1de64c22ee, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SoundManager
-  clickSound: {fileID: 8300000, guid: 4da0c69d17d80aa4b9793737e8093ce2, type: 3}
-  clickVolume: 1
-  hoverSound: {fileID: 0}
-  hoverVolume: 0.4
+  clickSound: {fileID: 8300000, guid: e7f2b8116a88b0842811ddbdd41ecf21, type: 3}
+  clickVolume: 0.3
 --- !u!1 &6799009122869324144
 GameObject:
   m_ObjectHideFlags: 0
@@ -432,7 +484,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 42307343211c75b40a05b119994e724f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MusicManager
-  music: {fileID: 8300000, guid: d2d78affb60bdfe499932723d8829207, type: 3}
+  music: {fileID: 8300000, guid: bbbbaff86aed78648989cc6a5d95b7e3, type: 3}
   maxVolume: 0.1
   fadeDuration: 2
 --- !u!1 &7201251750733486348

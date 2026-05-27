@@ -9,13 +9,13 @@ public class DragAndDropClue : ClueBase
     public string initialText;
     public string resultA;
     public string resultB;
-
-    [Header("Draggable Object")]
     public DraggableClueObject draggableObject;
 
     [Header("Drop Zones")]
     public RectTransform dropZoneA;
     public RectTransform dropZoneB;
+
+    public float closeButtonDelay = 2f;
 
     public override void OnClueOpen()
     {
@@ -38,7 +38,7 @@ public class DragAndDropClue : ClueBase
 
     IEnumerator ShowCloseButtonAfterDelay()
     {
-        yield return new WaitForSeconds(3f);
+        yield return new WaitForSeconds(closeButtonDelay);
         isDone = true;
     }
 }

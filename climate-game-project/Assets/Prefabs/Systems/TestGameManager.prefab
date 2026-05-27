@@ -45,3 +45,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::TestGameManager
   gameManagerPrefab: {fileID: 1876365694075783628, guid: d272b6f57a32b6449abc744dd56cd81a, type: 3}
+  forceStatsBoxActive: 1
+  forcePathChosen: 1
+  forcedPathIsA: 1
