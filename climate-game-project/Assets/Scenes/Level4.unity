@@ -5174,7 +5174,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8988672335240603379, guid: a86e4ae3e161e7e4fba08808e40a886a, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 9208171731078813578, guid: a86e4ae3e161e7e4fba08808e40a886a, type: 3}
       propertyPath: m_Camera
@@ -5426,6 +5426,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Canvas, background
       objectReference: {fileID: 0}
+    - target: {fileID: 8266216554043080387, guid: fb5a7ca021c353e45abb7359f9083bcf, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 0abeb9dc08048ea48adc3b29f7679eb2, type: 3}
+    - target: {fileID: 8266216554043080387, guid: fb5a7ca021c353e45abb7359f9083bcf, type: 3}
+      propertyPath: m_UseSpriteMesh
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects:
@@ -5529,7 +5537,7 @@ PrefabInstance:
     - target: {fileID: 7204986445972012875, guid: 1f756d8542719c045b2240ed47a519f1, type: 3}
       propertyPath: continueObject
       value: 
-      objectReference: {fileID: 1955291039}
+      objectReference: {fileID: 0}
     - target: {fileID: 7204986445972012875, guid: 1f756d8542719c045b2240ed47a519f1, type: 3}
       propertyPath: interactPrompt
       value: 
@@ -5851,7 +5859,7 @@ PrefabInstance:
     - target: {fileID: 3185961394995840796, guid: 8d433e0ad6390e84ab093ef3b8018e19, type: 3}
       propertyPath: continueObject
       value: 
-      objectReference: {fileID: 1955291039}
+      objectReference: {fileID: 0}
     - target: {fileID: 3185961394995840796, guid: 8d433e0ad6390e84ab093ef3b8018e19, type: 3}
       propertyPath: interactPrompt
       value: 
