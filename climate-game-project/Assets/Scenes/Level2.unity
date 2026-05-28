@@ -3241,6 +3241,18 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 6285636750442381334, guid: 94d58e2082f83c444ba764d92b33cb97, type: 3}
   m_PrefabInstance: {fileID: 963457359578700379}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1955291045
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1955291039}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 96d5227f6d773de4ba4fd4bd1b18c54e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::DebugActivation
 --- !u!114 &2027505520 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 5131715662916698184, guid: a86e4ae3e161e7e4fba08808e40a886a, type: 3}
@@ -3383,12 +3395,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6285636750442381334, guid: 94d58e2082f83c444ba764d92b33cb97, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 6285636750442381334, guid: 94d58e2082f83c444ba764d92b33cb97, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1955291045}
   m_SourcePrefab: {fileID: 100100000, guid: 94d58e2082f83c444ba764d92b33cb97, type: 3}
 --- !u!1001 &1199096499757272173
 PrefabInstance:
@@ -4612,7 +4627,7 @@ PrefabInstance:
     - target: {fileID: 7204986445972012875, guid: 1f756d8542719c045b2240ed47a519f1, type: 3}
       propertyPath: continueObject
       value: 
-      objectReference: {fileID: 1955291039}
+      objectReference: {fileID: 0}
     - target: {fileID: 7204986445972012875, guid: 1f756d8542719c045b2240ed47a519f1, type: 3}
       propertyPath: interactPrompt
       value: 
@@ -4962,7 +4977,7 @@ PrefabInstance:
     - target: {fileID: 3185961394995840796, guid: 8d433e0ad6390e84ab093ef3b8018e19, type: 3}
       propertyPath: continueObject
       value: 
-      objectReference: {fileID: 1955291039}
+      objectReference: {fileID: 0}
     - target: {fileID: 3185961394995840796, guid: 8d433e0ad6390e84ab093ef3b8018e19, type: 3}
       propertyPath: interactPrompt
       value: 
