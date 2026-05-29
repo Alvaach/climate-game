@@ -1,0 +1,871 @@
+fileFormatVersion: 2
+guid: dfc98c85dbd6fd0489ed32c9f00765b4
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -2352103519597506332
+    second: Thoughtbubble_02_spritesheet_0
+  - first:
+      213: 6256664188477397342
+    second: Thoughtbubble_02_spritesheet_1
+  - first:
+      213: -6714185630698406667
+    second: Thoughtbubble_02_spritesheet_2
+  - first:
+      213: -6491361965489902734
+    second: Thoughtbubble_02_spritesheet_3
+  - first:
+      213: -8529959454950293381
+    second: Thoughtbubble_02_spritesheet_4
+  - first:
+      213: -2101143504183502213
+    second: Thoughtbubble_02_spritesheet_5
+  - first:
+      213: -2442578407601242266
+    second: Thoughtbubble_02_spritesheet_6
+  - first:
+      213: 4780662408561750013
+    second: Thoughtbubble_02_spritesheet_7
+  - first:
+      213: -5931295024594722969
+    second: Thoughtbubble_02_spritesheet_8
+  - first:
+      213: -2563560180670688760
+    second: Thoughtbubble_02_spritesheet_9
+  - first:
+      213: 4212319420455044861
+    second: Thoughtbubble_02_spritesheet_10
+  - first:
+      213: -2824802835693462211
+    second: Thoughtbubble_02_spritesheet_11
+  - first:
+      213: 1522418581237280506
+    second: Thoughtbubble_02_spritesheet_12
+  - first:
+      213: -7234985055961599525
+    second: Thoughtbubble_02_spritesheet_13
+  - first:
+      213: -523169291794936367
+    second: Thoughtbubble_02_spritesheet_14
+  - first:
+      213: -7072641667665717727
+    second: Thoughtbubble_02_spritesheet_15
+  - first:
+      213: -5075064953972093655
+    second: Thoughtbubble_02_spritesheet_16
+  - first:
+      213: -7788056974116916080
+    second: Thoughtbubble_02_spritesheet_17
+  - first:
+      213: -148060042523720340
+    second: Thoughtbubble_02_spritesheet_18
+  - first:
+      213: -6322881254110015704
+    second: Thoughtbubble_02_spritesheet_19
+  - first:
+      213: -5363351694220822392
+    second: Thoughtbubble_02_spritesheet_20
+  - first:
+      213: -7242482448875112695
+    second: Thoughtbubble_02_spritesheet_21
+  - first:
+      213: -8670554651082080111
+    second: Thoughtbubble_02_spritesheet_22
+  - first:
+      213: -3913906271694453300
+    second: Thoughtbubble_02_spritesheet_23
+  - first:
+      213: 527173070673210688
+    second: Thoughtbubble_02_spritesheet_24
+  - first:
+      213: 3028364759782607551
+    second: Thoughtbubble_02_spritesheet_25
+  - first:
+      213: 8718444981895989051
+    second: Thoughtbubble_02_spritesheet_26
+  - first:
+      213: -858492002581672193
+    second: Thoughtbubble_02_spritesheet_27
+  - first:
+      213: 7838118054542529791
+    second: Thoughtbubble_02_spritesheet_28
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Thoughtbubble_02_spritesheet_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 697
+        width: 18
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4e0d1779f46ab5fd0800000000000000
+      internalID: -2352103519597506332
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Thoughtbubble_02_spritesheet_1
+      rect:
+        serializedVersion: 2
+        x: 853
+        y: 700
+        width: 67
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e595a112ee224d650800000000000000
+      internalID: 6256664188477397342
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Thoughtbubble_02_spritesheet_2
+      rect:
+        serializedVersion: 2
+        x: 1764
+        y: 332
+        width: 516
+        height: 389
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5fc703efdbb62d2a0800000000000000
+      internalID: -6714185630698406667
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Thoughtbubble_02_spritesheet_3
+      rect:
+        serializedVersion: 2
+        x: 2551
+        y: 660
+        width: 46
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 27b2e726fac0ae5a0800000000000000
+      internalID: -6491361965489902734
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Thoughtbubble_02_spritesheet_4
+      rect:
+        serializedVersion: 2
+        x: 3491
+        y: 191
+        width: 853
+        height: 518
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b700433c11f7f9980800000000000000
+      internalID: -8529959454950293381
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Thoughtbubble_02_spritesheet_5
+      rect:
+        serializedVersion: 2
+        x: 819
+        y: 660
+        width: 25
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b7ad5038d1d37d2e0800000000000000
+      internalID: -2101143504183502213
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Thoughtbubble_02_spritesheet_6
+      rect:
+        serializedVersion: 2
+        x: 2649
+        y: 667
+        width: 20
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 66f73ee21e73a1ed0800000000000000
+      internalID: -2442578407601242266
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Thoughtbubble_02_spritesheet_7
+      rect:
+        serializedVersion: 2
+        x: 3425
+        y: 671
+        width: 10
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dffe26da123585240800000000000000
+      internalID: 4780662408561750013
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Thoughtbubble_02_spritesheet_8
+      rect:
+        serializedVersion: 2
+        x: 3465
+        y: 660
+        width: 9
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 76f5df8b99ecfada0800000000000000
+      internalID: -5931295024594722969
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Thoughtbubble_02_spritesheet_9
+      rect:
+        serializedVersion: 2
+        x: 2842
+        y: 263
+        width: 425
+        height: 373
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 80299c619976c6cd0800000000000000
+      internalID: -2563560180670688760
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Thoughtbubble_02_spritesheet_10
+      rect:
+        serializedVersion: 2
+        x: 118
+        y: 9
+        width: 74
+        height: 74
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: df6c3b0f13a257a30800000000000000
+      internalID: 4212319420455044861
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Thoughtbubble_02_spritesheet_11
+      rect:
+        serializedVersion: 2
+        x: 989
+        y: 9
+        width: 74
+        height: 74
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d3d99f199c84cc8d0800000000000000
+      internalID: -2824802835693462211
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Thoughtbubble_02_spritesheet_12
+      rect:
+        serializedVersion: 2
+        x: 1027
+        y: 78
+        width: 130
+        height: 131
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: afe2a1e22a7b02510800000000000000
+      internalID: 1522418581237280506
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Thoughtbubble_02_spritesheet_13
+      rect:
+        serializedVersion: 2
+        x: 1860
+        y: 9
+        width: 74
+        height: 74
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bd136289c6b289b90800000000000000
+      internalID: -7234985055961599525
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Thoughtbubble_02_spritesheet_14
+      rect:
+        serializedVersion: 2
+        x: 1898
+        y: 78
+        width: 130
+        height: 131
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1dd8b2d0d445db8f0800000000000000
+      internalID: -523169291794936367
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Thoughtbubble_02_spritesheet_15
+      rect:
+        serializedVersion: 2
+        x: 2731
+        y: 9
+        width: 74
+        height: 74
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 126982f20ede8dd90800000000000000
+      internalID: -7072641667665717727
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Thoughtbubble_02_spritesheet_16
+      rect:
+        serializedVersion: 2
+        x: 2769
+        y: 78
+        width: 130
+        height: 131
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 92d857e205fb199b0800000000000000
+      internalID: -5075064953972093655
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Thoughtbubble_02_spritesheet_17
+      rect:
+        serializedVersion: 2
+        x: 3602
+        y: 9
+        width: 74
+        height: 74
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 094f147e1734be390800000000000000
+      internalID: -7788056974116916080
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Thoughtbubble_02_spritesheet_18
+      rect:
+        serializedVersion: 2
+        x: 3640
+        y: 78
+        width: 130
+        height: 131
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c65c1fffc2cf1fdf0800000000000000
+      internalID: -148060042523720340
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Thoughtbubble_02_spritesheet_19
+      rect:
+        serializedVersion: 2
+        x: 1680
+        y: 46
+        width: 11
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 82fcbcbdffc9048a0800000000000000
+      internalID: -6322881254110015704
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Thoughtbubble_02_spritesheet_20
+      rect:
+        serializedVersion: 2
+        x: 2551
+        y: 55
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8887a74ec0c8195b0800000000000000
+      internalID: -5363351694220822392
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Thoughtbubble_02_spritesheet_21
+      rect:
+        serializedVersion: 2
+        x: 2611
+        y: 52
+        width: 40
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9073cc6c5988d7b90800000000000000
+      internalID: -7242482448875112695
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Thoughtbubble_02_spritesheet_22
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 54
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 19044a0cb700ca780800000000000000
+      internalID: -8670554651082080111
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Thoughtbubble_02_spritesheet_23
+      rect:
+        serializedVersion: 2
+        x: 2551
+        y: 31
+        width: 13
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cc58a7f8bf20fa9c0800000000000000
+      internalID: -3913906271694453300
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Thoughtbubble_02_spritesheet_24
+      rect:
+        serializedVersion: 2
+        x: 3483
+        y: 12
+        width: 7
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 04de0ac5d15e05700800000000000000
+      internalID: 527173070673210688
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Thoughtbubble_02_spritesheet_25
+      rect:
+        serializedVersion: 2
+        x: 3534
+        y: 37
+        width: 12
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fba472d34b9e60a20800000000000000
+      internalID: 3028364759782607551
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Thoughtbubble_02_spritesheet_26
+      rect:
+        serializedVersion: 2
+        x: 809
+        y: 0
+        width: 77
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b3782bbc4832ef870800000000000000
+      internalID: 8718444981895989051
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Thoughtbubble_02_spritesheet_27
+      rect:
+        serializedVersion: 2
+        x: 1680
+        y: 0
+        width: 54
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ffe0b9772160614f0800000000000000
+      internalID: -858492002581672193
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Thoughtbubble_02_spritesheet_28
+      rect:
+        serializedVersion: 2
+        x: 2551
+        y: 5
+        width: 13
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ff4559ca7d696cc60800000000000000
+      internalID: 7838118054542529791
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Thoughtbubble_02_spritesheet_0: -2352103519597506332
+      Thoughtbubble_02_spritesheet_1: 6256664188477397342
+      Thoughtbubble_02_spritesheet_10: 4212319420455044861
+      Thoughtbubble_02_spritesheet_11: -2824802835693462211
+      Thoughtbubble_02_spritesheet_12: 1522418581237280506
+      Thoughtbubble_02_spritesheet_13: -7234985055961599525
+      Thoughtbubble_02_spritesheet_14: -523169291794936367
+      Thoughtbubble_02_spritesheet_15: -7072641667665717727
+      Thoughtbubble_02_spritesheet_16: -5075064953972093655
+      Thoughtbubble_02_spritesheet_17: -7788056974116916080
+      Thoughtbubble_02_spritesheet_18: -148060042523720340
+      Thoughtbubble_02_spritesheet_19: -6322881254110015704
+      Thoughtbubble_02_spritesheet_2: -6714185630698406667
+      Thoughtbubble_02_spritesheet_20: -5363351694220822392
+      Thoughtbubble_02_spritesheet_21: -7242482448875112695
+      Thoughtbubble_02_spritesheet_22: -8670554651082080111
+      Thoughtbubble_02_spritesheet_23: -3913906271694453300
+      Thoughtbubble_02_spritesheet_24: 527173070673210688
+      Thoughtbubble_02_spritesheet_25: 3028364759782607551
+      Thoughtbubble_02_spritesheet_26: 8718444981895989051
+      Thoughtbubble_02_spritesheet_27: -858492002581672193
+      Thoughtbubble_02_spritesheet_28: 7838118054542529791
+      Thoughtbubble_02_spritesheet_3: -6491361965489902734
+      Thoughtbubble_02_spritesheet_4: -8529959454950293381
+      Thoughtbubble_02_spritesheet_5: -2101143504183502213
+      Thoughtbubble_02_spritesheet_6: -2442578407601242266
+      Thoughtbubble_02_spritesheet_7: 4780662408561750013
+      Thoughtbubble_02_spritesheet_8: -5931295024594722969
+      Thoughtbubble_02_spritesheet_9: -2563560180670688760
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
