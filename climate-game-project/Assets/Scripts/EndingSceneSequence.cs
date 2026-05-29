@@ -9,6 +9,8 @@ public class EndingSceneSequence : MonoBehaviour
     [SerializeField] private GameObject preOutcomeObject;
     [SerializeField] private GameObject outcomeA;
     [SerializeField] private GameObject outcomeB;
+    [SerializeField] private GameObject iconA;
+    [SerializeField] private GameObject iconB;
     [SerializeField] private GameObject postOutcomeObject;
 
     [Header("Spawn Sequence")]
@@ -18,6 +20,7 @@ public class EndingSceneSequence : MonoBehaviour
 
     [Header("Ending Menu")]
     [SerializeField] private GameObject endingMenu;
+    [SerializeField] private GameObject fadeOutPreviousCanvas;
 
     private readonly List<GameObject> _spawnedObjects = new List<GameObject>();
 
@@ -26,6 +29,8 @@ public class EndingSceneSequence : MonoBehaviour
         preOutcomeObject.SetActive(false);
         outcomeA.SetActive(false);
         outcomeB.SetActive(false);
+        if (iconA != null) iconA.SetActive(false);
+        if (iconB != null) iconB.SetActive(false);
         postOutcomeObject.SetActive(false);
 
         foreach (var obj in sequenceObjects)
@@ -38,12 +43,16 @@ public class EndingSceneSequence : MonoBehaviour
 
     private IEnumerator RunOutcomeSequence()
     {
+        bool isPathA = PathTracker.Instance != null && PathTracker.Instance.IsPathA;
+        GameObject icon = isPathA ? iconA : iconB;
+
         yield return new WaitForSeconds(timeBetweenSpawns);
         preOutcomeObject.SetActive(true);
+        if (icon != null) icon.SetActive(true);
+        if (icon != null) StartCoroutine(FadeObject(icon, 0f, 1f, fadeDuration));
         yield return StartCoroutine(FadeObject(preOutcomeObject, 0f, 1f, fadeDuration));
 
         yield return new WaitForSeconds(timeBetweenSpawns);
-        bool isPathA = PathTracker.Instance != null && PathTracker.Instance.IsPathA;
         GameObject outcome = isPathA ? outcomeA : outcomeB;
         outcome.SetActive(true);
         yield return StartCoroutine(FadeObject(outcome, 0f, 1f, fadeDuration));
@@ -68,13 +77,16 @@ public class EndingSceneSequence : MonoBehaviour
 
         bool isPathA = PathTracker.Instance != null && PathTracker.Instance.IsPathA;
         GameObject outcome = isPathA ? outcomeA : outcomeB;
+        GameObject icon = isPathA ? iconA : iconB;
         StartCoroutine(FadeObject(outcome, 1f, 0f, fadeDuration));
+        if (icon != null) StartCoroutine(FadeObject(icon, 1f, 0f, fadeDuration));
         StartCoroutine(FadeObject(postOutcomeObject, 1f, 0f, fadeDuration));
 
         yield return new WaitForSeconds(fadeDuration);
 
         preOutcomeObject.SetActive(false);
         outcome.SetActive(false);
+        if (icon != null) icon.SetActive(false);
         postOutcomeObject.SetActive(false);
 
         yield return StartCoroutine(RunSpawnSequence());
@@ -110,7 +122,18 @@ public class EndingSceneSequence : MonoBehaviour
     private IEnumerator FadeInEndingMenu()
     {
         endingMenu.SetActive(true);
+        if (fadeOutPreviousCanvas != null)
+        {
+            StartCoroutine(FadeObject(fadeOutPreviousCanvas, 1f, 0f, fadeDuration));
+            StartCoroutine(DeactivateAfterDelay(fadeOutPreviousCanvas, fadeDuration));
+        }
         yield return StartCoroutine(FadeObject(endingMenu, 0f, 1f, fadeDuration));
+    }
+
+    private IEnumerator DeactivateAfterDelay(GameObject obj, float delay)
+    {
+        yield return new WaitForSeconds(delay);
+        obj.SetActive(false);
     }
 
     private IEnumerator FadeObject(GameObject obj, float from, float to, float duration)
