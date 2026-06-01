@@ -1,94 +1,31 @@
 fileFormatVersion: 2
-guid: dfc98c85dbd6fd0489ed32c9f00765b4
+guid: 636fee1722fe6dd4f9cd6ec1c2f66486
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -2352103519597506332
-    second: Thoughtbubble_02_spritesheet_0
+      213: 6530486457313734560
+    second: Sunnyweather_spritesheet_0
   - first:
-      213: 6256664188477397342
-    second: Thoughtbubble_02_spritesheet_1
+      213: 6468117663766449299
+    second: Sunnyweather_spritesheet_1
   - first:
-      213: -6714185630698406667
-    second: Thoughtbubble_02_spritesheet_2
+      213: 6180875452434871170
+    second: Sunnyweather_spritesheet_2
   - first:
-      213: -6491361965489902734
-    second: Thoughtbubble_02_spritesheet_3
+      213: -7308812412172435458
+    second: Sunnyweather_spritesheet_3
   - first:
-      213: -8529959454950293381
-    second: Thoughtbubble_02_spritesheet_4
+      213: 7270696993481408970
+    second: Sunnyweather_spritesheet_4
   - first:
-      213: -2101143504183502213
-    second: Thoughtbubble_02_spritesheet_5
+      213: -5255516970328381733
+    second: Sunnyweather_spritesheet_5
   - first:
-      213: -2442578407601242266
-    second: Thoughtbubble_02_spritesheet_6
+      213: -262075478888868752
+    second: Sunnyweather_spritesheet_6
   - first:
-      213: 4780662408561750013
-    second: Thoughtbubble_02_spritesheet_7
-  - first:
-      213: -5931295024594722969
-    second: Thoughtbubble_02_spritesheet_8
-  - first:
-      213: -2563560180670688760
-    second: Thoughtbubble_02_spritesheet_9
-  - first:
-      213: 4212319420455044861
-    second: Thoughtbubble_02_spritesheet_10
-  - first:
-      213: -2824802835693462211
-    second: Thoughtbubble_02_spritesheet_11
-  - first:
-      213: 1522418581237280506
-    second: Thoughtbubble_02_spritesheet_12
-  - first:
-      213: -7234985055961599525
-    second: Thoughtbubble_02_spritesheet_13
-  - first:
-      213: -523169291794936367
-    second: Thoughtbubble_02_spritesheet_14
-  - first:
-      213: -7072641667665717727
-    second: Thoughtbubble_02_spritesheet_15
-  - first:
-      213: -5075064953972093655
-    second: Thoughtbubble_02_spritesheet_16
-  - first:
-      213: -7788056974116916080
-    second: Thoughtbubble_02_spritesheet_17
-  - first:
-      213: -148060042523720340
-    second: Thoughtbubble_02_spritesheet_18
-  - first:
-      213: -6322881254110015704
-    second: Thoughtbubble_02_spritesheet_19
-  - first:
-      213: -5363351694220822392
-    second: Thoughtbubble_02_spritesheet_20
-  - first:
-      213: -7242482448875112695
-    second: Thoughtbubble_02_spritesheet_21
-  - first:
-      213: -8670554651082080111
-    second: Thoughtbubble_02_spritesheet_22
-  - first:
-      213: -3913906271694453300
-    second: Thoughtbubble_02_spritesheet_23
-  - first:
-      213: 527173070673210688
-    second: Thoughtbubble_02_spritesheet_24
-  - first:
-      213: 3028364759782607551
-    second: Thoughtbubble_02_spritesheet_25
-  - first:
-      213: 8718444981895989051
-    second: Thoughtbubble_02_spritesheet_26
-  - first:
-      213: -858492002581672193
-    second: Thoughtbubble_02_spritesheet_27
-  - first:
-      213: 7838118054542529791
-    second: Thoughtbubble_02_spritesheet_28
+      213: -4927188453973069427
+    second: Sunnyweather_spritesheet_7
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -184,13 +121,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Thoughtbubble_02_spritesheet_0
+      name: Sunnyweather_spritesheet_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 871
-        height: 721
+        width: 826
+        height: 853
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -199,20 +136,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 4e0d1779f46ab5fd0800000000000000
-      internalID: -2352103519597506332
+      spriteID: 0af2faa35d2f0aa50800000000000000
+      internalID: 6530486457313734560
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Thoughtbubble_02_spritesheet_1
+      name: Sunnyweather_spritesheet_1
       rect:
         serializedVersion: 2
-        x: 871
+        x: 826
         y: 0
-        width: 871
-        height: 721
+        width: 826
+        height: 853
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -221,20 +158,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: e595a112ee224d650800000000000000
-      internalID: 6256664188477397342
+      spriteID: 39c8a32eebe53c950800000000000000
+      internalID: 6468117663766449299
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Thoughtbubble_02_spritesheet_2
+      name: Sunnyweather_spritesheet_2
       rect:
         serializedVersion: 2
-        x: 1742
+        x: 1652
         y: 0
-        width: 871
-        height: 721
+        width: 826
+        height: 853
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -243,20 +180,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 5fc703efdbb62d2a0800000000000000
-      internalID: -6714185630698406667
+      spriteID: 283ff4fe971e6c550800000000000000
+      internalID: 6180875452434871170
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Thoughtbubble_02_spritesheet_3
+      name: Sunnyweather_spritesheet_3
       rect:
         serializedVersion: 2
-        x: 2613
+        x: 2478
         y: 0
-        width: 871
-        height: 721
+        width: 826
+        height: 853
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -265,20 +202,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 27b2e726fac0ae5a0800000000000000
-      internalID: -6491361965489902734
+      spriteID: efffe7ab5d1e19a90800000000000000
+      internalID: -7308812412172435458
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Thoughtbubble_02_spritesheet_4
+      name: Sunnyweather_spritesheet_4
       rect:
         serializedVersion: 2
-        x: 3484
+        x: 3304
         y: 0
-        width: 871
-        height: 721
+        width: 826
+        height: 853
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -287,8 +224,74 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: b700433c11f7f9980800000000000000
-      internalID: -8529959454950293381
+      spriteID: ac1c5fdc464b6e460800000000000000
+      internalID: 7270696993481408970
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sunnyweather_spritesheet_5
+      rect:
+        serializedVersion: 2
+        x: 4130
+        y: 0
+        width: 826
+        height: 853
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bd62a801927a017b0800000000000000
+      internalID: -5255516970328381733
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sunnyweather_spritesheet_6
+      rect:
+        serializedVersion: 2
+        x: 4956
+        y: 0
+        width: 826
+        height: 853
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0741d709dbbec5cf0800000000000000
+      internalID: -262075478888868752
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sunnyweather_spritesheet_7
+      rect:
+        serializedVersion: 2
+        x: 5782
+        y: 0
+        width: 826
+        height: 853
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d81778bd43c1f9bb0800000000000000
+      internalID: -4927188453973069427
       vertices: []
       indices: 
       edges: []
@@ -297,7 +300,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: a063f9c2355c00e47bd9672f95ad51dd
+    spriteID: 3b46c55ebc8f64141a049577e585cf2d
     internalID: 0
     vertices: []
     indices: 
@@ -307,13 +310,16 @@ TextureImporter:
     spriteCustomMetadata:
       entries:
       - key: SpriteEditor.SliceSettings
-        value: '{"sliceOnImport":false,"gridCellCount":{"x":5.0,"y":1.0},"gridSpriteSize":{"x":871.0,"y":721.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":2,"keepEmptyRects":false,"isAlternate":false}'
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":8.0,"y":1.0},"gridSpriteSize":{"x":826.0,"y":853.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":2,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
-      Thoughtbubble_02_spritesheet_0: -2352103519597506332
-      Thoughtbubble_02_spritesheet_1: 6256664188477397342
-      Thoughtbubble_02_spritesheet_2: -6714185630698406667
-      Thoughtbubble_02_spritesheet_3: -6491361965489902734
-      Thoughtbubble_02_spritesheet_4: -8529959454950293381
+      Sunnyweather_spritesheet_0: 6530486457313734560
+      Sunnyweather_spritesheet_1: 6468117663766449299
+      Sunnyweather_spritesheet_2: 6180875452434871170
+      Sunnyweather_spritesheet_3: -7308812412172435458
+      Sunnyweather_spritesheet_4: 7270696993481408970
+      Sunnyweather_spritesheet_5: -5255516970328381733
+      Sunnyweather_spritesheet_6: -262075478888868752
+      Sunnyweather_spritesheet_7: -4927188453973069427
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

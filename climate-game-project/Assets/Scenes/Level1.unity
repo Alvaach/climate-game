@@ -1627,7 +1627,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 1
   m_MaskInteraction: 0
-  m_Sprite: {fileID: 21300000, guid: 1d2845fe07d991840a163a11c196c46b, type: 3}
+  m_Sprite: {fileID: 59814685321824636, guid: eaf68123d17aa4546bff55c771755d66, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -1651,6 +1651,7 @@ Transform:
   m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 118861972}
+  - {fileID: 5112491975992271774}
   - {fileID: 1790968333}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1704,7 +1705,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 3.11, y: 3.31}
+    oldSize: {x: 3.03, y: 3.27}
     newSize: {x: 10.12, y: 11.06}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -5447,6 +5448,80 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!1001 &5112491975992271773
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 764147124}
+    m_Modifications:
+    - target: {fileID: 4179897312397359011, guid: 98c42ddfd9de43f43a847b7a7b5f9dbf, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.38004074
+      objectReference: {fileID: 0}
+    - target: {fileID: 4179897312397359011, guid: 98c42ddfd9de43f43a847b7a7b5f9dbf, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.38004074
+      objectReference: {fileID: 0}
+    - target: {fileID: 4179897312397359011, guid: 98c42ddfd9de43f43a847b7a7b5f9dbf, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.38004074
+      objectReference: {fileID: 0}
+    - target: {fileID: 4179897312397359011, guid: 98c42ddfd9de43f43a847b7a7b5f9dbf, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.019999983
+      objectReference: {fileID: 0}
+    - target: {fileID: 4179897312397359011, guid: 98c42ddfd9de43f43a847b7a7b5f9dbf, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.009999991
+      objectReference: {fileID: 0}
+    - target: {fileID: 4179897312397359011, guid: 98c42ddfd9de43f43a847b7a7b5f9dbf, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -3.9801488
+      objectReference: {fileID: 0}
+    - target: {fileID: 4179897312397359011, guid: 98c42ddfd9de43f43a847b7a7b5f9dbf, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4179897312397359011, guid: 98c42ddfd9de43f43a847b7a7b5f9dbf, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4179897312397359011, guid: 98c42ddfd9de43f43a847b7a7b5f9dbf, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4179897312397359011, guid: 98c42ddfd9de43f43a847b7a7b5f9dbf, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4179897312397359011, guid: 98c42ddfd9de43f43a847b7a7b5f9dbf, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4179897312397359011, guid: 98c42ddfd9de43f43a847b7a7b5f9dbf, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4179897312397359011, guid: 98c42ddfd9de43f43a847b7a7b5f9dbf, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8092205462435338053, guid: 98c42ddfd9de43f43a847b7a7b5f9dbf, type: 3}
+      propertyPath: m_Name
+      value: Rainy_weather
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 98c42ddfd9de43f43a847b7a7b5f9dbf, type: 3}
+--- !u!4 &5112491975992271774 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4179897312397359011, guid: 98c42ddfd9de43f43a847b7a7b5f9dbf, type: 3}
+  m_PrefabInstance: {fileID: 5112491975992271773}
+  m_PrefabAsset: {fileID: 0}
 --- !u!114 &5844650490834488001
 MonoBehaviour:
   m_ObjectHideFlags: 0
