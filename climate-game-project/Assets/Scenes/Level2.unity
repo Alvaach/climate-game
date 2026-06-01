@@ -2172,8 +2172,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 6.1251197, y: 7.8251624, z: 0.2}
-  m_Center: {x: 0.0569432, y: 2.6193864, z: 0}
+  m_Size: {x: 3.452105, y: 4.9690695, z: 0.2}
+  m_Center: {x: 0.038631517, y: 1.5941201, z: 0}
 --- !u!1 &998231000
 GameObject:
   m_ObjectHideFlags: 0
@@ -4658,29 +4658,33 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 433690417678304996, guid: 1f756d8542719c045b2240ed47a519f1, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 1227147473622502452, guid: 2f9f65c38cbaeb347ac170468f7c3729, type: 3}
     - target: {fileID: 2026110651148238776, guid: 1f756d8542719c045b2240ed47a519f1, type: 3}
       propertyPath: m_Name
       value: Fridge-1
       objectReference: {fileID: 0}
     - target: {fileID: 4283140540573174706, guid: 1f756d8542719c045b2240ed47a519f1, type: 3}
       propertyPath: m_LocalScale.x
-      value: 0.32
+      value: 0.515968
       objectReference: {fileID: 0}
     - target: {fileID: 4283140540573174706, guid: 1f756d8542719c045b2240ed47a519f1, type: 3}
       propertyPath: m_LocalScale.y
-      value: 0.32
+      value: 0.515968
       objectReference: {fileID: 0}
     - target: {fileID: 4283140540573174706, guid: 1f756d8542719c045b2240ed47a519f1, type: 3}
       propertyPath: m_LocalScale.z
-      value: 0.32
+      value: 0.515968
       objectReference: {fileID: 0}
     - target: {fileID: 4283140540573174706, guid: 1f756d8542719c045b2240ed47a519f1, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 8.04
+      value: 8.08
       objectReference: {fileID: 0}
     - target: {fileID: 4283140540573174706, guid: 1f756d8542719c045b2240ed47a519f1, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.79
+      value: -0.774
       objectReference: {fileID: 0}
     - target: {fileID: 4283140540573174706, guid: 1f756d8542719c045b2240ed47a519f1, type: 3}
       propertyPath: m_LocalPosition.z
