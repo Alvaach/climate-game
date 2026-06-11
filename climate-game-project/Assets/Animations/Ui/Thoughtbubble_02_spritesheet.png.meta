@@ -1,0 +1,321 @@
+fileFormatVersion: 2
+guid: dfc98c85dbd6fd0489ed32c9f00765b4
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -2352103519597506332
+    second: Thoughtbubble_02_spritesheet_0
+  - first:
+      213: 6256664188477397342
+    second: Thoughtbubble_02_spritesheet_1
+  - first:
+      213: -6714185630698406667
+    second: Thoughtbubble_02_spritesheet_2
+  - first:
+      213: -6491361965489902734
+    second: Thoughtbubble_02_spritesheet_3
+  - first:
+      213: -8529959454950293381
+    second: Thoughtbubble_02_spritesheet_4
+  - first:
+      213: -2101143504183502213
+    second: Thoughtbubble_02_spritesheet_5
+  - first:
+      213: -2442578407601242266
+    second: Thoughtbubble_02_spritesheet_6
+  - first:
+      213: 4780662408561750013
+    second: Thoughtbubble_02_spritesheet_7
+  - first:
+      213: -5931295024594722969
+    second: Thoughtbubble_02_spritesheet_8
+  - first:
+      213: -2563560180670688760
+    second: Thoughtbubble_02_spritesheet_9
+  - first:
+      213: 4212319420455044861
+    second: Thoughtbubble_02_spritesheet_10
+  - first:
+      213: -2824802835693462211
+    second: Thoughtbubble_02_spritesheet_11
+  - first:
+      213: 1522418581237280506
+    second: Thoughtbubble_02_spritesheet_12
+  - first:
+      213: -7234985055961599525
+    second: Thoughtbubble_02_spritesheet_13
+  - first:
+      213: -523169291794936367
+    second: Thoughtbubble_02_spritesheet_14
+  - first:
+      213: -7072641667665717727
+    second: Thoughtbubble_02_spritesheet_15
+  - first:
+      213: -5075064953972093655
+    second: Thoughtbubble_02_spritesheet_16
+  - first:
+      213: -7788056974116916080
+    second: Thoughtbubble_02_spritesheet_17
+  - first:
+      213: -148060042523720340
+    second: Thoughtbubble_02_spritesheet_18
+  - first:
+      213: -6322881254110015704
+    second: Thoughtbubble_02_spritesheet_19
+  - first:
+      213: -5363351694220822392
+    second: Thoughtbubble_02_spritesheet_20
+  - first:
+      213: -7242482448875112695
+    second: Thoughtbubble_02_spritesheet_21
+  - first:
+      213: -8670554651082080111
+    second: Thoughtbubble_02_spritesheet_22
+  - first:
+      213: -3913906271694453300
+    second: Thoughtbubble_02_spritesheet_23
+  - first:
+      213: 527173070673210688
+    second: Thoughtbubble_02_spritesheet_24
+  - first:
+      213: 3028364759782607551
+    second: Thoughtbubble_02_spritesheet_25
+  - first:
+      213: 8718444981895989051
+    second: Thoughtbubble_02_spritesheet_26
+  - first:
+      213: -858492002581672193
+    second: Thoughtbubble_02_spritesheet_27
+  - first:
+      213: 7838118054542529791
+    second: Thoughtbubble_02_spritesheet_28
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Thoughtbubble_02_spritesheet_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 871
+        height: 721
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4e0d1779f46ab5fd0800000000000000
+      internalID: -2352103519597506332
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Thoughtbubble_02_spritesheet_1
+      rect:
+        serializedVersion: 2
+        x: 871
+        y: 0
+        width: 871
+        height: 721
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e595a112ee224d650800000000000000
+      internalID: 6256664188477397342
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Thoughtbubble_02_spritesheet_2
+      rect:
+        serializedVersion: 2
+        x: 1742
+        y: 0
+        width: 871
+        height: 721
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5fc703efdbb62d2a0800000000000000
+      internalID: -6714185630698406667
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Thoughtbubble_02_spritesheet_3
+      rect:
+        serializedVersion: 2
+        x: 2613
+        y: 0
+        width: 871
+        height: 721
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 27b2e726fac0ae5a0800000000000000
+      internalID: -6491361965489902734
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Thoughtbubble_02_spritesheet_4
+      rect:
+        serializedVersion: 2
+        x: 3484
+        y: 0
+        width: 871
+        height: 721
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b700433c11f7f9980800000000000000
+      internalID: -8529959454950293381
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: a063f9c2355c00e47bd9672f95ad51dd
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":5.0,"y":1.0},"gridSpriteSize":{"x":871.0,"y":721.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":2,"keepEmptyRects":false,"isAlternate":false}'
+    nameFileIdTable:
+      Thoughtbubble_02_spritesheet_0: -2352103519597506332
+      Thoughtbubble_02_spritesheet_1: 6256664188477397342
+      Thoughtbubble_02_spritesheet_2: -6714185630698406667
+      Thoughtbubble_02_spritesheet_3: -6491361965489902734
+      Thoughtbubble_02_spritesheet_4: -8529959454950293381
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
