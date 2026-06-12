@@ -57,4 +57,24 @@ public class PlayerStats : MonoBehaviour
         }
         statsBoxCanvas.alpha = 1f;
     }
+
+    public void FadeOutStatsBox()
+    {
+        if (statsBoxCanvas != null && statsBoxCanvas.gameObject.activeSelf)
+            StartCoroutine(FadeOutStatsBoxCoroutine());
+    }
+
+    private IEnumerator FadeOutStatsBoxCoroutine()
+    {
+        float elapsed = 0f;
+        float startAlpha = statsBoxCanvas.alpha;
+        while (elapsed < statsBoxFadeDuration)
+        {
+            elapsed += Time.deltaTime;
+            statsBoxCanvas.alpha = Mathf.Lerp(startAlpha, 0f, elapsed / statsBoxFadeDuration);
+            yield return null;
+        }
+        statsBoxCanvas.alpha = 0f;
+        statsBoxCanvas.gameObject.SetActive(false);
+    }
 }

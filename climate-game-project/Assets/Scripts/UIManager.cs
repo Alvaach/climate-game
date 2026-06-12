@@ -2,6 +2,7 @@ using System.Collections;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.InputSystem;
+using UnityEngine.UI;
 
 public class UIManager : MonoBehaviour
 {
@@ -136,10 +137,25 @@ public class UIManager : MonoBehaviour
     // Add to decision-bbuttons + set positive/negative score
     public void MakeDecision(int scoreChange)
     {
+        DisableDecisionButtons();
         ShowOptionPreviews();
         PlayerStats.Instance.AddEnvironmentScore(scoreChange);
         PathTracker.Instance?.SpawnNext();
         NextScene();
+    }
+
+    private void DisableDecisionButtons()
+    {
+        DisableButton(decisionButton1);
+        DisableButton(decisionButton2);
+        DisableButton(decisionButton3);
+    }
+
+    private void DisableButton(GameObject btn)
+    {
+        if (btn == null) return;
+        if (btn.TryGetComponent<Button>(out var b))
+            b.interactable = false;
     }
 
     private void ShowOptionPreviews()

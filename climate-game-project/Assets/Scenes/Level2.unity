@@ -627,7 +627,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &242952011
 RectTransform:
   m_ObjectHideFlags: 0
@@ -670,8 +670,8 @@ MonoBehaviour:
   m_Transition: 1
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
-    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
-    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+    m_HighlightedColor: {r: 0.72156864, g: 0.61960787, b: 0.81960785, a: 1}
+    m_PressedColor: {r: 0.5686275, g: 0.42745098, b: 0.69803923, a: 1}
     m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
     m_ColorMultiplier: 1
@@ -5110,11 +5110,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3646441191045957926, guid: 8d433e0ad6390e84ab093ef3b8018e19, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -5.63
+      value: -6.03
       objectReference: {fileID: 0}
     - target: {fileID: 3646441191045957926, guid: 8d433e0ad6390e84ab093ef3b8018e19, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.36
+      value: -0.44
       objectReference: {fileID: 0}
     - target: {fileID: 3646441191045957926, guid: 8d433e0ad6390e84ab093ef3b8018e19, type: 3}
       propertyPath: m_LocalPosition.z
