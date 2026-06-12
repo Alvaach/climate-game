@@ -1873,6 +1873,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 66434012995745748, guid: d272b6f57a32b6449abc744dd56cd81a, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 402720907675942521, guid: d272b6f57a32b6449abc744dd56cd81a, type: 3}
       propertyPath: m_IsActive
       value: 0
@@ -1880,6 +1884,10 @@ PrefabInstance:
     - target: {fileID: 1876365694075783628, guid: d272b6f57a32b6449abc744dd56cd81a, type: 3}
       propertyPath: m_Name
       value: GameManager
+      objectReference: {fileID: 0}
+    - target: {fileID: 5359816740399046185, guid: d272b6f57a32b6449abc744dd56cd81a, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7475974616678800686, guid: d272b6f57a32b6449abc744dd56cd81a, type: 3}
       propertyPath: m_LocalPosition.x

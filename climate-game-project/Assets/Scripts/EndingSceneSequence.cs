@@ -26,6 +26,9 @@ public class EndingSceneSequence : MonoBehaviour
 
     void Start()
     {
+        GameObject player = GameObject.FindWithTag("Player");
+        if (player != null) player.SetActive(false);
+
         preOutcomeObject.SetActive(false);
         outcomeA.SetActive(false);
         outcomeB.SetActive(false);
