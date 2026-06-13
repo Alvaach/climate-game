@@ -187,8 +187,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Stick with your habits, you\xB4ve decided to prioritize plant based options
-    and intend to see it through. Buy tofu and try out a new recipe!"
+  m_text: "Stick with your habits, \nyou\xB4ve decided to prioritize plant based
+    options. \nBuy tofu and try out \na new recipe!"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 9b7528e0c1226974991d1ed873a501db, type: 2}
   m_sharedMaterial: {fileID: 4418553693185215687, guid: 9b7528e0c1226974991d1ed873a501db, type: 2}
@@ -1149,7 +1149,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &419981856
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1751,7 +1751,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &678685826
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1901,7 +1901,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -2.4149933, y: 7.6500015}
+  m_AnchoredPosition: {x: -2.4149933, y: 9}
   m_SizeDelta: {x: -4.83, y: -15.3}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &683065890
@@ -1924,9 +1924,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: ' Feeling your stomach rumbling, the cravings for a nice steak is immediate.
-    With your mood worsening, don''t you deserve to treat yourself a little? Besides,
-    what is one more steak gonna do for the environment?'
+  m_text: "Feeling your stomach rumble,  craving a nice steak... Don't you deserve
+    to treat yourself a little? \nBesides, what is one more steak gonna do for the
+    environment?"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 9b7528e0c1226974991d1ed873a501db, type: 2}
   m_sharedMaterial: {fileID: 4418553693185215687, guid: 9b7528e0c1226974991d1ed873a501db, type: 2}
@@ -2192,7 +2192,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &998231001
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2325,7 +2325,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &1106484374
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2346,7 +2346,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 5b85f862a16b93347bb22d68a12381a8, type: 3}
+  m_Sprite: {fileID: 21300000, guid: cd0aec8e6903089468ad87e549b1969c, type: 3}
   m_Type: 0
   m_PreserveAspect: 1
   m_FillCenter: 1
@@ -2373,7 +2373,7 @@ RectTransform:
   m_GameObject: {fileID: 1106484373}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.5452406, y: 0.5452406, z: 0.5452406}
+  m_LocalScale: {x: 0.47718313, y: 0.47718313, z: 0.47718313}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1109750661}
@@ -2381,7 +2381,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 245}
+  m_AnchoredPosition: {x: 0, y: 301}
   m_SizeDelta: {x: 1500, y: 1125}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1109750660
@@ -2411,14 +2411,14 @@ RectTransform:
   m_GameObject: {fileID: 1109750660}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 1.1924223, y: 1.1924223, z: 1.1924223}
   m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 1106484376}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: -10}
   m_SizeDelta: {x: 916.8, y: 283.7}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1109750662
@@ -2441,8 +2441,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "The switch to a more plant based diet was easy enough - to begin with.
-    Now, you're heading out for the weekly shop and you don\xB4t have a plan. Do
+  m_text: "The switch to a more \nplant based diet was easy \nenough to begin with.
+    \nNow, you're heading out for the weekly shop and you don\xB4t have a plan. Do
     you\u2026 "
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 4c607bc552d27574281ceda981cb73ea, type: 2}
@@ -2717,9 +2717,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: You stop in your tracks, realizing you have plenty of food in the fridge
-    that needs to be used before it goes bad. Step back into the apartment, and cook
-    a delicious meal without food waste!
+  m_text: "You stop in your tracks, \nrealizing you have plenty of food in the fridge
+    that needs to be used before it goes bad. \nCook a delicious meal without food
+    waste!"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 9b7528e0c1226974991d1ed873a501db, type: 2}
   m_sharedMaterial: {fileID: 4418553693185215687, guid: 9b7528e0c1226974991d1ed873a501db, type: 2}
@@ -2887,7 +2887,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1551474788
 RectTransform:
   m_ObjectHideFlags: 0
@@ -3792,7 +3792,7 @@ PrefabInstance:
     - target: {fileID: 2110459575239237580, guid: a86e4ae3e161e7e4fba08808e40a886a, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: 4c368603535a3d644b2af5ba71110642, type: 3}
+      objectReference: {fileID: 21300000, guid: 5d9a797f337ea214ba8d0471e783832d, type: 3}
     - target: {fileID: 2148397352713773377, guid: a86e4ae3e161e7e4fba08808e40a886a, type: 3}
       propertyPath: m_SizeDelta.x
       value: 980
@@ -4003,11 +4003,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4161538967522672125, guid: a86e4ae3e161e7e4fba08808e40a886a, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 387
+      value: 418
       objectReference: {fileID: 0}
     - target: {fileID: 4161538967522672125, guid: a86e4ae3e161e7e4fba08808e40a886a, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -127
+      value: -84
       objectReference: {fileID: 0}
     - target: {fileID: 4646141506797837489, guid: a86e4ae3e161e7e4fba08808e40a886a, type: 3}
       propertyPath: m_Name
@@ -4116,7 +4116,7 @@ PrefabInstance:
     - target: {fileID: 5226156605966183995, guid: a86e4ae3e161e7e4fba08808e40a886a, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: 4c368603535a3d644b2af5ba71110642, type: 3}
+      objectReference: {fileID: 21300000, guid: 5d9a797f337ea214ba8d0471e783832d, type: 3}
     - target: {fileID: 5255491163162378596, guid: a86e4ae3e161e7e4fba08808e40a886a, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5

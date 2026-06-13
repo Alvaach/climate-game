@@ -398,7 +398,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &114684926
 RectTransform:
   m_ObjectHideFlags: 0
@@ -408,7 +408,7 @@ RectTransform:
   m_GameObject: {fileID: 114684925}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.54539996, y: 0.54539996, z: 0.54539996}
+  m_LocalScale: {x: 0.4677658, y: 0.4677658, z: 0.4677658}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1720660263}
@@ -440,7 +440,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 5b85f862a16b93347bb22d68a12381a8, type: 3}
+  m_Sprite: {fileID: 21300000, guid: cd0aec8e6903089468ad87e549b1969c, type: 3}
   m_Type: 0
   m_PreserveAspect: 1
   m_FillCenter: 1
@@ -1168,7 +1168,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &590374857
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1872,7 +1872,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Recycle more plastic containers
+  m_text: Recycle more plastic containers.
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 9b7528e0c1226974991d1ed873a501db, type: 2}
   m_sharedMaterial: {fileID: 4418553693185215687, guid: 9b7528e0c1226974991d1ed873a501db, type: 2}
@@ -2214,7 +2214,7 @@ PrefabInstance:
     - target: {fileID: 2110459575239237580, guid: a86e4ae3e161e7e4fba08808e40a886a, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: 4c368603535a3d644b2af5ba71110642, type: 3}
+      objectReference: {fileID: 21300000, guid: 5d9a797f337ea214ba8d0471e783832d, type: 3}
     - target: {fileID: 2148397352713773377, guid: a86e4ae3e161e7e4fba08808e40a886a, type: 3}
       propertyPath: m_SizeDelta.x
       value: 980
@@ -2273,7 +2273,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4161538967522672125, guid: a86e4ae3e161e7e4fba08808e40a886a, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 459
+      value: 410
       objectReference: {fileID: 0}
     - target: {fileID: 4161538967522672125, guid: a86e4ae3e161e7e4fba08808e40a886a, type: 3}
       propertyPath: m_AnchoredPosition.y
@@ -2298,7 +2298,7 @@ PrefabInstance:
     - target: {fileID: 5226156605966183995, guid: a86e4ae3e161e7e4fba08808e40a886a, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: 4c368603535a3d644b2af5ba71110642, type: 3}
+      objectReference: {fileID: 21300000, guid: 5d9a797f337ea214ba8d0471e783832d, type: 3}
     - target: {fileID: 5849064200586338960, guid: a86e4ae3e161e7e4fba08808e40a886a, type: 3}
       propertyPath: m_AnchoredPosition.x
       value: -0.2999878
@@ -2880,7 +2880,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1010319777
 RectTransform:
   m_ObjectHideFlags: 0
@@ -3274,7 +3274,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 4c368603535a3d644b2af5ba71110642, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 5d9a797f337ea214ba8d0471e783832d, type: 3}
   m_Type: 0
   m_PreserveAspect: 1
   m_FillCenter: 1
@@ -3823,7 +3823,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Buy more second hand items and clothing
+  m_text: Buy more second hand items and clothing.
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 9b7528e0c1226974991d1ed873a501db, type: 2}
   m_sharedMaterial: {fileID: 4418553693185215687, guid: 9b7528e0c1226974991d1ed873a501db, type: 2}
@@ -4799,7 +4799,7 @@ RectTransform:
   m_GameObject: {fileID: 1720660262}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 1.2900089, y: 1.2900089, z: 1.2900089}
   m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 114684926}
@@ -4829,9 +4829,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Which out of these options would lower your total CO  emission long term?
-
-'
+  m_text: "Which out of these options \nwould lower your total CO  emission long
+    term?\n"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 4c607bc552d27574281ceda981cb73ea, type: 2}
   m_sharedMaterial: {fileID: -2763390048462947370, guid: 4c607bc552d27574281ceda981cb73ea, type: 2}
@@ -5108,7 +5107,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Invest in companies prioritizing using recyclable materials in production
+  m_text: "Invest in \ncompanies prioritizing using recyclable materials in production."
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 9b7528e0c1226974991d1ed873a501db, type: 2}
   m_sharedMaterial: {fileID: 4418553693185215687, guid: 9b7528e0c1226974991d1ed873a501db, type: 2}
@@ -5579,7 +5578,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1977934107
 RectTransform:
   m_ObjectHideFlags: 0
