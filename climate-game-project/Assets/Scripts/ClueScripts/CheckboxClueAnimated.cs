@@ -23,6 +23,8 @@ public class CheckboxClueAnimated : ClueBase
     public float preAnimDelay = 1f;
     [Tooltip("Seconds to wait after animation finishes before showing close button")]
     public float postAnimDelay = 2f;
+    [Tooltip("Seconds after animation starts before midAnimObject activates")]
+    public float midAnimDelay = 1f;
 
     void Awake()
     {
@@ -65,11 +67,11 @@ public class CheckboxClueAnimated : ClueBase
 
         float clipLength = animTarget.GetCurrentAnimatorStateInfo(0).length;
 
-        yield return new WaitForSeconds(clipLength * 0.5f);
+        yield return new WaitForSeconds(midAnimDelay);
         if (midAnimObject != null)
             midAnimObject.SetActive(true);
 
-        yield return new WaitForSeconds(clipLength * 0.5f);
+        yield return new WaitForSeconds(clipLength - midAnimDelay);
 
         yield return new WaitForSeconds(postAnimDelay);
 

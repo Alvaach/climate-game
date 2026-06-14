@@ -1,4 +1,3 @@
-using System.Collections;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.InputSystem;
@@ -20,7 +19,8 @@ public class InteractScript : MonoBehaviour
     [Header("???? to replace with clue")]
     public TMP_Text targetText;
     public string newText;
-    public float fadeDuration = 0.5f;
+    public Animator textAnimator;
+    public string revealAnimationName = "TextReveal";
 
     private bool playerInRange = false;
     private bool clueIsOpen = false;
@@ -108,7 +108,7 @@ public class InteractScript : MonoBehaviour
         if (!textAlreadyChanged && targetText != null && !string.IsNullOrEmpty(newText))
         {
             textAlreadyChanged = true;
-            StartCoroutine(FadeTextSwap());
+            SwapTextWithAnimation();
         }
 
         clueIsOpen = false;
@@ -116,29 +116,18 @@ public class InteractScript : MonoBehaviour
         activeClue = null;
     }
 
-    IEnumerator FadeTextSwap()
+    void SwapTextWithAnimation()
     {
         Color c = targetText.color;
-        for (float t = 0; t < fadeDuration; t += Time.deltaTime)
-        {
-            c.a = 1f - t / fadeDuration;
-            targetText.color = c;
-            yield return null;
-        }
-
-        c.a = 0f;
+        c.a = 1f;
         targetText.color = c;
         targetText.text = newText;
 
-        for (float t = 0; t < fadeDuration; t += Time.deltaTime)
+        if (textAnimator != null && !string.IsNullOrEmpty(revealAnimationName))
         {
-            c.a = t / fadeDuration;
-            targetText.color = c;
-            yield return null;
+            textAnimator.Rebind();
+            textAnimator.Play(revealAnimationName, 0, 0f);
         }
-
-        c.a = 1f;
-        targetText.color = c;
     }
 
     void OnTriggerEnter2D(Collider2D other)
