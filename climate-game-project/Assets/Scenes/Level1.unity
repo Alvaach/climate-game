@@ -124,7 +124,7 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 3904647685220739106, guid: a86e4ae3e161e7e4fba08808e40a886a, type: 3}
   m_PrefabInstance: {fileID: 789862957}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
+  m_GameObject: {fileID: 789862961}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
@@ -315,7 +315,8 @@ MonoBehaviour:
   playerTag: Player
   targetText: {fileID: 1462228211}
   newText: Pondering about the benefits of sunny skies
-  fadeDuration: 0.5
+  textAnimator: {fileID: 1462228212}
+  revealAnimationName: TextReveal
 --- !u!61 &118861975
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -656,6 +657,28 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!95 &461033270
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 789862961}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 5ab754d47d7e75f4e9381d93f3d81dcb, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1001 &574337554
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -735,7 +758,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &590374857
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1067,6 +1090,10 @@ PrefabInstance:
       propertyPath: closeButton
       value: 
       objectReference: {fileID: 789862963}
+    - target: {fileID: 3185961394995840796, guid: 8d433e0ad6390e84ab093ef3b8018e19, type: 3}
+      propertyPath: textAnimator
+      value: 
+      objectReference: {fileID: 461033270}
     - target: {fileID: 3185961394995840796, guid: 8d433e0ad6390e84ab093ef3b8018e19, type: 3}
       propertyPath: interactPrompt
       value: 
@@ -1760,6 +1787,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 6310322310872481418, guid: a86e4ae3e161e7e4fba08808e40a886a, type: 3}
+      propertyPath: m_ConstrainProportionsScale
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6333528008732209883, guid: a86e4ae3e161e7e4fba08808e40a886a, type: 3}
       propertyPath: m_IsActive
       value: 1
@@ -2051,7 +2082,21 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 8988672335240603379, guid: a86e4ae3e161e7e4fba08808e40a886a, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1024881167}
+    - targetCorrespondingSourceObject: {fileID: 4404010674755331682, guid: a86e4ae3e161e7e4fba08808e40a886a, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1908591059}
+    - targetCorrespondingSourceObject: {fileID: 4091134208517565426, guid: a86e4ae3e161e7e4fba08808e40a886a, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 461033270}
+    - targetCorrespondingSourceObject: {fileID: 2023372723714269820, guid: a86e4ae3e161e7e4fba08808e40a886a, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1462228212}
   m_SourcePrefab: {fileID: 100100000, guid: a86e4ae3e161e7e4fba08808e40a886a, type: 3}
+--- !u!1 &789862958 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2023372723714269820, guid: a86e4ae3e161e7e4fba08808e40a886a, type: 3}
+  m_PrefabInstance: {fileID: 789862957}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &789862959 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 8988672335240603379, guid: a86e4ae3e161e7e4fba08808e40a886a, type: 3}
@@ -2060,6 +2105,11 @@ GameObject:
 --- !u!1 &789862960 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6002894458512418441, guid: a86e4ae3e161e7e4fba08808e40a886a, type: 3}
+  m_PrefabInstance: {fileID: 789862957}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &789862961 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4091134208517565426, guid: a86e4ae3e161e7e4fba08808e40a886a, type: 3}
   m_PrefabInstance: {fileID: 789862957}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &789862962 stripped
@@ -2086,6 +2136,11 @@ GameObject:
 --- !u!1 &789862965 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6333528008732209883, guid: a86e4ae3e161e7e4fba08808e40a886a, type: 3}
+  m_PrefabInstance: {fileID: 789862957}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &789862966 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4404010674755331682, guid: a86e4ae3e161e7e4fba08808e40a886a, type: 3}
   m_PrefabInstance: {fileID: 789862957}
   m_PrefabAsset: {fileID: 0}
 --- !u!224 &789862969 stripped
@@ -2591,7 +2646,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1010319777
 RectTransform:
   m_ObjectHideFlags: 0
@@ -3238,7 +3293,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1329689049
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3721,6 +3776,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 789862963}
     - target: {fileID: 7204986445972012875, guid: 1f756d8542719c045b2240ed47a519f1, type: 3}
+      propertyPath: textAnimator
+      value: 
+      objectReference: {fileID: 1908591059}
+    - target: {fileID: 7204986445972012875, guid: 1f756d8542719c045b2240ed47a519f1, type: 3}
       propertyPath: interactPrompt
       value: 
       objectReference: {fileID: 789862965}
@@ -3957,12 +4016,34 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 8033465797070601635, guid: a86e4ae3e161e7e4fba08808e40a886a, type: 3}
   m_PrefabInstance: {fileID: 789862957}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
+  m_GameObject: {fileID: 789862958}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Unity.TextMeshPro::TMPro.TextMeshProUGUI
+--- !u!95 &1462228212
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 789862958}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 5ab754d47d7e75f4e9381d93f3d81dcb, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &1473486015
 GameObject:
   m_ObjectHideFlags: 0
@@ -4685,12 +4766,34 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 4448204057114902871, guid: a86e4ae3e161e7e4fba08808e40a886a, type: 3}
   m_PrefabInstance: {fileID: 789862957}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
+  m_GameObject: {fileID: 789862966}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Unity.TextMeshPro::TMPro.TextMeshProUGUI
+--- !u!95 &1908591059
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 789862966}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 5ab754d47d7e75f4e9381d93f3d81dcb, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &1927334779
 GameObject:
   m_ObjectHideFlags: 0
@@ -4851,7 +4954,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1977934107
 RectTransform:
   m_ObjectHideFlags: 0
@@ -5422,7 +5525,8 @@ MonoBehaviour:
   playerTag: Player
   targetText: {fileID: 0}
   newText: 
-  fadeDuration: 0
+  textAnimator: {fileID: 0}
+  revealAnimationName: TextReveal
 --- !u!1 &6285636749542321473
 GameObject:
   m_ObjectHideFlags: 0
