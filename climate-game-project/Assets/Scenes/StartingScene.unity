@@ -731,7 +731,7 @@ MonoBehaviour:
     m_HighlightedColor: {r: 0.94509804, g: 0.88235295, b: 1, a: 1}
     m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
     m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
-    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+    m_DisabledColor: {r: 0.72156864, g: 0.6156863, b: 0.8196079, a: 0.5019608}
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
   m_SpriteState:
@@ -1355,7 +1355,7 @@ MonoBehaviour:
     m_HighlightedColor: {r: 1, g: 0.90588236, b: 0.84313726, a: 1}
     m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
     m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
-    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+    m_DisabledColor: {r: 0.96470594, g: 0.5372549, b: 0.26666668, a: 0.5019608}
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
   m_SpriteState:
@@ -3074,17 +3074,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1796743801}
   m_CullTransparentMesh: 1
---- !u!114 &1884757589 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 4269127574951236075, guid: d272b6f57a32b6449abc744dd56cd81a, type: 3}
-  m_PrefabInstance: {fileID: 1058292565}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 845d98385edad1343ad35a9337ae5ce3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::PlayerStats
 --- !u!224 &1908956670 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 3421091041901118373, guid: 975a154d33cf2e641be30764da260cf6, type: 3}
@@ -3463,7 +3452,15 @@ PrefabInstance:
     - target: {fileID: 5848173709714068007, guid: 907fd3f4c632e3e4f9ace7f46b28b85d, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
       value: 
-      objectReference: {fileID: 1884757589}
+      objectReference: {fileID: 1264066661}
+    - target: {fileID: 5848173709714068007, guid: 907fd3f4c632e3e4f9ace7f46b28b85d, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: UnlockStatsBox
+      objectReference: {fileID: 0}
+    - target: {fileID: 5848173709714068007, guid: 907fd3f4c632e3e4f9ace7f46b28b85d, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
+      value: UIManager, Assembly-CSharp
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -3529,6 +3526,14 @@ PrefabInstance:
       propertyPath: nextCanvas
       value: 
       objectReference: {fileID: 1078222726}
+    - target: {fileID: 4865701153945382676, guid: ce2ca3d12e96f584ab9d7005bfcde841, type: 3}
+      propertyPath: pathButtonA
+      value: 
+      objectReference: {fileID: 515226123}
+    - target: {fileID: 4865701153945382676, guid: ce2ca3d12e96f584ab9d7005bfcde841, type: 3}
+      propertyPath: pathButtonB
+      value: 
+      objectReference: {fileID: 278434538}
     - target: {fileID: 4865701153945382676, guid: ce2ca3d12e96f584ab9d7005bfcde841, type: 3}
       propertyPath: creditScreen
       value: 

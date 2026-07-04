@@ -343,7 +343,8 @@ MonoBehaviour:
   playerTag: Player
   targetText: {fileID: 859655547}
   newText: H&M is releasing new collections frequently
-  fadeDuration: 0.5
+  textAnimator: {fileID: 859655548}
+  revealAnimationName: TextReveal
 --- !u!61 &118861975
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -658,7 +659,7 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 4448204057114902871, guid: a86e4ae3e161e7e4fba08808e40a886a, type: 3}
   m_PrefabInstance: {fileID: 789862957}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
+  m_GameObject: {fileID: 789862961}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
@@ -674,7 +675,7 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 3904647685220739106, guid: a86e4ae3e161e7e4fba08808e40a886a, type: 3}
   m_PrefabInstance: {fileID: 789862957}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
+  m_GameObject: {fileID: 789862959}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
@@ -1486,6 +1487,10 @@ PrefabInstance:
       propertyPath: closeButton
       value: 
       objectReference: {fileID: 789862963}
+    - target: {fileID: 3185961394995840796, guid: 8d433e0ad6390e84ab093ef3b8018e19, type: 3}
+      propertyPath: textAnimator
+      value: 
+      objectReference: {fileID: 789862966}
     - target: {fileID: 3185961394995840796, guid: 8d433e0ad6390e84ab093ef3b8018e19, type: 3}
       propertyPath: interactPrompt
       value: 
@@ -2561,11 +2566,35 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 8276687679400745093, guid: a86e4ae3e161e7e4fba08808e40a886a, type: 3}
       insertIndex: 6
       addedObject: {fileID: 588839882}
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 4404010674755331682, guid: a86e4ae3e161e7e4fba08808e40a886a, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 789862966}
+    - targetCorrespondingSourceObject: {fileID: 4091134208517565426, guid: a86e4ae3e161e7e4fba08808e40a886a, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 789862964}
+    - targetCorrespondingSourceObject: {fileID: 2023372723714269820, guid: a86e4ae3e161e7e4fba08808e40a886a, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 859655548}
   m_SourcePrefab: {fileID: 100100000, guid: a86e4ae3e161e7e4fba08808e40a886a, type: 3}
+--- !u!1 &789862958 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2023372723714269820, guid: a86e4ae3e161e7e4fba08808e40a886a, type: 3}
+  m_PrefabInstance: {fileID: 789862957}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &789862959 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4091134208517565426, guid: a86e4ae3e161e7e4fba08808e40a886a, type: 3}
+  m_PrefabInstance: {fileID: 789862957}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &789862960 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6002894458512418441, guid: a86e4ae3e161e7e4fba08808e40a886a, type: 3}
+  m_PrefabInstance: {fileID: 789862957}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &789862961 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4404010674755331682, guid: a86e4ae3e161e7e4fba08808e40a886a, type: 3}
   m_PrefabInstance: {fileID: 789862957}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &789862962 stripped
@@ -2584,11 +2613,55 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
   m_Name: 
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Button
+--- !u!95 &789862964
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 789862959}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 5ab754d47d7e75f4e9381d93f3d81dcb, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &789862965 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6333528008732209883, guid: a86e4ae3e161e7e4fba08808e40a886a, type: 3}
   m_PrefabInstance: {fileID: 789862957}
   m_PrefabAsset: {fileID: 0}
+--- !u!95 &789862966
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 789862961}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 5ab754d47d7e75f4e9381d93f3d81dcb, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &853830476
 GameObject:
   m_ObjectHideFlags: 0
@@ -2733,12 +2806,34 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 8033465797070601635, guid: a86e4ae3e161e7e4fba08808e40a886a, type: 3}
   m_PrefabInstance: {fileID: 789862957}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
+  m_GameObject: {fileID: 789862958}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Unity.TextMeshPro::TMPro.TextMeshProUGUI
+--- !u!95 &859655548
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 789862958}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 5ab754d47d7e75f4e9381d93f3d81dcb, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &880060522
 GameObject:
   m_ObjectHideFlags: 0
@@ -4308,6 +4403,10 @@ PrefabInstance:
       propertyPath: closeButton
       value: 
       objectReference: {fileID: 789862963}
+    - target: {fileID: 7204986445972012875, guid: 1f756d8542719c045b2240ed47a519f1, type: 3}
+      propertyPath: textAnimator
+      value: 
+      objectReference: {fileID: 789862964}
     - target: {fileID: 7204986445972012875, guid: 1f756d8542719c045b2240ed47a519f1, type: 3}
       propertyPath: interactPrompt
       value: 
@@ -5952,7 +6051,8 @@ MonoBehaviour:
   playerTag: Player
   targetText: {fileID: 0}
   newText: 
-  fadeDuration: 0
+  textAnimator: {fileID: 0}
+  revealAnimationName: TextReveal
 --- !u!1 &6285636749542321473
 GameObject:
   m_ObjectHideFlags: 0

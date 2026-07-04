@@ -26,6 +26,14 @@ public class PathTracker : MonoBehaviour
         DontDestroyOnLoad(gameObject);
     }
 
+    public void ResetPath()
+    {
+        _pathAChosen = true;
+        PathChosen = true;
+        _decisionIndex = 0;
+        pathContainer = null;
+    }
+
     public void ChoosePath(bool chooseA)
     {
         _pathAChosen = chooseA;

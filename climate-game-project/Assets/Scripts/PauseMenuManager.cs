@@ -54,11 +54,13 @@ public class PauseMenuManager : MonoBehaviour
         isPaused = false;
         Time.timeScale = 1f;
 
-        GameObject player = GameObject.FindWithTag("Player");
-        if (player != null) player.SetActive(false);
+        if (pauseMenuPanel != null) pauseMenuPanel.SetActive(false);
 
-        if (PlayerStats.Instance != null) Destroy(PlayerStats.Instance.gameObject);
-        if (PathTracker.Instance != null) Destroy(PathTracker.Instance.gameObject);
+        MovementScript[] players = FindObjectsByType<MovementScript>(FindObjectsInactive.Include);
+        if (players.Length > 0) players[0].gameObject.SetActive(false);
+
+        if (PlayerStats.Instance != null) PlayerStats.Instance.ResetStats();
+        if (PathTracker.Instance != null) PathTracker.Instance.ResetPath();
 
         SceneFader fader = FindObjectOfType<SceneFader>();
         if (fader != null)
