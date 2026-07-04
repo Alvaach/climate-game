@@ -11,13 +11,19 @@ public class TestGameManager : MonoBehaviour
 
     void Awake()
     {
-        if (PlayerStats.Instance == null)
+        bool isDirectTest = PlayerStats.Instance == null;
+
+        if (isDirectTest)
             Instantiate(gameManagerPrefab);
 
         if (forceStatsBoxActive)
             PlayerStats.Instance.UnlockStatsBox();
 
-        if (forcePathChosen)
+        // Only force path when launching a level directly in the editor (not from StartingScene)
+        if (forcePathChosen && isDirectTest)
+        {
+            PathTracker.Instance?.ChoosePath(forcedPathIsA);
             PlayerStats.Instance.SpawnStatsIcon(forcedPathIsA);
+        }
     }
 }

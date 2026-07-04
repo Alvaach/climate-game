@@ -119,12 +119,17 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &71399653 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4404010674755331682, guid: a86e4ae3e161e7e4fba08808e40a886a, type: 3}
+  m_PrefabInstance: {fileID: 1199096499757272173}
+  m_PrefabAsset: {fileID: 0}
 --- !u!114 &73368230 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 3904647685220739106, guid: a86e4ae3e161e7e4fba08808e40a886a, type: 3}
   m_PrefabInstance: {fileID: 1199096499757272173}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
+  m_GameObject: {fileID: 1014088875}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
@@ -479,7 +484,7 @@ MonoBehaviour:
   optionAResultPrefab: {fileID: 7577554420620444563, guid: ba7df1abdb646b04e8a7360a376bcdba, type: 3}
   optionBResponsePrefab: {fileID: 7878896160624997942, guid: 8a65416cf0493e640a5d4de8872d1f4d, type: 3}
   optionBResultPrefab: {fileID: 8906166354614874848, guid: 779992d4f7ee18248be9289bd240843c, type: 3}
-  resultDelay: 3
+  resultDelay: 1.5
 --- !u!1001 &242444525
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2308,6 +2313,33 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 998231000}
   m_CullTransparentMesh: 1
+--- !u!1 &1014088875 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4091134208517565426, guid: a86e4ae3e161e7e4fba08808e40a886a, type: 3}
+  m_PrefabInstance: {fileID: 1199096499757272173}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &1014088878
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1014088875}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 5ab754d47d7e75f4e9381d93f3d81dcb, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &1106484373
 GameObject:
   m_ObjectHideFlags: 0
@@ -2654,12 +2686,34 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 4448204057114902871, guid: a86e4ae3e161e7e4fba08808e40a886a, type: 3}
   m_PrefabInstance: {fileID: 1199096499757272173}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
+  m_GameObject: {fileID: 71399653}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Unity.TextMeshPro::TMPro.TextMeshProUGUI
+--- !u!95 &1195907601
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 71399653}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 5ab754d47d7e75f4e9381d93f3d81dcb, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &1212259061
 GameObject:
   m_ObjectHideFlags: 0
@@ -4517,6 +4571,12 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 8988672335240603379, guid: a86e4ae3e161e7e4fba08808e40a886a, type: 3}
       insertIndex: -1
       addedObject: {fileID: 233369042}
+    - targetCorrespondingSourceObject: {fileID: 4404010674755331682, guid: a86e4ae3e161e7e4fba08808e40a886a, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1195907601}
+    - targetCorrespondingSourceObject: {fileID: 4091134208517565426, guid: a86e4ae3e161e7e4fba08808e40a886a, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1014088878}
   m_SourcePrefab: {fileID: 100100000, guid: a86e4ae3e161e7e4fba08808e40a886a, type: 3}
 --- !u!224 &1199096499757272174 stripped
 RectTransform:
@@ -4734,6 +4794,10 @@ PrefabInstance:
       propertyPath: closeButton
       value: 
       objectReference: {fileID: 2027505520}
+    - target: {fileID: 7204986445972012875, guid: 1f756d8542719c045b2240ed47a519f1, type: 3}
+      propertyPath: textAnimator
+      value: 
+      objectReference: {fileID: 1195907601}
     - target: {fileID: 7204986445972012875, guid: 1f756d8542719c045b2240ed47a519f1, type: 3}
       propertyPath: continueObject
       value: 
@@ -5084,6 +5148,10 @@ PrefabInstance:
       propertyPath: closeButton
       value: 
       objectReference: {fileID: 2027505520}
+    - target: {fileID: 3185961394995840796, guid: 8d433e0ad6390e84ab093ef3b8018e19, type: 3}
+      propertyPath: textAnimator
+      value: 
+      objectReference: {fileID: 1014088878}
     - target: {fileID: 3185961394995840796, guid: 8d433e0ad6390e84ab093ef3b8018e19, type: 3}
       propertyPath: continueObject
       value: 

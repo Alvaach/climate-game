@@ -26,6 +26,8 @@ public class UIManager : MonoBehaviour
     [SerializeField] private GameObject decisionButton1;
     [SerializeField] private GameObject decisionButton2;
     [SerializeField] private GameObject decisionButton3;
+    [SerializeField] private GameObject pathButtonA;
+    [SerializeField] private GameObject pathButtonB;
     [SerializeField] private GameObject decisionText;
     [SerializeField] private GameObject creditScreen;
     [SerializeField] private GameObject creditCloseButton;
@@ -90,6 +92,8 @@ public class UIManager : MonoBehaviour
     // Long term decisions
         public void ChoosePathA(int scoreChange)
     {
+        DisableButton(pathButtonA);
+        DisableButton(pathButtonB);
         PathTracker.Instance?.ChoosePath(true);
         PlayerStats.Instance.AddEnvironmentScore(scoreChange);
         PlayerStats.Instance.SpawnStatsIcon(true);
@@ -98,6 +102,8 @@ public class UIManager : MonoBehaviour
 
     public void ChoosePathB(int scoreChange)
     {
+        DisableButton(pathButtonA);
+        DisableButton(pathButtonB);
         PathTracker.Instance?.ChoosePath(false);
         PlayerStats.Instance.AddEnvironmentScore(scoreChange);
         PlayerStats.Instance.SpawnStatsIcon(false);
@@ -177,10 +183,16 @@ public class UIManager : MonoBehaviour
         }
     }
 
+    public void UnlockStatsBox()
+    {
+        if (PlayerStats.Instance != null)
+            PlayerStats.Instance.UnlockStatsBox();
+    }
+
     public void RestartGame()
     {
-        if (PlayerStats.Instance != null) Destroy(PlayerStats.Instance.gameObject);
-        if (PathTracker.Instance != null) Destroy(PathTracker.Instance.gameObject);
+        if (PlayerStats.Instance != null) PlayerStats.Instance.ResetStats();
+        if (PathTracker.Instance != null) PathTracker.Instance.ResetPath();
 
         if (sceneFader != null)
             sceneFader.FadeAndLoad("StartingScene", 1f);

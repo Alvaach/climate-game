@@ -844,6 +844,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerStats
   globalScore: 0
+  playerInactiveScenes:
+  - StartingScene
+  - EndScene
   statsBoxCanvas: {fileID: 7678693396856737198}
   statsBoxFadeDuration: 1.5
   statsIconContainer: {fileID: 1002600167356672612}
@@ -1470,7 +1473,7 @@ GameObject:
   - component: {fileID: 2702866859708735230}
   - component: {fileID: 3835696615060673203}
   m_Layer: 5
-  m_Name: StartGameButton
+  m_Name: MainMenuButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

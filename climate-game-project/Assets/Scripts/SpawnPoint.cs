@@ -4,8 +4,10 @@ public class SpawnPoint : MonoBehaviour
 {
     void Start()
     {
-        GameObject player = GameObject.FindWithTag("Player");
+        GameObject player = FindPlayer();
         if (player == null) return;
+
+        player.SetActive(true);
 
         MovementScript movement = player.GetComponent<MovementScript>();
         if (movement != null) movement.enabled = true;
@@ -20,5 +22,11 @@ public class SpawnPoint : MonoBehaviour
         {
             player.transform.position = transform.position;
         }
+    }
+
+    private static GameObject FindPlayer()
+    {
+        MovementScript[] found = FindObjectsByType<MovementScript>(FindObjectsInactive.Include);
+        return found.Length > 0 ? found[0].gameObject : null;
     }
 }
