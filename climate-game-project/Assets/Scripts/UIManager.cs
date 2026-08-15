@@ -193,6 +193,7 @@ public class UIManager : MonoBehaviour
     {
         if (PlayerStats.Instance != null) PlayerStats.Instance.ResetStats();
         if (PathTracker.Instance != null) PathTracker.Instance.ResetPath();
+        VisualTracker.ResetBoxes();
 
         if (sceneFader != null)
             sceneFader.FadeAndLoad("StartingScene", 1f);

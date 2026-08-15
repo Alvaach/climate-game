@@ -31,7 +31,10 @@ public class PathTracker : MonoBehaviour
         _pathAChosen = true;
         PathChosen = true;
         _decisionIndex = 0;
-        pathContainer = null;
+
+        if (pathContainer != null)
+            foreach (Transform child in pathContainer)
+                Destroy(child.gameObject);
     }
 
     public void ChoosePath(bool chooseA)

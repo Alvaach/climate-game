@@ -11,11 +11,19 @@ public class VisualTracker : MonoBehaviour
     [Header("Place where boxes spawn")]
     [SerializeField] private Transform boxContainer;
 
+    private static Transform cachedBoxContainer;
+
     void Awake()
     {
-        if (Instance != null) { Destroy(gameObject); return; }
         Instance = this;
-        DontDestroyOnLoad(gameObject);
+    }
+
+    public static void ResetBoxes()
+    {
+        if (cachedBoxContainer == null) return;
+
+        foreach (Transform child in cachedBoxContainer)
+            Destroy(child.gameObject);
     }
 
     public void AddVisual(int amount)
@@ -28,6 +36,8 @@ public class VisualTracker : MonoBehaviour
             if (found != null) boxContainer = found.transform;
             else return;
         }
+
+        cachedBoxContainer = boxContainer;
 
         GameObject prefab = amount > 0 ? greenBoxPrefab : redBoxPrefab;
         int count = Mathf.Abs(amount);

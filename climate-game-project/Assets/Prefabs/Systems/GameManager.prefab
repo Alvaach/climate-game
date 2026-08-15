@@ -1424,11 +1424,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PathTracker
   pathAPrefabs:
-  - {fileID: 4187308653597845055, guid: 242ab5d101d4f024a8d4f3b3daf4a09c, type: 3}
-  - {fileID: 4187308653597845055, guid: 242ab5d101d4f024a8d4f3b3daf4a09c, type: 3}
-  - {fileID: 4187308653597845055, guid: 242ab5d101d4f024a8d4f3b3daf4a09c, type: 3}
-  - {fileID: 4187308653597845055, guid: 242ab5d101d4f024a8d4f3b3daf4a09c, type: 3}
+  - {fileID: 5129116013013824575, guid: e2e43e10941d82f428fb164ca7a30a7f, type: 3}
+  - {fileID: 5129116013013824575, guid: e2e43e10941d82f428fb164ca7a30a7f, type: 3}
+  - {fileID: 5129116013013824575, guid: e2e43e10941d82f428fb164ca7a30a7f, type: 3}
+  - {fileID: 5129116013013824575, guid: e2e43e10941d82f428fb164ca7a30a7f, type: 3}
+  - {fileID: 5129116013013824575, guid: e2e43e10941d82f428fb164ca7a30a7f, type: 3}
   pathBPrefabs:
+  - {fileID: 5129116013013824575, guid: e2e43e10941d82f428fb164ca7a30a7f, type: 3}
   - {fileID: 5129116013013824575, guid: e2e43e10941d82f428fb164ca7a30a7f, type: 3}
   - {fileID: 5129116013013824575, guid: e2e43e10941d82f428fb164ca7a30a7f, type: 3}
   - {fileID: 5129116013013824575, guid: e2e43e10941d82f428fb164ca7a30a7f, type: 3}

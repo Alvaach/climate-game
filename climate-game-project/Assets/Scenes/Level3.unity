@@ -2719,9 +2719,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Hm, I can\u2019t believe how all the biggest companies nowadays are tech
-    companies\u2026 I remember just 10 years ago where all the biggest companies
-    were gas and oil companies."
+  m_text: "I can\u2019t believe how all the biggest companies nowadays are tech companies\u2026
+    I remember just 10 years ago where all the biggest companies were gas and oil
+    companies."
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 9b7528e0c1226974991d1ed873a501db, type: 2}
   m_sharedMaterial: {fileID: 4418553693185215687, guid: 9b7528e0c1226974991d1ed873a501db, type: 2}

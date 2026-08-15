@@ -438,17 +438,23 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Last year, this company did not pay a cent of federal tax in the USA, and
-    it is hard to get information if it does in other places in the world. The company
-    has mastered the art of avoidance, exploiting foreign tax havens, and moonwalking
-    through the seemingly infinite loopholes that accountants apparently willingly
-    work out for them. Alongside their spending on lobbying (which have increased
+  m_text: 'Last year, this company did not pay a cent of federal tax in the USA,
+    and it is hard to get information if it does in other places in the world. The
+    company has mastered the art of avoidance, exploiting foreign tax havens, and
+    jumping through seemingly infinite loopholes that accountants apparently willingly
+    work out for them.
+
+
+    Alongside their spending on lobbying (which have increased
     by almost 420% since 2012) and the fact that they sell facial recognition software
-    to law enforcement and ICE tells a story about lies and exploitation. Without
+    to law enforcement and ICE tells a story about lies and exploitation.
+
+
+    Without
     even mentioning the environmental implications of promising two day shipping
     and the increasing use of plastic and paper packaging, a company who hides behind
-    a successful front while operating in the shadows isn't a safe and sustainable
-    investment.
+    a successful front while operating in the shadows isn''t a safe and sustainable
+    investment.'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 4c607bc552d27574281ceda981cb73ea, type: 2}
   m_sharedMaterial: {fileID: -2763390048462947370, guid: 4c607bc552d27574281ceda981cb73ea, type: 2}
@@ -475,8 +481,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 30
-  m_fontSizeBase: 30
+  m_fontSize: 27
+  m_fontSizeBase: 27
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -2031,15 +2037,15 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: The reason for it being the only company left in the top 10 is due to the
-    fact that climate sustainable companies have pushed the others out of the way.
-    This company has poor prospects, with decreasing revenues from $466 billion in
-    2008 to about half in 2017. Moreover, legal risks in the fossil fuel industry
-    are growing. Groups of investors, institutions, customers, cities, and American
-    states are suing fossil companies over their environmental impact, and their
-    neglect to report the risks associated with fossil fuels for decades. Investing
-    your money in this company does not only contribute to more c02 compared to XXX,
-    but you also risk losing the money.
+  m_text: "It is the only company left in the top 10 due to the fact that climate
+    sustainable companies have pushed the others out of the way. This company has
+    poor prospects, with decreasing revenues from $466 billion in 2008 to about half
+    in 2017.\n\nMoreover, legal risks in the fossil fuel industry are growing. Groups
+    of investors, institutions, customers, cities, and American states are suing
+    fossil companies over their environmental impact, and their neglect to report
+    the risks associated with fossil fuels for decades. \n\nInvesting your money
+    in this company does not only contribute to more c02 compared to climate sustainable
+    companies, but you also risk losing the money invested."
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 4c607bc552d27574281ceda981cb73ea, type: 2}
   m_sharedMaterial: {fileID: -2763390048462947370, guid: 4c607bc552d27574281ceda981cb73ea, type: 2}
@@ -2066,8 +2072,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 30
-  m_fontSizeBase: 30
+  m_fontSize: 27
+  m_fontSizeBase: 27
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
