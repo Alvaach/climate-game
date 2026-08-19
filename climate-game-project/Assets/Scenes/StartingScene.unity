@@ -1901,7 +1901,7 @@ RectTransform:
   m_GameObject: {fileID: 1055049211}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 1.0516, y: 1.0516, z: 1.0516}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 95727812}
@@ -3114,7 +3114,7 @@ RectTransform:
   m_GameObject: {fileID: 1649098849}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.8967, y: 0.8967, z: 0.8967}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 229403078}
@@ -3144,18 +3144,18 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "This game was created by Linn Christiansen and Alva H\xF6glund during
-    our internship at Svenska H\xE5llbarhetsfonden. This game is an educational visualization
-    of the book Where the Moneytree Grows: Invest Climate-Smart and Get Rich written
-    by Sasja Beslijk and Karim Sayyad, in which the purpose of this experience is
-    to better understand how your financial decisions have long term effects on the
-    climate.\r\n\r\nSasja Beslijk alongside Joakim Friis both acted as our mentors
-    during this project and we want to especially thank their patience and expertise
-    on the area, which has led us in the right direction during development and helped
-    us produce our first published title as a developer duo. For the best experience
-    with the game, read the book first and treat this game as a test to see if you\u2019ve
-    grasped the importance of environmentally mindful decisions.\r\n\r\nBGM: Just
-    a Taste by JMHBM,\nfound on Freemusicarchive, published under CC BY license\r\n\r\nSound
+  m_text: "This game was created by \nLinn Christiansen and Alva H\xF6glund \nduring
+    our internship at Svenska H\xE5llbarhetsfonden. \n\nThis game is an educational
+    visualization of the book \nWhere the Moneytree Grows: Invest Climate-Smart and
+    Get Rich \nwritten by Sasja Beslijk and Karim Sayyad. The purpose of this experience
+    is to better understand how financial decisions have long term effects on the
+    climate.\r\n\r\nSasja Beslijk alongside Joakim Friis acted as our mentors during
+    this project and we want to especially thank their patience and expertise on
+    the area. It has led us in the right direction during development and helped
+    us produce our first published title as a developer duo. \n\nFor the best experience
+    with the game, read the book first and treat this game as a test to see if you
+    have grasped the importance of environmentally mindful decisions.\r\n\r\nBGM:
+    Just a Taste by JMHBM,\nfound on Freemusicarchive, published under CC BY license\r\n\r\nSound
     effects from ZapSplat\r\n"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 9b7528e0c1226974991d1ed873a501db, type: 2}
@@ -3189,7 +3189,7 @@ MonoBehaviour:
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
-  m_fontStyle: 0
+  m_fontStyle: 1
   m_HorizontalAlignment: 2
   m_VerticalAlignment: 512
   m_textAlignment: 65535
@@ -3805,7 +3805,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 701780659206735984, guid: 907fd3f4c632e3e4f9ace7f46b28b85d, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -292
+      value: -426
       objectReference: {fileID: 0}
     - target: {fileID: 701780659206735984, guid: 907fd3f4c632e3e4f9ace7f46b28b85d, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x

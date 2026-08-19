@@ -964,7 +964,7 @@ RectTransform:
   m_GameObject: {fileID: 590374856}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 2, y: 2, z: 2}
+  m_LocalScale: {x: 1.5552186, y: 1.5552186, z: 1.5552186}
   m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 1452703785}
@@ -973,7 +973,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
-  m_AnchoredPosition: {x: 500.45056, y: 159}
+  m_AnchoredPosition: {x: 384.15, y: 175}
   m_SizeDelta: {x: 229.6, y: 169.83}
   m_Pivot: {x: 0.5, y: 0}
 --- !u!114 &590374858
@@ -1714,10 +1714,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Choose Apple!
-
-    Being the currently largest company in the world must
-    be worth something.'
+  m_text: "Choose Apple!\nBeing the currently \nlargest company in the world must
+    be worth something."
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 9b7528e0c1226974991d1ed873a501db, type: 2}
   m_sharedMaterial: {fileID: 4418553693185215687, guid: 9b7528e0c1226974991d1ed873a501db, type: 2}
@@ -1744,13 +1742,13 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 18
-  m_fontSizeBase: 18
+  m_fontSize: 16
+  m_fontSizeBase: 16
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
-  m_fontStyle: 0
+  m_fontStyle: 1
   m_HorizontalAlignment: 2
   m_VerticalAlignment: 512
   m_textAlignment: 65535
@@ -1875,7 +1873,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8877271725900002926, guid: b0819dbed658fde4ba0c1f1da3d92c3e, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 97
+      value: 97.00001
       objectReference: {fileID: 0}
     - target: {fileID: 8877271725900002926, guid: b0819dbed658fde4ba0c1f1da3d92c3e, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -3186,7 +3184,7 @@ RectTransform:
   m_GameObject: {fileID: 1010319776}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 2, y: 2, z: 2}
+  m_LocalScale: {x: 1.5552186, y: 1.5552186, z: 1.5552186}
   m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 730612526}
@@ -3195,7 +3193,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
-  m_AnchoredPosition: {x: -501, y: 159}
+  m_AnchoredPosition: {x: -394.58, y: 175}
   m_SizeDelta: {x: 228.9, y: 169.83}
   m_Pivot: {x: 0.5, y: 0}
 --- !u!114 &1010319778
@@ -3816,7 +3814,7 @@ RectTransform:
   m_GameObject: {fileID: 1329689048}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.8232595, y: 0.8232595, z: 0.8232595}
+  m_LocalScale: {x: 0.7382168, y: 0.7382168, z: 0.7382168}
   m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 1103439897}
@@ -3824,7 +3822,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 261}
+  m_AnchoredPosition: {x: -2.3216, y: 164.19}
   m_SizeDelta: {x: 1146, y: 534}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1351500431
@@ -4575,13 +4573,13 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 18
-  m_fontSizeBase: 18
+  m_fontSize: 16
+  m_fontSizeBase: 16
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
-  m_fontStyle: 0
+  m_fontStyle: 1
   m_HorizontalAlignment: 2
   m_VerticalAlignment: 512
   m_textAlignment: 65535
@@ -5232,10 +5230,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Choose 3M!
-
-    Their active work with sustainability on a global scale
-    is inspiring.'
+  m_text: "Choose 3M!\nTheir active work \nwith sustainability on a global scale
+    is inspiring."
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 9b7528e0c1226974991d1ed873a501db, type: 2}
   m_sharedMaterial: {fileID: 4418553693185215687, guid: 9b7528e0c1226974991d1ed873a501db, type: 2}
@@ -5262,13 +5258,13 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 18
-  m_fontSizeBase: 18
+  m_fontSize: 16
+  m_fontSizeBase: 16
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
-  m_fontStyle: 0
+  m_fontStyle: 1
   m_HorizontalAlignment: 2
   m_VerticalAlignment: 512
   m_textAlignment: 65535
@@ -5393,7 +5389,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8877271725900002926, guid: b0819dbed658fde4ba0c1f1da3d92c3e, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 97
+      value: 97.00001
       objectReference: {fileID: 0}
     - target: {fileID: 8877271725900002926, guid: b0819dbed658fde4ba0c1f1da3d92c3e, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -5445,7 +5441,7 @@ RectTransform:
   m_GameObject: {fileID: 1977934106}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 2, y: 2, z: 2}
+  m_LocalScale: {x: 1.5552186, y: 1.5552186, z: 1.5552186}
   m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 1862742181}
@@ -5454,7 +5450,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
-  m_AnchoredPosition: {x: -0.27957535, y: 159}
+  m_AnchoredPosition: {x: -5.2159, y: 175}
   m_SizeDelta: {x: 231, y: 169.83}
   m_Pivot: {x: 0.5, y: 0}
 --- !u!114 &1977934108
@@ -5629,7 +5625,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8877271725900002926, guid: b0819dbed658fde4ba0c1f1da3d92c3e, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 97
+      value: 97.00001
       objectReference: {fileID: 0}
     - target: {fileID: 8877271725900002926, guid: b0819dbed658fde4ba0c1f1da3d92c3e, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
