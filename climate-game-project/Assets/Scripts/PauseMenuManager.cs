@@ -61,6 +61,7 @@ public class PauseMenuManager : MonoBehaviour
 
         if (PlayerStats.Instance != null) PlayerStats.Instance.ResetStats();
         if (PathTracker.Instance != null) PathTracker.Instance.ResetPath();
+        VisualTracker.ResetBoxes();
 
         SceneFader fader = FindObjectOfType<SceneFader>();
         if (fader != null)

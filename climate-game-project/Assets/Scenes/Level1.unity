@@ -5127,9 +5127,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: I am open to changing part of, or all, of my savings with respect to the
-    climate, human rights or other sustainability factors, but I am unsure if I will
-    lose returns on it.
+  m_text: I am open to changing part of, or all, my savings with respect to the climate,
+    human rights or other sustainability factors, but I am unsure if I will lose
+    returns on it.
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 4c607bc552d27574281ceda981cb73ea, type: 2}
   m_sharedMaterial: {fileID: -2763390048462947370, guid: 4c607bc552d27574281ceda981cb73ea, type: 2}
