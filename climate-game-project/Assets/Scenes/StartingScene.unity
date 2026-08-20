@@ -3146,12 +3146,12 @@ MonoBehaviour:
       m_Calls: []
   m_text: "This game was created by \nLinn Christiansen and Alva H\xF6glund \nduring
     our internship at Svenska H\xE5llbarhetsfonden. \n\nThis game is an educational
-    visualization of the book \nWhere the Moneytree Grows: Invest Climate-Smart and
-    Get Rich \nwritten by Sasja Beslijk and Karim Sayyad. The purpose of this experience
-    is to better understand how financial decisions have long term effects on the
-    climate.\r\n\r\nSasja Beslijk alongside Joakim Friis acted as our mentors during
-    this project and we want to especially thank their patience and expertise on
-    the area. It has led us in the right direction during development and helped
+    visualization of the book \n\"Where the Moneytree Grows: Invest Climate-Smart
+    and Get Rich\" \nwritten by Sasja Beslijk and Karim Sayyad. The purpose of this
+    experience is to better understand how financial decisions have long term effects
+    on the climate.\r\n\r\nSasja Beslijk alongside Joakim Friis acted as our mentors
+    during this project and we want to especially thank their patience and expertise
+    on the area. It has led us in the right direction during development and helped
     us produce our first published title as a developer duo. \n\nFor the best experience
     with the game, read the book first and treat this game as a test to see if you
     have grasped the importance of environmentally mindful decisions.\r\n\r\nBGM:
@@ -3272,7 +3272,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -303}
+  m_AnchoredPosition: {x: 0, y: -289}
   m_SizeDelta: {x: 1043.0194, y: 237.0275}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1796743803
@@ -3805,7 +3805,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 701780659206735984, guid: 907fd3f4c632e3e4f9ace7f46b28b85d, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -426
+      value: -297
       objectReference: {fileID: 0}
     - target: {fileID: 701780659206735984, guid: 907fd3f4c632e3e4f9ace7f46b28b85d, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
