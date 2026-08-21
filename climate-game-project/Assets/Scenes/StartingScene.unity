@@ -678,7 +678,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &229403078
 RectTransform:
   m_ObjectHideFlags: 0
@@ -969,7 +969,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &398607722
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1344,7 +1344,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &475603658
 RectTransform:
   m_ObjectHideFlags: 0
@@ -3146,7 +3146,7 @@ MonoBehaviour:
       m_Calls: []
   m_text: "This game was created by \nLinn Christiansen and Alva H\xF6glund \nduring
     our internship at Svenska H\xE5llbarhetsfonden. \n\nThis game is an educational
-    visualization of the book \n\"Where the Moneytree Grows: Invest Climate-Smart
+    visualization of the book \n\"Where the Money Tree Grows: Invest Climate-Smart
     and Get Rich\" \nwritten by Sasja Beslijk and Karim Sayyad. The purpose of this
     experience is to better understand how financial decisions have long term effects
     on the climate.\r\n\r\nSasja Beslijk alongside Joakim Friis acted as our mentors
@@ -3399,7 +3399,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &2035789404
 RectTransform:
   m_ObjectHideFlags: 0
